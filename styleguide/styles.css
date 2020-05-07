@@ -4,8 +4,13 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+
+}
+
+nav{
   
 }
+
 
 .header{
   font-size: 35px;
@@ -41,7 +46,7 @@
   border-bottom: 1px solid #bdb8d7;
   border-bottom: 1px solid rgba(0,0,0,0.05);
   border-top: 1px solid rgba(255,255,255,0.05);
-}    
+}
 
 .wrapper .sidebar ul li a{
   color: #ffffff;
@@ -55,11 +60,11 @@
 .wrapper .sidebar ul li a .fas{
   width: 25px;
 }
-    
+
 .wrapper .sidebar ul li:hover a{
   color: #fff;
 }
- 
+
 .wrapper .sidebar .social_media{
   position: absolute;
   bottom: 0;
@@ -71,7 +76,7 @@
 .wrapper .sidebar .social_media a{
   display: block;
   width: 40px;
-  
+
   height: 40px;
   line-height: 45px;
   text-align: center;
