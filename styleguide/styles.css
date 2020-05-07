@@ -7,16 +7,12 @@
 
 }
 
-nav{
-  
-}
-
 
 .header{
   font-size: 35px;
   font-weight: 700;
-
 }
+
 .wrapper{
   display: flex;
   position: relative;
@@ -186,6 +182,22 @@ input[type=text]:focus{
   border-color:dodgerBlue;
   box-shadow:0 0 8px 0 dodgerBlue;
 }
+
+/* Calender picker */
+
+
+.ui-datepicker-trigger{
+    width: auto;
+    height: 30px;
+    margin-bottom: -10px;
+}
+
+#datepicker{
+    border-radius: 8px;
+    margin-left: 20px;
+    width: 150px;
+}
+
 
 /*til alt content på styleguiden*/
 .content-wrapper{
