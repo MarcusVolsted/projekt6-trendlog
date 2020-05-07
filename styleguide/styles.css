@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  
+
 }
 
 .header{
@@ -41,7 +41,7 @@
   border-bottom: 1px solid #bdb8d7;
   border-bottom: 1px solid rgba(0,0,0,0.05);
   border-top: 1px solid rgba(255,255,255,0.05);
-}    
+}
 
 .wrapper .sidebar ul li a{
   color: #ffffff;
@@ -55,11 +55,11 @@
 .wrapper .sidebar ul li a .fas{
   width: 25px;
 }
-    
+
 .wrapper .sidebar ul li:hover a{
   color: #fff;
 }
- 
+
 .wrapper .sidebar .social_media{
   position: absolute;
   bottom: 0;
@@ -71,7 +71,7 @@
 .wrapper .sidebar .social_media a{
   display: block;
   width: 40px;
-  
+
   height: 40px;
   line-height: 45px;
   text-align: center;
@@ -181,6 +181,22 @@ input[type=text]:focus{
   border-color:dodgerBlue;
   box-shadow:0 0 8px 0 dodgerBlue;
 }
+
+/* Calender picker */
+
+
+.ui-datepicker-trigger{
+    width: auto;
+    height: 30px;
+    margin-bottom: -10px;
+}
+
+#datepicker{
+    border-radius: 8px;
+    margin-left: 20px;
+    width: 150px;
+}
+
 
 /*til alt content på styleguiden*/
 .content-wrapper{
