@@ -319,7 +319,7 @@ nav {
 }
 
 .navelement1 .navmenu li a{
-  font-family: open sans;
+  font-family: segoe ui;
   font-size: 14px;
   font-weight: bold;
   color: #fff;
@@ -367,7 +367,7 @@ margin-right: 15px;
 
 .navprofildropdown a {
   color: white;
-  font-family: open sans;
+  font-family: segoe ui;
   font-weight: bold;
   font-size: 14px;
   display: flex;
@@ -397,7 +397,7 @@ margin-right: 15px;
 }
 
 .navprofil a{
-  font-family: open sans;
+  font-family: segoe ui;
   color: #fff;
   font-size: 14px;
   font-weight: bold;
@@ -416,14 +416,27 @@ margin-right: 15px;
   opacity: 1;
 }
 
-@media only screen and (max-width: 1200px) {
-  .navelement1 ul {
-    opacity: 0;
-    pointer-events: none;
-  }
-  .navelement2 {
-    opacity: 0;
-    pointer-events: none;
-  }
+.navelement2 .burger a {
+  display: none;
+  color: #fff;
+  margin: 0px 20px 0px 20px;
+  text-decoration: none;
+}
 
+@media only screen and (max-width: 1200px) {
+  .navelement1 .navmenu {
+    display: none;
+  }
+  .navelement2 .navikoner {
+    display: ;
+  }
+  .navelement2 .plugandlog {
+    display: none;
+  }
+  .navelement2 .navprofildropdown {
+    display: none;
+  }
+  .navelement2 .burger a {
+    display: block;
+  }
 }
