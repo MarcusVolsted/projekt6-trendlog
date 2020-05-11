@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-------------------------------------  TIL RESSOURCEN NÅR DEN ER SELECTED - MOBIL VERSION  ----------------------------------->
+
+
+<!--  Headeren ligger for sig selv (i sit eget div) og ikke inden i en nogen container, da den skal vises på alle undersider  -->
+    <div class="header-mobile">header</div>
+<!-- ------------------------------------------------- SLUT PÅ HEADER ------------------------------------------------------- -->
+
+
+<!-- -------------------------------- Dette div indenholder checklisten undersiden ------------------------------------------ -->
+<div id="mobile-checkliste-container">
+
+    <div class="navigation-buttons">
+        <button class="button-nav">BACK</button>
+        <button class="button-nav-blue" onclick="toggleVisibility('mobile-checkliste-container');">CHECKLIST</button>
+        <button class="button-nav" onclick="toggleVisibility('mobile-settings-container');;">SETTINGS</button>
+        <button class="button-nav" onclick="toggleVisibility('mobile-history-container');">HISTORY</button>
+    </div>
+    <div class="title">title</div>
+    <div class="info-text">text</div>
+    <div class="todo-list">todo</div>
+    <div class="comment-checklist">kommentar</div>
+    <div class="upload-pic">upload</div>
+    <div class="document">dokumenetr</div>
+    <div class="save-button">save</div>
+    <div class="procentagebar-box">procentbar</div>
+</div>
+<!-- ----------------------------------------- SLUT PÅ CHECKLISTE UNDERSIDEN ------------------------------------------------ -->
+
+<!-- ----------------------------------------------------- SETTINGS --------------------------------------------------------- -->
+<!-- ----- Dette div indenholder settings undersiden, samt den første underside under settings "general settings" ----------- -->
+<div id="mobile-settings-container">
+
+    <div class="navigation-buttons">
+        <button class="button-nav">BACK</button>
+        <button class="button-nav" onclick="toggleVisibility('mobile-checkliste-container');">CHECKLIST</button>
+        <button class="button-nav-blue" onclick="toggleVisibility('mobile-settings-container');">SETTINGS</button>
+        <button class="button-nav" onclick="toggleVisibility('mobile-history-container');">HISTORY</button>
+    </div>
+
+    <div class="title">title</div>
+
+    <div id="mobile-general-settings-container">
+
+        <div class="navigation-buttons">
+            <button class="button-nav">BACK</button>
+            <button class="button-nav" onclick="toggleVisibility('mobile-checkliste-container');">CHECKLIST</button>
+            <button class="button-nav-blue" onclick="toggleVisibility('mobile-settings-container');">SETTINGS</button>
+            <button class="button-nav" onclick="toggleVisibility('mobile-history-container');">HISTORY</button>
+        </div>
+
+        <div class="navigation-buttons-settings">
+            <button class="button-nav-blue" onclick="toggleVisibility('mobile-settings-container');">CHECKLIST</button>
+            <button class="button-nav" onclick="toggleVisibility('mobile-service-settings-container');">SETTINGS</button>
+            <button class="button-nav" onclick="toggleVisibility('mobile-add-to-settings-container');">HISTORY</button>
+        </div>
+
+        <div class="todo-list">service1</div>
+
+    </div>
+</div>
+<!-- ------------------------------------ SLUT PÅ SETTINGS "GENERAL SETTINGS" UNDERSIDEN ------------------------------------------ -->
+
+
+<!-- ---------- Dette div indenholder settings undersiden, samt den anden underside under settings "service settings" ------------- -->
+<div id="mobile-service-settings-container">
+
+    <div class="navigation-buttons">
+        <button class="button-nav">BACK</button>
+        <button class="button-nav" onclick="toggleVisibility('mobile-checkliste-container');">CHECKLIST</button>
+        <button class="button-nav-blue" onclick="toggleVisibility('mobile-settings-container');">SETTINGS</button>
+        <button class="button-nav" onclick="toggleVisibility('mobile-history-container');">HISTORY</button>
+    </div>
+
+    <div class="title">title</div>
+
+    <div class="navigation-buttons-settings">
+        <button class="button-nav" onclick="toggleVisibility('mobile-settings-container');">CHECKLIST</button>
+        <button class="button-nav-blue" onclick="toggleVisibility('mobile-service-settings-container');">SETTINGS</button>
+        <button class="button-nav" onclick="toggleVisibility('mobile-add-to-settings-container');">HISTORY</button>
+    </div>
+
+    <div class="todo-list">service2</div>
+
+</div>
+<!-- ------------------------------------ SLUT PÅ SETTINGS "SERVICE SETTINGS" UNDERSIDEN ------------------------------------------ -->
+
+
+<!-- ---- Dette div indenholder settings undersiden, samt den tredje underside under settings "add to checklisten settings" ------- -->
+<div id="mobile-add-to-settings-container">
+
+    <div class="navigation-buttons">
+        <button class="button-nav">BACK</button>
+        <button class="button-nav" onclick="toggleVisibility('mobile-checkliste-container');">CHECKLIST</button>
+        <button class="button-nav-blue" onclick="toggleVisibility('mobile-settings-container');">SETTINGS</button>
+        <button class="button-nav" onclick="toggleVisibility('mobile-history-container');">HISTORY</button>
+    </div>
+
+    <div class="title">title</div>
+
+    <div class="navigation-buttons-settings">
+        <button class="button-nav" onclick="toggleVisibility('mobile-settings-container');">CHECKLIST</button>
+        <button class="button-nav" onclick="toggleVisibility('mobile-service-settings-container');">SETTINGS</button>
+        <button class="button-nav-blue" onclick="toggleVisibility('mobile-add-to-settings-container');">HISTORY</button>
+    </div>
+
+    <div class="todo-list">service3</div>
+
+</div>
+<!-- ------------------------------------ SLUT PÅ SETTINGS "ADD TO CHECKLISTEN SETTINGS" UNDERSIDEN ---------------------------------- -->
+<!-- -------------------------------------------------------- SLUT SETTINGS ---------------------------------------------------------- -->
+
+
+<!-- -------------------------------------------- Dette div indenholder history undersiden ------------------------------------------- -->
+<div id="mobile-history-container">
+
+    <div class="navigation-buttons">
+        <button class="button-nav">BACK</button>
+        <button class="button-nav" onclick="toggleVisibility('mobile-checkliste-container');">CHECKLIST</button>
+        <button class="button-nav" onclick="toggleVisibility('mobile-settings-container');">SETTINGS</button>
+        <button class="button-nav-blue" onclick="toggleVisibility('mobile-history-container');">HISTORY</button>
+    </div>
+
+    <div class="title">title</div>
+    <div class="info-text">text</div>
+    <div class="todo-list">todo</div>
+
+</div>
+<!-- --------------------------------------------------- SLUT PÅ HISTORY UNDERSIDEN ------------------------------------------------- -->
+
+
+<script src="../js/select-div.js"></script>
+<!------------------------------------------  SLUT MOBIL VERSION - TIL RESSOURCEN NÅR DEN ER SELECTED ---------------------------------->
+
+</body>
+</html>

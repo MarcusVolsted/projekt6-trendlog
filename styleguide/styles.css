@@ -523,3 +523,232 @@ margin-right: 15px;
     display: block;
   }
 }
+
+/* TIL RESSOURCEN NÅR DEN ER SELECTED - MOBIL*/
+/* HEADER - SPECIFIKT TIL TING KUN UNDER HER*/
+/* HEADER BOX STYLE */
+.header-mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: red;
+}
+/* SLUT HEADER - SPECIFIKT TIL TING KUN UNDER HER*/
+
+
+/* CHECKLIST UNDERSIDE - SPECIFIKT TIL TING KUN UNDER HER*/
+/* CHECKLIST BOX STYLE */
+#mobile-checkliste-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Infomationens box - "name", "service date planned" & "description" */
+.info-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 250px;
+    background: royalblue;
+}
+
+/* Checklisten boxen som indenholder de forskellige "todo's" */
+.todo-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 225px;
+    background: sandybrown;
+}
+
+/* kommentar boxen */
+.comment-checklist {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 190px;
+    background: slategrey;
+}
+
+/* upload boxen */
+.upload-pic {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 180px;
+    background: violet;
+}
+
+/* dokument boxen */
+.document {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 145px;
+    background: yellowgreen;
+}
+
+/* procentbaren boxen */
+.procentagebar-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: darkolivegreen;
+}
+/* SLUT CHECKLIST UNDERSIDE - SPECIFIKT TIL TING KUN UNDER HER*/
+
+
+/* SETTINGS UNDERSIDE - SPECIFIKT TIL TING KUN UNDER HER*/
+/* SETTINGS BOX STYLE */
+#mobile-settings-container {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Knappe boxen til settings undersiden som skal indenholde knapperne til at navigerer
+   rundt under settings  */
+.navigation-buttons-settings {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 40px;
+    top: 0;
+    left: 0;
+    background: rebeccapurple;
+}
+
+/* GENERAL SETTINGS BOX STYLE */
+#mobile-general-settings-container {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SERVICE SETTINGS BOX STYLE */
+#mobile-service-settings-container {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ADD TO CHECKLISTEN SETTINGS BOX STYLE */
+#mobile-add-to-settings-container {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* SLUT SETTINGS UNDERSIDE - SPECIFIKT TIL TING KUN UNDER HER*/
+
+
+/* HISTORY BOX STYLE */
+#mobile-history-container {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ALLE UNDERSIDE - SPECIFIKT TIL TING PÅ ALLE UNDERSIDER AD RESSOURCEN*/
+/* Dette er boxen til "titlen" på undersiderne */
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 80px;
+    margin-top: 90px;
+    background: darkturquoise;
+}
+
+/* Dette er boxen til "save" knappens style */
+.save-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 40px;
+    background: orange;
+}
+
+/* Knappe boxen som skal indenholde knapperne til at navigerer
+   rundt mellem "Checklist", "Setting" & "History" */
+.navigation-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 50px;
+    background: rebeccapurple;
+}
+
+/* Knap som ikke er selectede */
+.button-nav {
+    background: #222222;
+    width: 25vh;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+    font-size: 15px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+
+/* Knap som er selectede */
+.button-nav-blue {
+    background: #337AB7;
+    width: 25vh;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+    font-size: 15px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  /* SLUT - TIL RESSOURCEN NÅR DEN ER SELECTED - SLUT MOBIL*/
