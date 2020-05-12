@@ -735,10 +735,11 @@ margin-right: 15px;
 
 .history-menu-øvre-kasse {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
   height: 50%;
   width: 100%;
-  background-color: #fff;
+  background-color: ;
 }
 
 .history-menu-nedre-kasse {
@@ -746,6 +747,104 @@ margin-right: 15px;
   height: 50%;
   width: 100%;
   background-color: #555;
+}
+
+
+/* History Boks Tekst */
+
+.history-boks-tekst {
+  color: #fff;
+  margin-left: 15px;
+  font-family: segoe ui;
+  font-weight: bold;
+}
+
+/* Historie Søgefunktion */
+
+.history-søgefunktion {
+  height: 40px;
+}
+
+/* Øvre kasse dropdowns */
+
+/* Dropdown til listeantal */
+.history-listeantal{
+  width: 75px;
+  margin: 15px;
+  position: relative;
+  user-select: none;
+  margin-left: px;
+}
+
+.history-listeantal .default_option{
+  background: #fff;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+  text-decoration: none;
+}
+
+.history-listeantal .default_option li{
+    padding: 10px 20px;
+}
+
+.history-listeantal .default_option:before{
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 18px;
+    width: 6px;
+    height: 6px;
+    border: 2px solid;
+    border-color: transparent transparent #555555 #555555;
+    transform: rotate(-45deg);
+}
+
+.history-listeantal .history-listeantal-ul{
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  display: none;
+}
+
+.history-listeantal .history-listeantal-ul li{
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.history-listeantal .history-listeantal-ul li:first-child:hover{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.history-listeantal .history-listeantal-ul li:last-child:hover{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.history-listeantal .history-listeantal-ul li:hover{
+  background: #e8e8e8;
+}
+
+.history-listeantal .option{
+  display: flex;
+  align-items: center;
+}
+
+
+.history-listeantal.active .history-listeantal-ul{
+  display: block;
+  list-style: none;
+  text-decoration: none;
+}
+
+.history-listeantal.active .default_option:before{
+  top: 18px;
+  transform: rotate(-225deg);
 }
 
 /* HER SLUTTER HISTORY MENU DELEN */
