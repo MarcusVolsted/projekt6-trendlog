@@ -744,10 +744,24 @@ margin-right: 15px;
 
 .history-menu-nedre-kasse {
   display: flex;
+  flex-direction: column;
   height: 50%;
   width: 100%;
   background-color: #555;
 }
+
+.history-menu-nedre-kasse .history-menu-nedre-kasse-1 {
+  display: flex;
+  align-items: center;
+  height: 50%;
+  font-size: 15px;
+  color: #fff;
+  font-family: segoe ui;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+
 
 
 /* History Boks Tekst */
@@ -773,7 +787,6 @@ margin-right: 15px;
   margin: 15px;
   position: relative;
   user-select: none;
-  margin-left: px;
 }
 
 .history-listeantal .history-default-option{
@@ -847,7 +860,11 @@ margin-right: 15px;
   transform: rotate(-225deg);
 }
 
+
+
 /* HER SLUTTER HISTORY MENU DELEN */
+
+/* HER STARTER HISTORY LISTE DELEN */
 
 .history-list {
   display: flex;
