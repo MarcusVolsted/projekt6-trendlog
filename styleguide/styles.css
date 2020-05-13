@@ -761,7 +761,13 @@ margin-right: 15px;
   margin-left: 15px;
 }
 
-
+.history-menu-nedre-kasse .history-menu-nedre-kasse-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  
+}
 
 
 /* History Boks Tekst */
