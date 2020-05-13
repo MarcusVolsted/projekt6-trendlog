@@ -953,7 +953,9 @@ margin-right: 15px;
 .history-list .history-list-resources ul li {
   display: flex;
   justify-content: space-between;
+  height: 20px;
   color: #222;
+  width: 90%;
   font-size: 15px;
   font-family: segoe ui;
   font-weight: bold;
@@ -963,7 +965,7 @@ margin-right: 15px;
   border-radius: 5px;
 }
 
-.history-list .history-list-resources .history-list-id {
+/* .history-list .history-list-resources .history-list-id {
   width: 45px;
 }
 
@@ -976,8 +978,8 @@ margin-right: 15px;
 }
 
 .history-list .history-list-resources .history-list-value {
-  width: auto;
-}
+  padding-right: 27%;
+} */
 
 /* HER STARTER HISTORY LISTE DELEN */
 
