@@ -739,6 +739,11 @@ margin-right: 15px;
   align-items: center;
   height: 50%;
   width: 100%;
+  margin-right: 10px;
+}
+
+.history-menu-øvre-kasse .history-boks-tekst {
+  margin-left: 20px;
 }
 
 .history-menu-nedre-kasse {
@@ -746,6 +751,8 @@ margin-right: 15px;
   flex-direction: column;
   height: 50%;
   width: 100%;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .history-menu-nedre-kasse .history-menu-nedre-kasse-1 {
@@ -774,12 +781,13 @@ margin-right: 15px;
 
 #datepicker-history-menu1{
     border-radius: 8px;
-    width: 100px;
+    width: 40%;
+    margin-left: 10px;
 }
 
 #datepicker-history-menu2{
     border-radius: 8px;
-    width: 100px;
+    width: 40%;
 }
 
 /* History Boks Tekst */
@@ -795,6 +803,7 @@ margin-right: 15px;
 
 .history-søgefunktion {
   height: 40px;
+  margin-right: 10px;
 }
 
 /* Øvre kasse dropdowns */
