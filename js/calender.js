@@ -1,7 +1,7 @@
 $( function() {
     $( "#datepicker-history-menu1" ).datepicker({
       showOn: "button",
-      buttonImage: "../img/calendar.png",
+      buttonImage: "../img/calendar-white.png",
       buttonImageOnly: true,
       buttonText: "Select date"
     });
@@ -10,7 +10,7 @@ $( function() {
   $( function() {
       $( "#datepicker-history-menu2" ).datepicker({
         showOn: "button",
-        buttonImage: "../img/calendar.png",
+        buttonImage: "../img/calendar-white.png",
         buttonImageOnly: true,
         buttonText: "Select date"
       });
