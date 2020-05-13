@@ -1,4 +1,4 @@
-$(".default_option").click(function(){
+$(".history-default-option").click(function(){
   $(this).parent().toggleClass("active");
 })
 

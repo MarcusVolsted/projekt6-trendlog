@@ -776,7 +776,7 @@ margin-right: 15px;
   margin-left: px;
 }
 
-.history-listeantal .default_option{
+.history-listeantal .history-default-option{
   background: #fff;
   border-radius: 8px;
   position: relative;
@@ -785,11 +785,11 @@ margin-right: 15px;
   text-decoration: none;
 }
 
-.history-listeantal .default_option li{
+.history-listeantal .history-default-option li{
     padding: 10px 20px;
 }
 
-.history-listeantal .default_option:before{
+.history-listeantal .history-default-option:before{
     content: "";
     position: absolute;
     top: 13px;
@@ -842,7 +842,7 @@ margin-right: 15px;
   text-decoration: none;
 }
 
-.history-listeantal.active .default_option:before{
+.history-listeantal.active .history-default-option:before{
   top: 18px;
   transform: rotate(-225deg);
 }
