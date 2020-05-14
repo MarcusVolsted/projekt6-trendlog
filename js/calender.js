@@ -1,8 +1,17 @@
 $( function() {
-    $( "#datepicker" ).datepicker({
+    $( "#datepicker-history-menu1" ).datepicker({
       showOn: "button",
-      buttonImage: "../img/calendar.png",
+      buttonImage: "../img/calendar-hvid.png",
       buttonImageOnly: true,
       buttonText: "Select date"
     });
   } );
+
+  $( function() {
+      $( "#datepicker-history-menu2" ).datepicker({
+        showOn: "button",
+        buttonImage: "../img/calendar-hvid.png",
+        buttonImageOnly: true,
+        buttonText: "Select date"
+      });
+    } );
