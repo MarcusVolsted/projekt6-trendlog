@@ -11,18 +11,18 @@ body{
 }
 
 
-.header{
+.header-styleguide{
   font-size: 35px;
   font-weight: 700;
 }
 
-.wrapper{
+.wrapper-styleguide{
   display: flex;
   position: relative;
   width: 100%;
 }
 
-.wrapper .sidebar{
+.wrapper-styleguide .sidebar{
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -33,38 +33,38 @@ body{
   position: fixed;
 }
 
-.wrapper .sidebar h2{
+.wrapper-styleguide .sidebar h2{
   color: #fff;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 30px;
 }
 
-.wrapper .sidebar ul li{
+.wrapper-styleguide .sidebar ul li{
   padding: 15px;
   border-bottom: 1px solid #bdb8d7;
   border-bottom: 1px solid rgba(0,0,0,0.05);
   border-top: 1px solid rgba(255,255,255,0.05);
 }
 
-.wrapper .sidebar ul li a{
+.wrapper-styleguide .sidebar ul li a{
   color: #ffffff;
   display: block;
 }
 
-.wrapper .sidebar ul li:hover{
+.wrapper-styleguide .sidebar ul li:hover{
   background-color: #717171;
 }
 
-.wrapper .sidebar ul li a .fas{
+.wrapper-styleguide .sidebar ul li a .fas{
   width: 25px;
 }
 
-.wrapper .sidebar ul li:hover a{
+.wrapper-styleguide .sidebar ul li:hover a{
   color: #fff;
 }
 
-.wrapper .sidebar .social_media{
+.wrapper-styleguide .sidebar .social_media{
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -72,10 +72,9 @@ body{
   display: flex;
 }
 
-.wrapper .sidebar .social_media a{
+.wrapper-styleguide .sidebar .social_media a{
   display: block;
   width: 40px;
-
   height: 40px;
   line-height: 45px;
   text-align: center;
@@ -85,24 +84,24 @@ body{
   border-top-right-radius: 5px;
 }
 
-.wrapper .main_content{
+.wrapper-styleguide .main-content-styleguide{
   width: 100%;
   margin-left: 200px;
 }
 
-.wrapper .main_content .header{
+.wrapper-styleguide .main-content-styleguide .header{
   padding: 20px;
   background-color: lightgrey;
   color: #000000;
   border-bottom: 1px solid #e0e4e8;
 }
 
-.wrapper .main_content .info{
+.wrapper-styleguide .main-content-styleguide .info{
   margin: 20px;
   line-height: 25px;
 }
 
-.wrapper .main_content .info div{
+.wrapper-styleguide .main-content-styleguide .info div{
   margin-bottom: 20px;
 }
 
@@ -200,87 +199,6 @@ input[type=text]:focus{
     width: 150px;
 }
 
-/* Dropdown menu */
-
-.select_wrap{
-  width: 225px;
-  margin: 15px;
-  position: relative;
-  user-select: none;
-  margin-left: 250px;
-}
-
-.select_wrap .default_option{
-  background: #fff;
-  border-radius: 8px;
-  position: relative;
-  cursor: pointer;
-  list-style: none;
-  text-decoration: none;
-}
-
-.select_wrap .default_option li{
-    padding: 10px 20px;
-}
-
-.select_wrap .default_option:before{
-    content: "";
-    position: absolute;
-    top: 13px;
-    right: 18px;
-    width: 6px;
-    height: 6px;
-    border: 2px solid;
-    border-color: transparent transparent #555555 #555555;
-    transform: rotate(-45deg);
-}
-
-.select_wrap .select_ul{
-  position: absolute;
-  top: 45px;
-  left: 0;
-  width: 100%;
-  background: #fff;
-  border-radius: 5px;
-  display: none;
-}
-
-.select_wrap .select_ul li{
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.select_wrap .select_ul li:first-child:hover{
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.select_wrap .select_ul li:last-child:hover{
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.select_wrap .select_ul li:hover{
-  background: #e8e8e8;
-}
-
-.select_wrap .option{
-  display: flex;
-  align-items: center;
-}
-
-
-.select_wrap.active .select_ul{
-  display: block;
-  list-style: none;
-  text-decoration: none;
-}
-
-.select_wrap.active .default_option:before{
-  top: 18px;
-  transform: rotate(-225deg);
-}
-
 
 /*til alt content på styleguiden*/
 .content-wrapper{
@@ -292,7 +210,7 @@ input[type=text]:focus{
 
 
 /*TOGGLE KNAP DESIGN*/
-input[type="checkbox"] {
+.toggleknap-styleguide[type="checkbox"] {
   position: relative;
   width: 70px;
   height: 25px;
@@ -306,13 +224,12 @@ input[type="checkbox"] {
 }
 
 /*EFTER KLIK TOGGLE KNAP*/
-input:checked[type="checkbox"] {
+.toggleknap-styleguide:checked[type="checkbox"] {
   background: #00ff00;
 }
 
-/*KNAPPEN INDEN CLICK.  Dette fucker min kode op, når ge trykker på
-  mine checkboxes udvider hele min skærm på mobil version - Oliver*/
-/* input[type="checkbox"]::before {
+/*KNAPPEN INDEN CLICK.*/
+.toggleknap-styleguide[type="checkbox"]::before {
   z-index: 2;
   position: absolute;
   content: "";
@@ -327,19 +244,18 @@ input:checked[type="checkbox"] {
 } */
 
 /*Styrer hvor langt toggleknapper rykker*/
-input:checked[type="checkbox"]::before {
+.toggleknap-styleguide:checked[type="checkbox"]::before {
   left: 44px;
 }
 
 /*knappen*/
-.toggle {
+.toggle-sg {
   position: relative;
   display: inline;
 }
 
-/*Label i toggle knappen - Dette fucker min kode op, 
-  jeg kan ikke trykke på mine checkboxes pga. denne - Oliver*/
-/* label {
+/*Label i toggle knappen*/
+.toogle label {
   position: absolute;
   color: #fff;
   font-weight: 600;
@@ -348,13 +264,13 @@ input:checked[type="checkbox"]::before {
 } */
 
 /*TÆNDT KNAP*/
-.onbtn {
+.onbtn1 {
   bottom: 10px;
   left: 10px;
 }
 
 /*SLUKKET KNAP*/
-.ofbtn {
+.ofbtn1 {
   bottom: 10px;
   right: 10px;
   color: #34495e;
@@ -446,10 +362,6 @@ margin-right: 15px;
   margin-top: 79px;
 }
 
-.navprofildropdown ul {
-
-}
-
 .navprofildropdown a {
   color: white;
   font-family: segoe ui;
@@ -508,23 +420,7 @@ margin-right: 15px;
   text-decoration: none;
 }
 
-@media only screen and (max-width: 1200px) {
-  .navelement1 .navmenu {
-    display: none;
-  }
-  .navelement2 .navikoner {
-    display: ;
-  }
-  .navelement2 .plugandlog {
-    display: none;
-  }
-  .navelement2 .navprofildropdown {
-    display: none;
-  }
-  .navelement2 .burger a {
-    display: block;
-  }
-}
+
 
 /* ------------------ TIL RESSOURCEN NÅR DEN ER SELECTED - MOBIL ------------------ */
 /* ------------------ HEADER - SPECIFIKT TIL TING KUN UNDER HER ------------------ */
@@ -823,11 +719,11 @@ margin-right: 15px;
   box-shadow: 0px 2px 5px rgba(0,0,0,.5);
 }
 
-.ui-progressbar-value { 
-  background: #337AB7; 
+.ui-progressbar-value {
+  background: #337AB7;
 }
 
-.progressbar-bar { 
+.progressbar-bar {
 margin-top: 10px;
 margin-left: 20px;
 margin-right: 20px;
@@ -1303,7 +1199,385 @@ padding: 15px;
     width: 100%;
     height: 80px;
     margin-top: 90px;
-    /* background: darkturquoise; */
+    background: darkturquoise;
+}
+/* HER STARTER HISTORY MENU DELEN */
+.history-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 170px;
+  background: #f1f1f1;
+}
+
+.history-menu-kasse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 90%;
+  background-color: #7d7d7d;
+  border-radius: 5px;
+}
+
+.history-menu-øvre-kasse {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.history-menu-øvre-kasse .history-boks-tekst {
+  margin-left: 20px;
+}
+
+.history-menu-nedre-kasse {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  width: 100%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.history-menu-nedre-kasse .history-menu-nedre-kasse-1 {
+  display: flex;
+  align-items: center;
+  height: 50%;
+  font-size: 15px;
+  color: #fff;
+  font-family: segoe ui;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.history-menu-nedre-kasse .history-menu-nedre-kasse-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.history-menu-nedre-kasse .history-menu-nedre-kasse-2 i {
+  margin: 0px 10px 0px 10px;
+}
+
+#datepicker-history-menu1{
+    border-radius: 8px;
+    width: 40%;
+    margin-left: 10px;
+}
+
+#datepicker-history-menu2{
+    border-radius: 8px;
+    width: 40%;
+}
+
+/* History Boks Tekst */
+
+.history-boks-tekst {
+  color: #fff;
+  margin-left: 15px;
+  font-family: segoe ui;
+  font-weight: bold;
+}
+
+/* Historie Søgefunktion */
+
+.history-søgefunktion {
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Øvre kasse dropdowns */
+
+/* Dropdown til listeantal */
+.history-listeantal{
+  width: 75px;
+  margin: 15px;
+  position: relative;
+  user-select: none;
+}
+
+.history-listeantal .history-default-option{
+  background: #fff;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+  text-decoration: none;
+}
+
+.history-listeantal .history-default-option li{
+    padding: 10px 20px;
+}
+
+.history-listeantal .history-default-option:before{
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 18px;
+    width: 6px;
+    height: 6px;
+    border: 2px solid;
+    border-color: transparent transparent #555555 #555555;
+    transform: rotate(-45deg);
+}
+
+.history-listeantal .history-listeantal-ul{
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  display: none;
+}
+
+.history-listeantal .history-listeantal-ul li{
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.history-listeantal .history-listeantal-ul li:first-child:hover{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.history-listeantal .history-listeantal-ul li:last-child:hover{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.history-listeantal .history-listeantal-ul li:hover{
+  background: #e8e8e8;
+}
+
+.history-listeantal .option{
+  display: flex;
+  align-items: center;
+}
+
+
+.history-listeantal.active .history-listeantal-ul{
+  display: block;
+  list-style: none;
+  text-decoration: none;
+}
+
+.history-listeantal.active .history-default-option:before{
+  top: 18px;
+  transform: rotate(-225deg);
+}
+
+
+
+/* HER SLUTTER HISTORY MENU DELEN */
+
+/* HER STARTER HISTORY LISTE DELEN */
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 450px;
+  background: #f1f1f1;
+}
+
+.history-list .history-list-boks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 5px;
+  width: 90%;
+  height: 425px;
+  background-color: #7d7d7d;
+}
+
+/* HER STARTER LISTE FILTER DELEN */
+
+.history-list .history-list-boks .history-list-id {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.history-list .history-list-boks .history-list-id .history-list-filter-id {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #fff;
+  font-family: segoe ui;
+  font-weight: bold;
+  background-color: #222;
+  margin: 10px 0px 10px 10px;
+  padding: 5px 5px 5px 5px;
+}
+
+.history-list .history-list-boks .history-list-name {
+  width: 25%;
+}
+
+.history-list .history-list-boks .history-list-name .history-list-filter-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #fff;
+  font-family: segoe ui;
+  font-weight: bold;
+  background-color: #222;
+  margin: 10px 0px 10px 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+.history-list .history-list-boks .history-list-date {
+  width: 25%;
+}
+
+.history-list .history-list-boks .history-list-date .history-list-filter-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #fff;
+  font-family: segoe ui;
+  font-weight: bold;
+  background-color: #222;
+  margin: 10px 0px 10px 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+.history-list .history-list-boks .history-list-value {
+  width: 25%;
+}
+
+.history-list .history-list-boks .history-list-value .history-list-filter-value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #fff;
+  font-family: segoe ui;
+  font-weight: bold;
+  background-color: #222;
+  margin: 10px 10px 10px 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+/* HER SLUTTER LISTE FILTER DELEN */
+
+/* HER STARTER LISTEN */
+
+.history-list .history-list-boks .history-list-id .history-list-element-id {
+  display: flex;
+}
+
+.history-list .history-list-boks .history-list-id .history-list-element-id ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.history-list .history-list-boks .history-list-id .history-list-element-id ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #222;
+  font-family: segoe ui;
+  font-weight: bold;
+  background-color: #fff;
+  margin: 5px 0px 0px 10px;
+  padding: 5px 5px 5px 5px;
+}
+
+.history-list .history-list-boks .history-list-name .history-list-element-name {
+  display: flex;
+}
+
+.history-list .history-list-boks .history-list-name .history-list-element-name ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.history-list .history-list-boks .history-list-name .history-list-element-name ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #222;
+  font-family: segoe ui;
+  font-weight: bold;
+  background-color: #fff;
+  margin: 5px 0px 0px 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+.history-list .history-list-boks .history-list-date .history-list-element-date {
+  display: flex;
+}
+
+.history-list .history-list-boks .history-list-date .history-list-element-date ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.history-list .history-list-boks .history-list-date .history-list-element-date ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #222;
+  font-family: segoe ui;
+  font-weight: bold;
+  background-color: #fff;
+  margin: 5px 0px 0px 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+.history-list .history-list-boks .history-list-value .history-list-element-value {
+  display: flex;
+}
+
+.history-list .history-list-boks .history-list-value .history-list-element-value ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.history-list .history-list-boks .history-list-value .history-list-element-value ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #222;
+  font-family: segoe ui;
+  font-weight: bold;
+  background-color: #fff;
+  margin: 5px 10px 0px 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+/* HER SLUTTER HISTORY LISTE DELEN */
+
+.title h1 {¨
+  height: 75vh;
+  font-size: 40px;
+  font-family: 'Segoe UI';
+  font-weight: bold;
 }
 
 /* Dette er boxen til "save" knappens style */
@@ -1380,3 +1654,21 @@ padding: 15px;
     cursor: pointer;
   }
   /* SLUT - TIL RESSOURCEN NÅR DEN ER SELECTED - SLUT MOBIL*/
+
+  @media only screen and (max-width: 1200px) {
+    .navelement1 .navmenu {
+      display: none;
+    }
+    .navelement2 .navikoner {
+      display: ;
+    }
+    .navelement2 .plugandlog {
+      display: none;
+    }
+    .navelement2 .navprofildropdown {
+      display: none;
+    }
+    .navelement2 .burger a {
+      display: block;
+    }
+  }
