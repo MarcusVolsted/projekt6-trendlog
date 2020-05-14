@@ -168,7 +168,7 @@ body{
 
 /*UI PATTERNS START*/
 /*NAME PLACEHOLDER*/
-.name-placeholder[type=text]{
+input[type=text]{
   width:50%;
   border:2px solid #aaa;
   border-radius:4px;
@@ -180,7 +180,7 @@ body{
   transition:.3s;
 }
 
-.name-placeholder[type=text]:focus{
+input[type=text]:focus{
   border-color:dodgerBlue;
   box-shadow:0 0 8px 0 dodgerBlue;
 }
@@ -249,7 +249,7 @@ body{
 }
 
 /*knappen*/
-.toggle {
+.toggle-sg {
   position: relative;
   display: inline;
 }
@@ -362,10 +362,6 @@ margin-right: 15px;
   margin-top: 79px;
 }
 
-.navprofildropdown ul {
-
-}
-
 .navprofildropdown a {
   color: white;
   font-family: segoe ui;
@@ -424,23 +420,7 @@ margin-right: 15px;
   text-decoration: none;
 }
 
-@media only screen and (max-width: 1200px) {
-  .navelement1 .navmenu {
-    display: none;
-  }
-  .navelement2 .navikoner {
-    display: ;
-  }
-  .navelement2 .plugandlog {
-    display: none;
-  }
-  .navelement2 .navprofildropdown {
-    display: none;
-  }
-  .navelement2 .burger a {
-    display: block;
-  }
-}
+
 
 /* TIL RESSOURCEN NÅR DEN ER SELECTED - MOBIL*/
 /* HEADER - SPECIFIKT TIL TING KUN UNDER HER*/
@@ -1068,3 +1048,21 @@ margin-right: 15px;
     cursor: pointer;
   }
   /* SLUT - TIL RESSOURCEN NÅR DEN ER SELECTED - SLUT MOBIL*/
+
+  @media only screen and (max-width: 1200px) {
+    .navelement1 .navmenu {
+      display: none;
+    }
+    .navelement2 .navikoner {
+      display: ;
+    }
+    .navelement2 .plugandlog {
+      display: none;
+    }
+    .navelement2 .navprofildropdown {
+      display: none;
+    }
+    .navelement2 .burger a {
+      display: block;
+    }
+  }
