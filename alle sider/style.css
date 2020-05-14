@@ -3,8 +3,7 @@
     margin: 0;
 }
 
-body{
-    
+body{ 
     color:#3F3844;
     font-family: 'Segoe UI', sans-serif; 
     min-height: 100vh;
@@ -482,6 +481,10 @@ h2{
   width: 40%;
   background: #f1f1f1f1;
   overflow: auto;
+}
+
+.resource-venstre{
+  font-size: 30px;
 }
 
 /*Skrift på index.html venstre for*/
