@@ -10,6 +10,7 @@ body{
     color:#3F3844;
     font-family: 'Segoe UI', sans-serif; 
     min-height: 100vh;
+    background: #F1F1F1;
 }
 
 /*Wrapperen til mobil = formålet med denne wrapper er så vi kan lave display none på den når vi rammer web-udgaven af vores hjemmeside*/
@@ -1701,193 +1702,867 @@ margin-right: 15px;
 
 
 
-/* TIL RESSOURCEN NÅR DEN ER SELECTED - MOBIL*/
-/* HEADER - SPECIFIKT TIL TING KUN UNDER HER*/
+/* ------------------ TIL RESSOURCEN NÅR DEN ER SELECTED - MOBIL ------------------ */
+/* ------------------ HEADER - SPECIFIKT TIL TING KUN UNDER HER ------------------ */
 /* HEADER BOX STYLE */
 .header-mobile {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 50px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #222222;
+  z-index: 5;
 }
-/* SLUT HEADER - SPECIFIKT TIL TING KUN UNDER HER*/
+/* ------------------ SLUT HEADER - SPECIFIKT TIL TING KUN UNDER HER ------------------ */
 
 
-/* CHECKLIST UNDERSIDE - SPECIFIKT TIL TING KUN UNDER HER*/
+/* ------------------ CHECKLIST UNDERSIDE - SPECIFIKT TIL TING KUN UNDER HER ------------------*/
 /* CHECKLIST BOX STYLE */
 #mobile-checkliste-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F1F1F1;
+  height: auto;
 }
 
 /* Infomationens box - "name", "service date planned" & "description" */
 .info-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 300px;
-    background: royalblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 300px;
+  /* background: royalblue; */
 }
 
 .info-text-categori {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 80px;
+line-height: 25px;
+}
+
+.info-text-categori h4 {
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: bold;
+}
+
+.info-text-categori p {
+font-size: 15px;
+font-family: 'Segoe UI';
+}
+
+/* ------------------ Checklisten boxen som indenholder de forskellige "todo's" ------------------ */
+.todo-list-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 325px;
+  /* background: sandybrown; */
+}
+
+.checkboxes {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 90%;
+width: 90%;
+background: #7D7D7D;
+border-radius: 5px;
+padding-top: 12px;
+}
+
+.todo-list-wrapper {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+height: 60px;
+width: 90%;
+background: white;
+border-radius: 5px;
+margin-bottom: 12px;
+}
+
+.item-container {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-end;
+cursor: pointer;
+font-size: 22px;
+user-select: none;
+background: white;
+border-radius: 5px;
+height: 50px;
+width: 50%;
+}
+
+.todo-item {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;
+cursor: pointer;
+user-select: none;
+background: none;
+border-radius: 5px;
+height: 75px;
+width: 50%;
+}
+
+.todo-item p {
+margin: 15px;
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: #3F3844;
+}
+
+/* Gem browserens default checkbox, så jeg kan lave en custom */
+.item-container input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+
+/* Her laver jeg en custom checkbox */
+.checkmark-in-box {
+margin-right: 15px;
+height: 35px;
+width: 35px;
+border-radius: 5px;
+background-color: #eee;
+}
+
+/* Hover effekt på "checkmark-in-box", når man holder over .item-container */
+.item-container:hover input ~ .checkmark-in-box {
+background-color: #ccc;
+}
+
+/* Ændring når checkboxen er tjekkede af */
+.item-container input:checked ~ .checkmark-in-box {
+background-color: #32CD32;
+}
+
+/* Her laver jeg et simple checkmark (den er gemet, så man ikke kan se den) */
+.checkmark-in-box:after {
+margin: 10px 13px;
+content: "";
+display: none;
+}
+
+/* Vis checkmark'et */
+.item-container input:checked ~ .checkmark-in-box:after {
+display: block;
+}
+
+/* Style til mit checkmark'et */
+.item-container .checkmark-in-box:after {
+left: 9px;
+top: 5px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 3px 3px 0;
+transform: rotate(45deg);
+}
+
+/* ------------------ kommentar boxen ------------------ */
+.comment-checklist {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80px;
-  line-height: 25px;
+  width: 100%;
+  height: 190px;
+  /* background: #7D7D7D; */
+  border-radius: 15px;
 }
 
-.info-text-categori h4 {
-  font-size: 15px;
-  font-family: 'Segoe UI';
-  font-weight: bold;
+.comment-checklist-wrapper {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 200px;
+width: 90%;
+background: #7D7D7D;
+border-radius: 5px;
 }
 
-.info-text-categori p {
-  font-size: 15px;
-  font-family: 'Segoe UI';
+.comment-checklist-wrapper h4 {
+font-size: 20px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: white;
 }
 
-/* Checklisten boxen som indenholder de forskellige "todo's" */
-.todo-list-box {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 525px;
-    background: sandybrown;
+.comment-container {
+display: flex;
+height: 100px;
+width: 90%;
+background: white;
+border-radius: 15px;
+margin: 15px;
 }
 
-/* kommentar boxen */
-.comment-checklist {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 190px;
-    background: slategrey;
+.comment-container textarea {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: space-around;
+border-radius: 15px;
+padding: 15px;
 }
 
-/* upload boxen */
+/* ------------------ upload boxen ------------------ */
 .upload-pic {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 180px;
-    background: violet;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 230px;
+  /* background: violet; */
 }
 
-/* dokument boxen */
+/* ------------------ dokument boxen ------------------ */
 .document {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 145px;
-    background: yellowgreen;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 145px;
+  /* background: yellowgreen; */
 }
 
-/* procentbaren boxen */
+.document-wrapper {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+height: 145px;
+width: 90%;
+background: #7D7D7D;
+border-radius: 5px;
+}
+
+/* The container */
+.document-container {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+cursor: pointer;
+font-size: 22px;
+user-select: none;
+background: white;
+border-radius: 5px;
+height: 50px;
+width: 90%;
+}
+
+.documents p {
+margin: 15px;
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: #3F3844;
+}
+
+/* ------------------ procentbaren boxen ------------------ */
+
+
 .procentagebar-box {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 40px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    background: darkolivegreen;
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+height: 50px;
+background-color: white;
+box-shadow: 0px 2px 2px rgba(0,0,0,.5);
 }
-/* SLUT CHECKLIST UNDERSIDE - SPECIFIKT TIL TING KUN UNDER HER*/
+
+.ui-progressbar-value { 
+background: #337AB7; 
+}
+
+.ui-widget.ui-widget-content {
+  border-style: none;
+}
+
+.progressbar-bar { 
+margin-top: 10px;
+margin-left: 20px;
+margin-right: 20px;
+height: 30px;
+width: auto;
+border-radius: 230px;
+z-index: 5;
+background: #EBEBEB;
+}
+
+.progressbar-label {
+position: absolute;
+margin-top: 10px;
+top: 15%;
+left: 50%;
+z-index: 2;
+color: #3F3844;
+}
+/* ------------------ SLUT CHECKLIST UNDERSIDE - SPECIFIKT TIL TING KUN UNDER HER ------------------ */
 
 
-/* SETTINGS UNDERSIDE - SPECIFIKT TIL TING KUN UNDER HER*/
+/* ------------------ SETTINGS UNDERSIDE - SPECIFIKT TIL TING KUN UNDER HER ------------------ */
 /* SETTINGS BOX STYLE */
 #mobile-settings-container {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Knappe boxen til settings undersiden som skal indenholde knapperne til at navigerer
-   rundt under settings  */
+ rundt under settings  */
 .navigation-buttons-settings {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 40px;
-    top: 0;
-    left: 0;
-    background: rebeccapurple;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  left: 0;
+  /* background: rebeccapurple; */
+}
+/* Så de er på lige linje med de andrer div'er */
+.navigation-buttons-settings-wrapper-margin {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+width: 90%;
+/* background: rebeccapurple; */
 }
 
 /* GENERAL SETTINGS BOX STYLE */
 #mobile-general-settings-container {
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#center-div-shadow {
+display: none;
+position: absolute;
+margin: auto;
+right: 0;
+bottom: 0;
+left: 0;
+width: 100vw;
+height: 89vh;
+background-color: rgba(0, 0, 0, 0.3);;
+border-radius: 0px;
+}
+
+.center-div {
+position: absolute;
+margin-top: 15vh;
+right: 0;
+left: 0;
+}
+
+.center-div-indhold {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: auto;
+width: 250px;
+height: 190px;
+line-height: 40px;
+background-color: #F1F1F1;
+border-radius: 6px;
+box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.center-div-indhold p {
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: #3F3844;
+}
+
+.close-button-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+padding: 10px;
+}
+
+.selection-container {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+flex-wrap: nowrap;
+margin: 0px 15px;
+}
+
+.selection-container input::placeholder  {
+font-size: 12px;
+}
+
+.selection-container input[type=text], select {
+width: 83%;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+font-size: 15px;
+}
+
+#add-group-button {
+height: 30px;
+width: 30px;
+border-radius: 5px;
+background-color: #32CD32;
+text-decoration: none;
+border: none;
+color: #ffffff;
+font-size: 25px;
+}
+
+.add-group-button-div {
+margin-right: 15px;
+height: 30px;
+width: 30px;
+border-radius: 5px;
+background-color: #32CD32;
+text-decoration: none;
+border: none;
+}
+
+.add-group-button-div::before {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+content: "+";
+font-size: 25px;
+color:white;
+height: 30px;
+width: 30px;
+}
+
+.close-add-group-button {
+
+}
+
+/* Dropdown menus */
+#group-add-select {
+width: 220px;
+height: 30px;
+user-select: none;
+}
+
+.select-and-button-contianer {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+width: 65%;
+height: 30px;
+}
+
+#group-add-select-out {
+width: 100%;
+height: 30px;
+margin-right: 5px;
+user-select: none;
+}
+
+/* Knap som ikke er selectede */
+.button-nav-settings {
+background: white;
+width: 30%;
+height: 30px;
+text-align: center;
+text-decoration: none;
+border: none;
+font-size: 9px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: black;
+cursor: pointer;
+border-radius: 5px;
+}
+
+/* Knap som er selectede */
+.button-nav-settings-blue {
+background: #337AB7;
+width: 30%;
+height: 30px;
+text-align: center;
+text-decoration: none;
+border: none;
+font-size: 9px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: white;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.navigation-buttons-settings-wrapper {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+height: 50px;
+width: 90%;
+background: #7D7D7D;
+border-radius: 5px;
+}
+
+.name-group {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+height: 150px;
+/* background: rebeccapurple; */
+}
+
+.name-group-container {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+background: orange;
+height: 125px;
+width: 90%;
+background: #7D7D7D;
+border-radius: 5px;
+}
+
+.name-group-proxi {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+height: 100px;
+width: 100%;
+/* background: red; */
+border-radius: 5px;
+}
+
+.name-group-wrapper {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+height: 45px;
+width: 90%;
+background: white;
+border-radius: 5px;
+}
+
+.name-group-wrapper p {
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: #3F3844;
+margin-left: 15px;
+}
+
+#lname {
+margin-right: 15px;
+width: 100%;
+}
+
+.name-group-wrapper input[type=text], select {
+width: 60%;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+font-size: 15px;
+}
+
+.description-settings {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 190px;
+/* background: #7D7D7D; */
+border-radius: 15px;
+}
+
+.description-settings-wrapper {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 200px;
+width: 90%;
+background: #7D7D7D;
+border-radius: 5px;
+}
+
+.description-settings-wrapper h4 {
+font-size: 20px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: white;
+}
+
+.description-container {
+display: flex;
+height: 100px;
+width: 90%;
+background: white;
+border-radius: 15px;
+margin: 15px;
+}
+
+.description-container textarea {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: space-around;
+border-radius: 15px;
+padding: 15px;
 }
 
 /* SERVICE SETTINGS BOX STYLE */
 #mobile-service-settings-container {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ADD TO CHECKLISTEN SETTINGS BOX STYLE */
 #mobile-add-to-settings-container {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.add-checklist-container {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+height: auto;
+/* background: rebeccapurple; */
+}
+
+.add-todo-container {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+/* background: orange; */
+height: auto;
+width: 90%;
+background: #7D7D7D;
+border-radius: 5px;
+margin-top: 10px;
+}
+
+.add-todo-container h4 {
+font-size: 20px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: white;
+margin: 10px;
+}
+
+.add-todo-proxi {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+height: auto;
+width: 100%;
+/* background: red; */
+border-radius: 5px;
+margin-top: 0 15px;
+margin-top: 10px;
+}
+
+.add-todo-wrapper {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+height: 45px;
+width: 90%;
+background: white;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+
+.add-todo-wrapper p {
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: #3F3844;
+margin-left: 15px;
+}
+
+.add-todo-button-div {
+margin-right: 15px;
+height: 30px;
+width: 30px;
+border-radius: 5px;
+background-color: #32CD32;
+text-decoration: none;
+border: none;
+margin-bottom: 10px;
+}
+
+.add-todo-button-div::before {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+content: "+";
+font-size: 25px;
+color:white;
+height: 30px;
+width: 30px;
 }
 /* SLUT SETTINGS UNDERSIDE - SPECIFIKT TIL TING KUN UNDER HER*/
 
 
-/* HISTORY BOX STYLE */
-#mobile-history-container {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* ALLE UNDERSIDE - SPECIFIKT TIL TING PÅ ALLE UNDERSIDER AD RESSOURCEN*/
+/* --------------- ALLE UNDERSIDE - SPECIFIKT TIL TING PÅ ALLE UNDERSIDER AD RESSOURCEN -------------*/
 /* Dette er boxen til "titlen" på undersiderne */
 .title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 80px;
-    margin-top: 90px;
-    background: darkturquoise;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 80px;
+  margin-top: 90px;
+  /* background: darkturquoise; */
 }
+
+/* Dette er boxen til "save" knappens style */
+.save-button-mobil {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 70px;
+  /* background: orange; */
+}
+
+.save-mobil {
+margin-top: 20px;
+background-color: #32CD32;
+border: none;
+color: white;
+padding: 10px;
+width: 200px;
+height: 50px;
+text-align: center;
+border-radius: 55px;
+text-decoration: none;
+display: inline-block;
+box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+}
+
+/* Knappe boxen som skal indenholde knapperne til at navigerer
+ rundt mellem "Checklist", "Setting" & "History" */
+.navigation-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 50px;
+  background: rebeccapurple;
+  box-shadow: 0px 1px 5px rgba(0,0,0,.5);
+}
+
+/* Knap som ikke er selectede */
+.button-nav {
+  background: #222222;
+  width: 25vh;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  font-size: 15px;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+/* Knap som er selectede */
+.button-nav-blue {
+  background: #337AB7;
+  width: 25vh;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  font-size: 15px;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+/* ----------------------- SLUT - TIL RESSOURCEN NÅR DEN ER SELECTED - SLUT MOBIL-------------------- */
+
+
+/* HISTORY BOX STYLE */
+#mobile-history-container {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* HER STARTER HISTORY MENU DELEN */
 .history-menu {
   display: flex;
