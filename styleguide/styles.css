@@ -84,24 +84,24 @@ body{
   border-top-right-radius: 5px;
 }
 
-.wrapper-styleguide .main_content{
+.wrapper-styleguide .main-content-styleguide{
   width: 100%;
   margin-left: 200px;
 }
 
-.wrapper-styleguide .main_content .header{
+.wrapper-styleguide .main-content-styleguide .header{
   padding: 20px;
   background-color: lightgrey;
   color: #000000;
   border-bottom: 1px solid #e0e4e8;
 }
 
-.wrapper-styleguide .main_content .info{
+.wrapper-styleguide .main-content-styleguide .info{
   margin: 20px;
   line-height: 25px;
 }
 
-.wrapper-styleguide .main_content .info div{
+.wrapper-styleguide .main-content-styleguide .info div{
   margin-bottom: 20px;
 }
 
@@ -206,7 +206,7 @@ input[type=text]:focus{
   margin: 15px;
   position: relative;
   user-select: none;
-  margin-left: px;
+  margin-left: 210px;
 }
 
 .select-wrap .default_option{
