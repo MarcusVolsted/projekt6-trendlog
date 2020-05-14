@@ -11,7 +11,7 @@ body{
 }
 
 
-.header{
+.header-styleguide{
   font-size: 35px;
   font-weight: 700;
 }
@@ -168,7 +168,7 @@ body{
 
 /*UI PATTERNS START*/
 /*NAME PLACEHOLDER*/
-input[type=text]{
+.name-placeholder[type=text]{
   width:50%;
   border:2px solid #aaa;
   border-radius:4px;
@@ -180,7 +180,7 @@ input[type=text]{
   transition:.3s;
 }
 
-input[type=text]:focus{
+.name-placeholder[type=text]:focus{
   border-color:dodgerBlue;
   box-shadow:0 0 8px 0 dodgerBlue;
 }
@@ -291,7 +291,7 @@ input[type=text]:focus{
 
 
 /*TOGGLE KNAP DESIGN*/
-input[type="checkbox"] {
+.toggleknap-styleguide[type="checkbox"] {
   position: relative;
   width: 70px;
   height: 25px;
@@ -305,12 +305,12 @@ input[type="checkbox"] {
 }
 
 /*EFTER KLIK TOGGLE KNAP*/
-input:checked[type="checkbox"] {
+.toggleknap-styleguide:checked[type="checkbox"] {
   background: #00ff00;
 }
 
 /*KNAPPEN INDEN CLICK.*/
-input[type="checkbox"]::before {
+.toggleknap-styleguide[type="checkbox"]::before {
   z-index: 2;
   position: absolute;
   content: "";
@@ -325,7 +325,7 @@ input[type="checkbox"]::before {
 }
 
 /*Styrer hvor langt toggleknapper rykker*/
-input:checked[type="checkbox"]::before {
+.toggleknap-styleguide:checked[type="checkbox"]::before {
   left: 44px;
 }
 
@@ -336,7 +336,7 @@ input:checked[type="checkbox"]::before {
 }
 
 /*Label i toggle knappen*/
-label {
+.toogle label {
   position: absolute;
   color: #fff;
   font-weight: 600;
@@ -345,13 +345,13 @@ label {
 }
 
 /*TÆNDT KNAP*/
-.onbtn {
+.onbtn1 {
   bottom: 10px;
   left: 10px;
 }
 
 /*SLUKKET KNAP*/
-.ofbtn {
+.ofbtn1 {
   bottom: 10px;
   right: 10px;
   color: #34495e;
