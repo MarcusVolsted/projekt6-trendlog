@@ -508,18 +508,31 @@ h2{
 }
 
 
-.container-settings-web{
+.container-settings-web {
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
   align-items: center;
   flex-direction: row;
   color: #000000;
   margin-top: 20px;
   width: 100%;
-  height: auto;
-  background-color: rgb(145, 145, 145);
-  border-radius: 30px;
+  height: 84px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 2px 2px 3px 1px rgba(0,0,0,.5);
+  border-radius: 20px;
 }
+.setting-tekst-web{
+  padding-left: 30px;
+  padding-right: 60px;
+}
+.placeholder-setting-wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 
 /*ALT INDHOLD PÅ VENSTRE SIDE AF HJEMMESIDEN: DETTE GÆLDER KUN PÅ WEB*/
 .contentflexbox-1{
@@ -534,6 +547,8 @@ h2{
 .resource-venstre{
   font-size: 30px;
 }
+
+
 
 /*Skrift på index.html venstre for*/
 .select-rs{

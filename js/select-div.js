@@ -9,7 +9,6 @@ function toggleVisibility(divId) {
 }
 function hideNonVisibleDivs() {
   var i, divId, div;
-  var but = document.getElementById("button-nav")
   for(i = 0; i < divs.length; i++) {
     divId = divs[i];
     div = document.getElementById(divId);
