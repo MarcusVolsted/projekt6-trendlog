@@ -6,9 +6,9 @@
     text-decoration: none;
 }
 
-body{ 
-    color:#3F3844;
-    font-family: 'Segoe UI', sans-serif; 
+body{
+    color:black;
+    font-family: 'Segoe UI', sans-serif;
     min-height: 100vh;
     background: #F1F1F1;
 }
@@ -29,7 +29,7 @@ body{
 }
 
 /*knapperne der ses øverst i layoutet af mobilversionen*/
-.mobile-btn-top { 
+.mobile-btn-top {
   margin-top: 20px;
   width: 96px;
   height: 39px;
@@ -60,7 +60,7 @@ body{
     padding-left: 10px;
     width: 32%;
     flex-direction: column;
-    
+
 }
 /*Dette er nr2 flexbox til parrenten resource containeren*/
 /*Den indeholder text vedr. type og group af det der skal bruge maintaince*/
@@ -68,7 +68,7 @@ body{
     display: flex;
     text-align: center;
     flex-direction: column;
-    width: 8%; 
+    width: 8%;
 }
 
 /*En tom div der hjælper med at skubbe toggleknappen på plads i resource container*/
@@ -78,13 +78,13 @@ body{
 
 }
 /*Enable knap mobil ------starter her*/
-.enable-mb{ 
+.enable-mb{
   width: auto;
   height: 100%;
 }
 
 /*Dette er bare skriften der siger "Enable" over knappen*/
-.enable1{ 
+.enable1{
   width: auto;
   height: 10;
   font-size:0.7em;
@@ -94,7 +94,7 @@ body{
 /*dette er 3 flexbox til parrenten "resourcevirk", som er resource containeren*/
 .flexbox3{
    display: flex;
-   width: 20%; 
+   width: 20%;
    height: 100%;
    padding-left: 20px;
    justify-content: center;
@@ -116,7 +116,7 @@ body{
     align-items: center;
     text-align: center;
     width: 40%;
-    height: 100%;   
+    height: 100%;
 }
 
 /*Styleing/css til flexbox 1*/
@@ -148,7 +148,7 @@ h2{
     width: 160px;
     justify-content: space-around ;
   }
-  
+
   /*css til grøn loading tab i cirkelbaren*/
   .circular-chart.green .circle {
     stroke: #38DB38;
@@ -182,7 +182,7 @@ h2{
     font-size: 0.3em;
     text-anchor: middle;
   }
-  
+
   .percentage-red {
     fill: #DF403C;
     font-weight: 600;
@@ -197,7 +197,7 @@ h2{
   /*-------------------RØD SLUT--------------------*/
 
 
-  
+
   /*containeren der holder searchknappen, samt add resource knappen (WEB)*/
   .fixed-knap-container-web {
     display: flex;
@@ -213,13 +213,13 @@ h2{
     /*rykker diven og indholdet op foran. sådan der ikke giver bøbl med resourve containerne*/
     z-index: 10;
     }
-    
+
     /**/
-    .plus-svg1{ 
+    .plus-svg1{
       width: 30%;
       height: 40%;
      }
-     
+
      /**/
      .addnew-text1{
        color: white;
@@ -309,7 +309,7 @@ h2{
     box-shadow: 0 5px 25px rgba(0,0,0,.5);
   }
   /*plus ikon til add resource knappen*/
-  .plus-svg{ 
+  .plus-svg{
    width: 30%;
    height: 40%;
   }
@@ -340,7 +340,7 @@ h2{
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
       overflow: hidden;
   }
-  
+
   /*Containeren til search skriften i searchbaren*/
   .virk{
       font-size: 1em;
@@ -411,7 +411,7 @@ h2{
   border-color:dodgerBlue;
   box-shadow:0 0 8px 0 dodgerBlue;
 }
-  
+
   /*De 3 øvereste knapper i mobilversionen*/
   .flex-knapper-mobil{
     display: flex;
@@ -419,8 +419,8 @@ h2{
     justify-content: space-around;
     }
 
-   
-    
+
+
 
     /*checkbox mobil TOGGLEKNAP (mobil)*/
     .checkbox-mb[type="checkbox"] {
@@ -435,12 +435,12 @@ h2{
       box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
       cursor: pointer;
     }
-    
+
     /*EFTER KLIK TOGGLE KNAP (MOBIL)*/
     .checkbox-mb:checked[type="checkbox"] {
       background: #ff0000;
     }
-    
+
     /*KNAPPEN INDEN CLICK.   (MOBIL)*/
     .checkbox-mb[type="checkbox"]::before {
       z-index: 2;
@@ -455,18 +455,18 @@ h2{
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       transition: .4s;
     }
-    
+
     /*Styrer hvor langt toggleknapper rykker (MOBIL)*/
     .checkbox-mb:checked[type="checkbox"]::before {
       left: 20px;
     }
-    
+
     /*knappen  (MOBIL)*/
     .toggle-mb {
       position: relative;
       display: inline;
     }
-    
+
     /*Label i toggle knappen   (MOBIL)*/
     .toggle-mb label {
       position: absolute;
@@ -475,13 +475,13 @@ h2{
       font-size: 10px;
       pointer-events: none;
     }
-    
+
     /*TÆNDT KNAP  (MOBIL)*/
     .onbtn-mb {
       bottom: 10px;
       left: 10px;
     }
-    
+
     /*SLUKKET KNAP  (MOBIL)*/
     .ofbtn-mb {
       bottom: 10px;
@@ -495,7 +495,7 @@ h2{
   /*WEB VERSION CSS START---------------------------------------------------------------*/
   /*Den wrapper der styrer margin på venstre side*/
 .wrapper-content1{
-  display: flex;  
+  display: flex;
   text-align: center;
   flex-direction: column;
   justify-content: center;
@@ -584,7 +584,7 @@ flex-direction: row;
 justify-content: center;
 align-self: center;
 width: 100%;
-}  
+}
 
 /**/
 .active {
@@ -678,7 +678,7 @@ cursor: pointer;
 
 .save:hover{
 background-color: rgb(29, 62, 90);
-} 
+}
 
 /*save knappen slut */
 
@@ -867,7 +867,7 @@ justify-content: center;
   justify-content: center;
   padding-top: 15px;
   padding-left: 50px;
-  line-height: 25px; 
+  line-height: 25px;
   font-weight: 500;
   width: 10%;
   height: 80%;
@@ -884,7 +884,7 @@ justify-content: center;
 display: flex;
 align-items: center;
 width: 100%;
-height: 150px; 
+height: 150px;
 left: 1;
 bottom: 0;
 background-color:#2c3e50;
@@ -975,7 +975,7 @@ box-shadow: 0 5px 25px rgba(0,0,0,.5);
   left: 10px;
 }
 
-.enable{ 
+.enable{
   width: auto;
   height: 100%;
 }
@@ -1125,7 +1125,7 @@ z-index: 10;
   /*rykker diven og indholdet op foran. sådan der ikke giver bøbl med resourve containerne*/
   z-index: 10;
   }
-  
+
 
 
 .addnew-rs{
@@ -1142,7 +1142,7 @@ text-decoration: none;
 cursor: pointer;
 box-shadow: 0 5px 25px rgba(0,0,0,.5);
 }
-.plus-svg{ 
+.plus-svg{
 width: 30%;
 height: 40%;
 }
@@ -1198,7 +1198,7 @@ font-size: 15px;
   display: flex;
   align-items: center;
   width: 100%;
-  height: 90px;  
+  height: 90px;
   bottom: 0;
   background-color:#2c3e50;
 }
@@ -1481,7 +1481,7 @@ input[type=text]:focus{
 
 
 /*til alt content på styleguiden*/
-.content-wrapper{
+.content-wrapper-styleguide{
   width: auto;
   background-color:#7a7a7a;
   margin-left: 200px;
@@ -3036,6 +3036,5 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
     .mobil-wrapper {
       display: none;
     }
-    
-  }
 
+  }
