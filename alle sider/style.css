@@ -550,6 +550,15 @@ h2{
 }
 
 
+.wrapper-inhold-contentflexbox-1{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 
 /*Skrift på index.html venstre for*/
 .select-rs{
