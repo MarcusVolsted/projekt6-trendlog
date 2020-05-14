@@ -1,0 +1,1155 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    
+    color:#3F3844;
+    font-family: 'Segoe UI', sans-serif; 
+    min-height: 100vh;
+}
+
+/*Wrapperen til mobil = formålet med denne wrapper er så vi kan lave display none på den når vi rammer web-udgaven af vores hjemmeside*/
+.mobil-wrapper{
+  background-color: #2C3E50;
+  width: 100%;
+  height: auto;
+}
+
+/*Denne container er lavet til mobil layoutet = formålet er at får en margin i siderne af layoutet*/
+.content-container{
+    margin: auto;
+    width: 90%;
+    min-height: 100vh;
+    font-size: 12px;
+}
+
+/*knapperne der ses øverst i layoutet af mobilversionen*/
+.mobile-btn-top { 
+  margin-top: 20px;
+  width: 96px;
+  height: 39px;
+  font-size: 1em;
+  font-weight: 600;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/*Parrenten til resource containerne.*/
+.resourcervirk{
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 12px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    box-shadow: 3px 2px 8px 3px rgba(0,0,0,.5);
+}
+/*Parrenten - resourcediv er opdelt i 4 store flexbox, nogle med mindre boxe indei. Dette er den første flexbox til resourcecontaineren. Den indeholder overskriften, ID navn og knappen Show more*/
+.flexbox1{
+    padding-top: 13px;
+    padding-left: 10px;
+    width: 32%;
+    flex-direction: column;
+    
+}
+/*Dette er nr2 flexbox til parrenten resource containeren*/
+/*Den indeholder text vedr. type og group af det der skal bruge maintaince*/
+.flexbox2{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 8%; 
+}
+
+/*En tom div der hjælper med at skubbe toggleknappen på plads i resource container*/
+.empty-box{
+  width: auto;
+  height: 84px;
+
+}
+/*Enable knap mobil ------starter her*/
+.enable-mb{ 
+  width: auto;
+  height: 100%;
+}
+
+/*Dette er bare skriften der siger "Enable" over knappen*/
+.enable1{ 
+  width: auto;
+  height: 10;
+  font-size:0.7em;
+  font-weight: 600;
+}
+
+/*dette er 3 flexbox til parrenten "resourcevirk", som er resource containeren*/
+.flexbox3{
+   display: flex;
+   width: 20%; 
+   height: 100%;
+   padding-left: 20px;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.middle-text-resourcer-mb{
+  font-weight: 750;
+  font-size: 10px;
+  line-height: 18px;
+}
+/*flexbox 3 css slutter her*/
+
+/*Dette er den sidste flexbox til resource containeren */
+.flexbox4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    height: 100%;   
+}
+
+/*Styleing/css til flexbox 1*/
+
+.green-text-mb{
+  font-weight: 700;
+  color: #00ff00;
+}
+.show-more-flex-mobil{
+  padding-top: 25px;
+  font-size: 0.9em;
+}
+
+h2{
+  font-size: 15px;
+  font-weight: 700;
+}
+/*Styleing/css til flexbox 1*/
+
+
+
+
+
+
+
+
+/*Cirkel loadingbaren til mobil*/
+  .single-chart-mobil {
+    width: 160px;
+    justify-content: space-around ;
+  }
+  
+  /*css til grøn loading tab i cirkelbaren*/
+  .circular-chart.green .circle {
+    stroke: #38DB38;
+  }
+
+  /*GRØN CIRKEL*/
+  .next-service{
+    fill: rgb(78, 78, 78);
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 0.3em;
+    text-anchor: middle;
+  }
+
+  /*Viser antal dage i cirkel loadingbaren*/
+  .percentage {
+    fill: #38DB38;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 0.4em;
+    text-anchor: middle;
+  }
+
+  /*GRØN CIRKEL SLUT*/
+
+  /*---------------RØD CIRKEL---------------*/
+  .next-service-red{
+    fill: rgb(78, 78, 78);
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 0.3em;
+    text-anchor: middle;
+  }
+  
+  .percentage-red {
+    fill: #DF403C;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 0.4em;
+    text-anchor: middle;
+  }
+
+  .circular-chart.red .circle {
+    stroke:#DF403C;
+  }
+  /*-------------------RØD SLUT--------------------*/
+
+
+  
+  /*containeren der holder searchknappen, samt add resource knappen (WEB)*/
+  .fixed-knap-container-web {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    left: 1;
+    bottom: 0;
+    background-color: #233240;
+    box-shadow: 4px -5px 5px 1px rgba(0,0,0,.5);
+    /* første er X aksen næste er til Y aksen, 3det 3 er til blur, den sidste er spread af shadow*/
+    /*rykker diven og indholdet op foran. sådan der ikke giver bøbl med resourve containerne*/
+    z-index: 10;
+    }
+    
+    /**/
+    .plus-svg1{ 
+      width: 30%;
+      height: 40%;
+     }
+     
+     /**/
+     .addnew-text1{
+       color: white;
+       font-size: 0.8em;
+     }
+     /**/
+     .knap-wrapper-mobil{
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+    /**/
+    .addnew-rs1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #32CD32;
+      margin-left: 15px;
+      min-width: 160px;
+      height: 30px;
+      font-weight: 750;
+      text-align: center;
+      border-radius: 30px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 5px 25px rgba(0,0,0,.5);
+    }
+    /**/
+    .search-bar1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 160px;
+      height: 30px;
+      background: rgb(255, 255, 255);
+      border-radius: 30px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+  }
+  /**/
+  .search-text{
+      font-size: 1em;
+  }
+  /**/
+  .addnew-text1{
+    color: white;
+    font-size: 0.8em;
+  }
+  /**/
+  .search-btnn{
+      width: 60%;
+      height: 44px;
+  }
+
+    /**/
+    .fixed-knap-container-mb{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 80px;
+      position: fixed;
+      left: 1;
+      bottom: 0;
+      background-color:#18222c;
+      box-shadow: 0px -6px 9px 1px rgba(0,0,0,.5);
+      /* første er X aksen næste er til Y aksen, 3det 3 er til blur, den sidste er spread af shadow*/
+      /*rykker diven og indholdet op foran. sådan der ikke giver bøbl med resourve containerne*/
+      z-index: 10;
+    }
+  /**/
+  .addnew-rs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #32CD32;
+    margin-left: 15px;
+    min-width: 160px;
+    height: 30px;
+    font-weight: 750;
+    text-align: center;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 5px 25px rgba(0,0,0,.5);
+  }
+  /*plus ikon til add resource knappen*/
+  .plus-svg{ 
+   width: 30%;
+   height: 40%;
+  }
+  /*add new resoruce teksten*/
+  .addnew-text{
+    color: white;
+    font-size: 0.8em;
+  }
+    /**/
+    .tester{
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    /*searchbaren til (web)*/
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 160px;
+      height: 30px;
+      background: rgb(255, 255, 255);
+      border-radius: 30px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+  }
+  
+  /*Containeren til search skriften i searchbaren*/
+  .virk{
+      font-size: 1em;
+  }
+  /*teksten i search containeren*/
+  .texttt{
+    font-size: 15px;
+    padding-left: 7px;
+    font-weight: 600;
+}
+  /*containeren der indeholder placeholdertexten og til searchbaren*/
+  .virk1{
+      width: 60%;
+      height: 44px;
+  }
+    /*Css / style til den orange streng i cirkel loadingbaren*/
+  .circular-chart.orange .circle {
+    stroke:#FFB347;
+  }
+
+  /*Viser antal dage i orange - skal kun bruges til de resourcer der er tæt på at mangle service*/
+  .percentage-orange {
+    fill: #FFB347;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 0.4em;
+    text-anchor: middle;
+  }
+
+  /*placeholder teksten til searchbaren (web)*/
+  .search-web {
+    width: 99%;
+    height: 50px;
+    margin: -2px 0;
+    border-radius: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+  
+  /*De 3 øvereste knapper i mobilversionen*/
+  .flex-knapper-mobil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    }
+
+   
+    
+
+    /*checkbox mobil TOGGLEKNAP (mobil)*/
+    .checkbox-mb[type="checkbox"] {
+      position: relative;
+      width: 30px;
+      height: 10px;
+      background: #00ff00;
+      -webkit-appearance: none;
+      border-radius: 20px;
+      outline: none;
+      transition: .4s;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+    
+    /*EFTER KLIK TOGGLE KNAP (MOBIL)*/
+    .checkbox-mb:checked[type="checkbox"] {
+      background: #ff0000;
+    }
+    
+    /*KNAPPEN INDEN CLICK.   (MOBIL)*/
+    .checkbox-mb[type="checkbox"]::before {
+      z-index: 2;
+      position: absolute;
+      content: "";
+      left: 0;
+      width: 10px;
+      height: 10px;
+      background: #fff;
+      border-radius: 50%;
+      transform: scale(1.1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: .4s;
+    }
+    
+    /*Styrer hvor langt toggleknapper rykker (MOBIL)*/
+    .checkbox-mb:checked[type="checkbox"]::before {
+      left: 20px;
+    }
+    
+    /*knappen  (MOBIL)*/
+    .toggle-mb {
+      position: relative;
+      display: inline;
+    }
+    
+    /*Label i toggle knappen   (MOBIL)*/
+    .toggle-mb label {
+      position: absolute;
+      color: #fff;
+      font-weight: 600;
+      font-size: 10px;
+      pointer-events: none;
+    }
+    
+    /*TÆNDT KNAP  (MOBIL)*/
+    .onbtn-mb {
+      bottom: 10px;
+      left: 10px;
+    }
+    
+    /*SLUKKET KNAP  (MOBIL)*/
+    .ofbtn-mb {
+      bottom: 10px;
+      right: 10px;
+      color: #34495e;
+    }
+
+
+
+
+  /*WEB VERSION CSS START---------------------------------------------------------------*/
+  /*Den wrapper der styrer margin på venstre side*/
+.wrapper-content1{
+  display: flex;  
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+
+}
+.wrapper-webversion{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  
+}
+
+/*ALT INDHOLD PÅ VENSTRE SIDE AF HJEMMESIDEN: DETTE GÆLDER KUN PÅ WEB*/
+.contentflexbox-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  background: #f1f1f1f1;
+  overflow: auto;
+}
+
+/*Skrift på index.html venstre for*/
+.select-rs{
+display: flex;
+margin-top: 35%;
+justify-content: center;
+text-align: center;
+width: 100%;
+height: 100%;
+font-size: 90px;
+font-weight: 700;
+color:#2c3e50;
+}
+
+/*Flexcontainer til alt text på venstre side CHECKLIST FORMULAREN*/
+.text-flex-venstre{
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+justify-content: center;
+line-height: 40px;
+margin-top: 30px;
+}
+
+
+
+/*KNAPPER TIL VENSTRE PÅ SIDEN FLEXBOX/WRAPPER*/
+.flex-knapper-ventre{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-self: center;
+}  
+
+/**/
+.active {
+padding: 10px 20px;
+width: 25%;
+height: 99px;
+margin: 10px;
+background-color: #337AB7;
+color:#ffffff;
+outline: none;
+border: none;
+font-size: 15px;
+font-weight: 750;
+border-radius: 30px;
+cursor: pointer;
+}
+.deactive {
+padding: 10px 20px;
+width: 25%;
+height: 99px;
+margin: 10px;
+background-color: rgb(255, 255, 255);
+color:#2c3e50;
+outline: none;
+border: none;
+font-size: 15px;
+font-weight: 750;
+border-radius: 30px;
+cursor: pointer;
+}
+
+/*Knapper øverst i den venstre store container ("contentflexbox-1")*/
+.venstre-btn {
+padding: auto;
+width: 130px;
+height: 60px;
+margin-top: 20px;
+margin-right: 10px;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+box-shadow: 5px 3px 5px 0px rgba(0,0,0,.5);
+outline: none;
+border: none;
+font-size: 15px;
+font-weight: 750;
+border-radius: 30px;
+cursor: pointer;
+}
+
+/*Knapper øverst i den venstre store container *når der er aktive* ("contentflexbox-1")*/
+.activevenstre-btn {
+padding: auto;
+width: 130px;
+height: 60px;
+margin-top: 20px;
+margin-right: 10px;
+background-color: #337AB7;
+box-shadow: 5px 3px 5px 0px rgba(0,0,0,.5);
+color: #fff;
+outline: none;
+border: none;
+font-size: 15px;
+font-weight: 750;
+border-radius: 30px;
+cursor: pointer;
+}
+
+/*Klik effekt til knapper i den vestre container. (virker ikke endnu)*/
+.venstre-btn:active{
+background: #337AB7;
+color: #fff;
+}
+
+
+/*save knappen */
+.save {
+margin-top: 50px;
+background-color: #32CD32;
+border: none;
+color: white;
+padding: 10px;
+width: 200px;
+height: 50px;
+text-align: center;
+border-radius: 12px;
+text-decoration: none;
+display: inline-block;
+box-shadow: 6px 4px 12px 2px rgba(0,0,0,.5);
+cursor: pointer;
+}
+
+.save:hover{
+background-color: rgb(29, 62, 90);
+} 
+.save-button{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+/*save knappen slut */
+
+/*Upload image boxen i venstre side af layoutet (WEB)*/
+.image-upload{
+margin-top: 40px;
+margin-bottom: 20px;
+width: 35%;
+display: flex;
+border: dotted;
+border-radius: 15px;
+border-color: #8F8F8F;
+flex-direction: column;
+padding: 40px;
+justify-content: center;
+align-items: center;
+text-align: center;
+cursor: pointer;
+}
+/*Upload image. Billedet der er i containeren */
+.uploadimg{
+width: 90px;
+height: 90px;
+}
+/**/
+.upload-img-text{
+font-weight: 500;
+color: #8F8F8F;
+}
+a{
+text-decoration: none;
+}
+
+/*wrapper der fordeler dosc billederne/img (WEB)*/
+.docs-upload{
+width: 50%;
+justify-content: space-evenly;
+margin-top: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+}
+/*styling af docuement png/img så er i venstre side af layoutet (WEB)*/
+.document-png{
+cursor: pointer;
+width: 100px;
+height: 100px;
+}
+
+
+
+/*ALT INDHOLD PÅ HØJRE SIDE AF HJEMMESIDEN: DETTE GÆLDER KUN PÅ WEB*/
+.contentflexbox-2{
+  width: 60%;
+  background-color:#2c3e50;
+}
+
+/*HELE REOSURCE CONTAINEREN*/
+.resource-container{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  background-color:#ffffff;
+  height: 170px;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0,0,0,.5);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/*Hover effekt til resource containeren (WEB)*/
+.resource-container:hover{
+transform: translateY(-10px);
+box-shadow: 0 15px 35px rgba(0,0,0,.5);
+transition: 0.5s;
+}
+
+/*aktiv resource container*/
+.resource-container1{
+display: flex;
+flex-direction: row;
+width: 90%;
+margin: auto;
+margin-top: 20px;
+background-color: #337AB7;
+color: #fff;
+height: 170px;
+border-radius: 12px;
+box-shadow: 0 5px 25px rgba(0,0,0,.5);
+cursor: pointer;
+transition: 0.5s;
+overflow: hidden;
+
+}
+/*hover effekt til en aktiv resource container*/
+.resource-container1:hover{
+transform: translateY(-10px);
+box-shadow: 0 15px 35px rgba(0,0,0,.5);
+}
+
+
+
+
+/*Gør resource containeren clickeble*/
+.div-click{
+text-decoration: none;
+color:#2c3e50;
+}
+
+/*Første flexbox til diven - resource-container. denne container er en stor container der er opdelt i 4 flexboxe med mindre boxe inde i disse flexboxe*/
+.resourceflex-1{
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+}
+/*Denne grønne tekst der siger "Show more" (Web)*/
+.green-text{
+  font-weight: bold;
+  color: #00ff00;
+  font-size: 15px;
+}
+.show-more-flex{
+  padding-top: 40px;
+}
+
+/* span css --- denne css er til de tekst inde i reosurce containeren der er grå*/
+.grey-text{
+  color: #737373;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.text-kategori{
+  font-size: 15px;
+  font-weight: bold;
+}
+.overskrift h2{
+  font-size:2em;
+}
+
+/*den blå test der er ved document container/billederne til venstre for web layoutet*/
+.docs-text{
+color: #337AB7;
+font-size: 12px;
+}
+
+
+
+
+
+
+/*Resourceflex-2 er et såkaldt 'cild' til 'parrenten' --resource-containeren*/
+/*WEB*/
+.resourceflex-2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+  font-weight: 600;
+  width: 40%;
+}
+/*Text css til resourceflex-2 containeren -----WEB*/
+.middle-text-resourcer{
+  font-weight: 750;
+  font-size: 11px;
+  line-height: 35px;
+}
+/*Resourceflex-1 css (web)-----slutter her*/
+
+/**/
+.flex-knapper3{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+/**/
+.resourceflex-3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 15px;
+  padding-left: 50px;
+  line-height: 25px; 
+  font-weight: 500;
+  width: 10%;
+  height: 80%;
+}
+
+/**/
+.resourceflex-4{
+  width: 20%;
+  height: 100%;
+}
+
+/*Denne div ligger bag den fixed container der indeholder search knap og add resource = formålet er at når man scroller helt ned på siden kan man se den sidste resource container. så den ikke ligger kan denne fixed container*/
+.div-tilbagom{
+display: flex;
+align-items: center;
+width: 100%;
+height: 150px; 
+left: 1;
+bottom: 0;
+background-color:#2c3e50;
+}
+
+
+/*search knappen css (WEB)*/
+.search-btn{
+font-weight: 750;
+margin-top: 20px;
+background-color: #fff;
+border: none;
+color: rgb(0, 0, 0);
+padding: 10px;
+width: 279px;
+height: 68px;
+font-size: 15px;
+text-align: center;
+border-radius: 30px;
+text-decoration: none;
+display: inline-block;
+box-shadow: 0 5px 25px rgba(0,0,0,.5);
+}
+/*section på fixed container slut*/
+
+
+
+
+
+/*Enablew knap*/
+/*EFTER KLIK TOGGLE KNAP*/
+.toggle-pc:checked[type="checkbox"] {
+  background: #ff0000;
+}
+
+
+.toggle-pc[type="checkbox"] {
+  position: relative;
+  width: 50px;
+  height: 15px;
+  background:  #00ff00;
+  -webkit-appearance: none;
+  border-radius: 20px;
+  outline: none;
+  transition: .4s;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/*KNAPPEN INDEN CLICK.*/
+.toggle-pc[type="checkbox"]::before {
+  z-index: 2;
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: .4s;
+}
+
+/*Styrer hvor langt toggleknapper rykker*/
+.toggle-pc:checked[type="checkbox"]::before {
+  left: 40px;
+}
+
+/*knappen*/
+.toggle {
+  position: relative;
+  display: inline;
+}
+
+/*Label i toggle knappen*/
+.toggleBox label {
+  position: absolute;
+  color: #fff;
+  font-weight: 600;
+  font-size: 10px;
+  pointer-events: none;
+}
+
+/*TÆNDT KNAP*/
+.onbtn {
+  bottom: 10px;
+  left: 10px;
+}
+
+.enable{ 
+  width: auto;
+  height: 100%;
+}
+
+/*SLUKKET KNAP*/
+.ofbtn {
+  bottom: 10px;
+  right: 10px;
+  color: #34495e;
+}
+/*Toggleknap slut*/
+
+
+
+/*CIRKEL*/
+.single-chart {
+  width: 100%;
+  padding-top: 15px;
+  justify-content: space-around ;
+}
+
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 65%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+/*den farvede cirkel til cirkel diagrammet/loadbaren*/
+.circular-chart.green .circle {
+  stroke: #38DB38;
+}
+
+/*GRØN CIRKEL*/
+.next-service{
+  fill: rgb(78, 78, 78);
+  font-weight: 600;
+  font-family: sans-serif;
+  font-size: 0.22em;
+  text-anchor: middle;
+}
+
+.percentage {
+  fill: #38DB38;
+  font-weight: 600;
+  font-family: sans-serif;
+  font-size: 0.4em;
+  text-anchor: middle;
+}
+
+/*GRØN CIRKEL SLUT*/
+
+
+
+/*aktiv cirkel text - hvid*/
+.next-service-white{
+  fill: #fff;
+  font-weight: 600;
+  font-family: sans-serif;
+  font-size: 0.22em;
+  text-anchor: middle;
+}
+
+
+/*RØD CIRKEL*/
+.next-service-red{
+  fill: rgb(78, 78, 78);
+  font-weight: 600;
+  font-family: sans-serif;
+  font-size: 0.3em;
+  text-anchor: middle;
+}
+
+.percentage-red {
+  fill: #DF403C;
+  font-weight: 600;
+  font-family: sans-serif;
+  font-size: 0.4em;
+  text-anchor: middle;
+}
+
+.circular-chart.red .circle {
+  stroke:#DF403C;
+}
+/*RØD SLUT*/
+
+
+/*Orange cirkel start*/
+.circular-chart.orange .circle {
+  stroke:#FFB347;
+}
+.percentage-orange {
+  fill: #FFB347;
+  font-weight: 600;
+  font-family: sans-serif;
+  font-size: 0.4em;
+  text-anchor: middle;
+}
+
+/*Fixed bar til searchknappen og add resource WEB*/
+.fixed-knap-container{
+display: flex;
+align-items: center;
+width: 100%;
+height: 143px;
+position: fixed;
+left: 1;
+bottom: 0;
+background-color:#243342;
+box-shadow: 2px -7px 14px rgba(0,0,0,.5);
+/* første er X aksen næste er til Y aksen, 3det 3 er til blur, den sidste er spread af shadow*/
+/*rykker diven og indholdet op foran. sådan der ikke giver bøbl med resourve containerne*/
+z-index: 10;
+}
+
+.fixed-knap-container1{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 143px;
+  position: fixed;
+  left: 1;
+  bottom: 0;
+  background-color:#243342;
+  box-shadow: 2px -7px 14px rgba(0,0,0,.5);
+  /* første er X aksen næste er til Y aksen, 3det 3 er til blur, den sidste er spread af shadow*/
+  /*rykker diven og indholdet op foran. sådan der ikke giver bøbl med resourve containerne*/
+  z-index: 10;
+  }
+  
+
+
+.addnew-rs{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #32CD32;
+width: 279px;
+height: 68px;
+font-weight: 750;
+text-align: center;
+border-radius: 30px;
+text-decoration: none;
+cursor: pointer;
+box-shadow: 0 5px 25px rgba(0,0,0,.5);
+}
+.plus-svg{ 
+width: 30%;
+height: 40%;
+}
+
+.addnew-text{
+color: white;
+font-size: 15px;
+}
+
+.tester{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+}
+
+
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 75px;
+  margin-right: 75px;
+  width: 279px;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  border-radius: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.virk{
+  width: 25%;
+}
+.virk1{
+  width: 60%;
+}
+
+.search-btn-mb {
+  width: 83%;
+  height: 22px;
+  margin: -11px 0;
+  border-radius: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+.div-tilbagom1{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 90px;  
+  bottom: 0;
+  background-color:#2c3e50;
+}
+  
+  /*MEDIA QUERY: FRA WEB TIL MOBIL*/
+  @media screen and (max-width: 860px){
+    .wrapper-webversion{
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width: 860px) {
+    .mobil-wrapper {
+      display: none;
+    }
+    
+  }
+
