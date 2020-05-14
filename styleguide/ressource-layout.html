@@ -16,8 +16,8 @@
 
 
 <!--  Headeren ligger for sig selv (i sit eget div) og ikke inden i en nogen container, da den skal vises på alle undersider  -->
-    <div class="header-mobile">header</div>
-<!-- SLUT PÅ HEADER -->
+    <div class="header-mobile"></div>
+<!-- ------------------------------------------------- SLUT PÅ HEADER ------------------------------------------------------- -->
 
 
 <!--  Dette div indenholder checklisten undersiden  -->
@@ -43,27 +43,82 @@
 
     <div class="todo-list-box">
         <div class="checkboxes">
-            <div class="wrapper">
-              <div class="todo"><p>TODO #1</p></div>
-              <label class="container">
+            <div class="todo-list-wrapper">
+                <div class="todo-item"><p>TODO #1</p></div>
+                <label class="item-container">
                 <input type="checkbox">
-                <span class="checkmark"></span>
-              </label>
-          </div>
+                <span class="checkmark-in-box"></span>
+                </label>
+            </div>
+            <div class="todo-list-wrapper">
+                <div class="todo-item"><p>TODO #2</p></div>
+                <label class="item-container">
+                <input type="checkbox">
+                <span class="checkmark-in-box"></span>
+                </label>
+            </div>
+            <div class="todo-list-wrapper">
+                <div class="todo-item"><p>TODO #3</p></div>
+                <label class="item-container">
+                <input type="checkbox">
+                <span class="checkmark-in-box"></span>
+                </label>
+            </div>
+            <div class="todo-list-wrapper">
+                <div class="todo-item"><p>TODO #4</p></div>
+                <label class="item-container">
+                <input type="checkbox">
+                <span class="checkmark-in-box"></span>
+                </label>
+            </div>
         </div>
     </div>
 
-    <div class="comment-checklist"></div>
-    <div class="upload-pic">upload</div>
-    <div class="document">dokumenetr</div>
-    <div class="save-button">save</div>
-    <div class="procentagebar-box">procentbar</div>
+    <div class="comment-checklist">
+        <div class="comment-checklist-wrapper">
+            <h4>Comment</h4>
+            <div class="comment-container">
+                <textarea cols="110" name="comment" placeholder="Write comment here..."></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="upload-pic"><img src="../img/upload.svg"/></div>
+    <div class="document">
+        <div class="document-wrapper">
+            <div class="document-container">
+                <div class="documents"><p>Manual (pdf)</p></div>
+            </div>
+            <div class="document-container">
+                <div class="documents"><p>Manual (pdf)</p></div>
+            </div>
+        </div>
+    </div>
+    <div class="save-button-mobil">
+        <button class="save-mobil">Save</button>
+    </div>
+    <div class="procentagebar-box">
+        <div class="progressbar-bar"></div>
+        <div class="progressbar-label"></div>
+    </div>
 </div>
 <!-- SLUT PÅ CHECKLISTE UNDERSIDEN -->
 
 <!-- SETTINGS  -->
 <!-- Dette div indenholder settings undersiden, samt den første underside under settings "general settings" ----------- -->
 <div id="mobile-settings-container">
+
+    <div id="center-div-shadow">
+        <div class="center-div">
+            <div class="center-div-indhold">
+                <p>Add New Group</p><div class="selection-container"><input type="text" placeholder="Write group name here..." id = "nyt-element-navn" />
+                <input type="button" id = "add-group-button" value="+" onclick = "addnewgroup(); addnewgrouptwo(); "/></div>
+                <select size="1" id = "group-add-select">
+                    <option>Machine</option>
+                </select>
+                <div class="close-button-container"><button class="close-add-group-button" onclick="selectionAppear('center-div-shadow');">close</button></div>
+            </div>
+        </div>
+    </div>
 
     <div class="navigation-buttons">
         <button class="button-nav">BACK</button>
@@ -72,7 +127,9 @@
         <button class="button-nav" onclick="toggleVisibility('mobile-history-container');">HISTORY</button>
     </div>
 
-    <div class="title">title</div>
+    <div class="title">
+        <h1>Resource Details</h1>
+    </div>
 
     <div id="mobile-general-settings-container">
 
@@ -84,12 +141,44 @@
         </div>
 
         <div class="navigation-buttons-settings">
-            <button class="button-nav-blue" onclick="toggleVisibility('mobile-settings-container');">CHECKLIST</button>
-            <button class="button-nav" onclick="toggleVisibility('mobile-service-settings-container');">SETTINGS</button>
-            <button class="button-nav" onclick="toggleVisibility('mobile-add-to-settings-container');">HISTORY</button>
+            <div class="navigation-buttons-settings-wrapper">
+                <div class="navigation-buttons-settings-wrapper-margin">
+                    <button class="button-nav-settings-blue" onclick="toggleVisibility('mobile-settings-container');">GENERAL SETTINGS</button>
+                    <button class="button-nav-settings" onclick="toggleVisibility('mobile-service-settings-container');">SERVICE CHECK SETTINGS</button>
+                    <button class="button-nav-settings" onclick="toggleVisibility('mobile-add-to-settings-container');">ADD TO CHECKLIST</button>
+                </div>
+            </div>
         </div>
-
-        <div class="todo-list">service1</div>
+        <div class="name-group">
+            <div class="name-group-container">
+                <div class="name-group-proxi">
+                    <div class="name-group-wrapper">
+                        <label for="lname"><p>Name:</p></label>
+                        <div class="select-and-button-contianer"><input type="text" id="lname" name="name" placeholder="Resource #1"></div>
+                    </div>
+                    <div class="name-group-wrapper">
+                        <label for="lname"><p>Group:</p></label>
+                        <div class="select-and-button-contianer">
+                        <select size="1" id = "group-add-select-out">
+                            <option class="default_option">Machine</option>
+                        </select>
+                        <button class="add-group-button-div" value="+" onclick="selectionAppear('center-div-shadow');"></button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="description-settings">
+            <div class="description-settings-wrapper">
+                <h4>Description</h4>
+                <div class="description-container">
+                    <textarea cols="110" name="comment" placeholder="Write description here..."></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="save-button-mobil">
+            <button class="save-mobil">Save</button>
+        </div>
 
     </div>
 </div>
@@ -106,12 +195,18 @@
         <button class="button-nav" onclick="toggleVisibility('mobile-history-container');">HISTORY</button>
     </div>
 
-    <div class="title">title</div>
+    <div class="title">
+        <h1>Resource Details</h1>
+    </div>
 
     <div class="navigation-buttons-settings">
-        <button class="button-nav" onclick="toggleVisibility('mobile-settings-container');">CHECKLIST</button>
-        <button class="button-nav-blue" onclick="toggleVisibility('mobile-service-settings-container');">SETTINGS</button>
-        <button class="button-nav" onclick="toggleVisibility('mobile-add-to-settings-container');">HISTORY</button>
+        <div class="navigation-buttons-settings-wrapper">
+            <div class="navigation-buttons-settings-wrapper-margin">
+                <button class="button-nav-settings" onclick="toggleVisibility('mobile-settings-container');">GENERAL SETTINGS</button>
+                <button class="button-nav-settings-blue" onclick="toggleVisibility('mobile-service-settings-container');">SERVICE CHECK SETTINGS</button>
+                <button class="button-nav-settings" onclick="toggleVisibility('mobile-add-to-settings-container');">ADD TO CHECKLIST</button>
+            </div>
+        </div>
     </div>
 
     <div class="todo-list">service2</div>
@@ -130,15 +225,54 @@
         <button class="button-nav" onclick="toggleVisibility('mobile-history-container');">HISTORY</button>
     </div>
 
-    <div class="title">title</div>
-
-    <div class="navigation-buttons-settings">
-        <button class="button-nav" onclick="toggleVisibility('mobile-settings-container');">CHECKLIST</button>
-        <button class="button-nav" onclick="toggleVisibility('mobile-service-settings-container');">SETTINGS</button>
-        <button class="button-nav-blue" onclick="toggleVisibility('mobile-add-to-settings-container');">HISTORY</button>
+    <div class="title">
+        <h1>Resource Details</h1>
     </div>
 
-    <div class="todo-list">service3</div>
+    <div class="navigation-buttons-settings">
+        <div class="navigation-buttons-settings-wrapper">
+            <div class="navigation-buttons-settings-wrapper-margin">
+                <button class="button-nav-settings" onclick="toggleVisibility('mobile-settings-container');">GENERAL SETTINGS</button>
+                <button class="button-nav-settings" onclick="toggleVisibility('mobile-service-settings-container');">SERVICE CHECK SETTINGS</button>
+                <button class="button-nav-settings-blue" onclick="toggleVisibility('mobile-add-to-settings-container');">ADD TO CHECKLIST</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="add-checklist-container">
+        <div class="add-todo-container">
+            <h4>Description</h4>
+            <div class="add-todo-proxi">
+                <div class="add-todo-wrapper">
+                    <label for="lname"><p>TODO #1</p></label>
+                </div>
+                <div class="add-todo-wrapper">
+                    <label for="lname"><p>TODO #2</p></label>
+                </div>
+                <div class="add-todo-wrapper">
+                    <label for="lname"><p>TODO #3</p></label>
+                </div>
+                <div class="add-todo-wrapper">
+                    <label for="lname"><p>TODO #4</p></label>
+                </div>
+                </div>
+                <button class="add-todo-button-div" value="+" onclick=""></button>
+            </div>
+        </div>
+        <div class="add-checklist-container">
+            <div class="add-todo-container">
+                <h4>Document</h4>
+                <div class="add-todo-proxi">
+                    <div class="add-todo-wrapper">
+                        <label for="lname"><p>Manual (pdf)</p></label>
+                    </div>
+                    <div class="add-todo-wrapper">
+                        <label for="lname"><p>El-diagram (pdf)</p></label>
+                    </div>
+                    </div>
+                    <button class="add-todo-button-div" value="+" onclick=""></button>
+                </div>
+            </div>
 
 </div>
 <!-- ------------------------------------ SLUT PÅ SETTINGS "ADD TO CHECKLISTEN SETTINGS" UNDERSIDEN ---------------------------------- -->
