@@ -211,7 +211,7 @@ html{
         flex-direction: column;
         box-shadow: 1px 2px 11px 0px rgba(183, 183, 183, 0.5);
       }
- 
+
     .resource-wrapper-placeholder{
         display: flex;
         flex-direction: row;
@@ -220,7 +220,7 @@ html{
         align-items: center;
         margin: auto;
     }
-    
+
     .description-wrapper{
         padding-top: 15px;
         display: flex;
@@ -236,7 +236,7 @@ html{
         font-weight: bold;
         color: white;
         }
-        
+
         .comment-container {
         display: flex;
         height: 100px;
@@ -245,7 +245,7 @@ html{
         border-radius: 15px;
         margin: 15px;
         }
-        
+
         .comment-container textarea {
         display: flex;
         flex-direction: row;
@@ -253,4 +253,5 @@ html{
         justify-content: space-around;
         border-radius: 15px;
         padding: 15px;
+        resize: none;
         }
