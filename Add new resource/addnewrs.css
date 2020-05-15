@@ -103,14 +103,17 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     background-color: #32CD32;
     border-radius: 6px;
+    cursor: pointer;
 }
 .plus-svg{
-    width: 60%;
-    height: 60%;
+    width: 50%;
+    height: 50%;
+    text-decoration: none;
+    color: #fff;
 }
 
 
@@ -199,14 +202,14 @@ html{
     margin-right: 10px;
     background-color: #337AB7;
     color: rgb(255, 255, 255);
-    box-shadow: 5px 3px 5px 0px rgba(0,0,0,.5);
+    box-shadow: 1px 2px 5px 0px rgba(0,0,0,.5);
     outline: none;
     border: none;
     font-size: 15px;
     font-weight: 750;
     border-radius: 30px;
     cursor: pointer;
-    }
+}
 
 
     .group-newresource-dc{
@@ -223,6 +226,25 @@ html{
         flex-direction: column;
         box-shadow: 1px 2px 11px 0px rgba(183, 183, 183, 0.5);
       }
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     .resource-wrapper-placeholder{
         display: flex;
