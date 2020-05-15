@@ -26,3 +26,44 @@ html{
   text-align: center;
   height: 500px;
 }
+
+#newresource p{
+  color: #333333;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.name-newresource{
+  width: 90%;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 6px;
+  flex-direction: row;
+}
+
+.type-newresource{
+  width: 90%;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 6px;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.group-newresource{
+  width: 90%;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 6px;
+  flex-direction: row;
+  margin-top: 10px;
+}
