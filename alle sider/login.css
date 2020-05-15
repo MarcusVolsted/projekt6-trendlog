@@ -4,7 +4,7 @@
   text-decoration: none;
 }
 
-body {
+.login-body {
   position: relative;
   background-image: url(../img/baggrundblur6.png);
   background-position: center center;

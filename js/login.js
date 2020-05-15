@@ -10,7 +10,7 @@ function validate() {
     true;
   }
   if(username.value =="Lars" && password.value =="1234") {
-    window.open('https://www.youtube.com/?gl=DK&hl=da')
+    window.open('index.html')
   }
   else {
     alert("Incorrect username or password")
