@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: sandybrown;
+}
+html{
+    min-width: 100vh;
+}
+
+
+.addnew-popup{
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    width: 40%;
+    height: 50%;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+}
