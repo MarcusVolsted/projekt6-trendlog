@@ -24,7 +24,7 @@ html{
   z-index: 9999;
   padding: 10px;
   text-align: center;
-  height: 500px;
+  height: auto;
 }
 
 #newresource p{
@@ -100,40 +100,7 @@ html{
 
 
 
-.group-newresource-dc{
-    width: 90%;
-    height: 50px;
-    background-color: #fff;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 6px;
-    flex-direction: row;
-    margin-top: 10px;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 1px 2px 11px 0px rgba(183, 183, 183, 0.5);
-  }
 
-
-
-
-.resource-wrapper-placeholder{
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-
-.description-wrapper{
-    display: flex;
-    width: 90%;
-    justify-content: space-around;
-    align-items: center;
-    margin: auto;
-}
 
 
 
@@ -203,3 +170,61 @@ html{
     border-radius: 30px;
     cursor: pointer;
     }
+
+
+    .group-newresource-dc{
+        width: 90%;
+        height: auto;
+        background-color: #fff;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 6px;
+        flex-direction: row;
+        margin-top: 10px;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 1px 2px 11px 0px rgba(183, 183, 183, 0.5);
+      }
+ 
+    .resource-wrapper-placeholder{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    
+    .description-wrapper{
+        display: flex;
+        width: 90%;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+    }
+
+    .comment-checklist-wrapper h4 {
+        font-size: 20px;
+        font-family: 'Segoe UI';
+        font-weight: bold;
+        color: white;
+        }
+        
+        .comment-container {
+        display: flex;
+        height: 100px;
+        width: 100%;
+        background: white;
+        border-radius: 15px;
+        margin: 15px;
+        }
+        
+        .comment-container textarea {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        border-radius: 15px;
+        padding: 15px;
+        }
