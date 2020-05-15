@@ -107,6 +107,7 @@ html{
     height: 40px;
     background-color: #32CD32;
     border-radius: 6px;
+    cursor: pointer;
 }
 .plus-svg{
     width: 60%;
