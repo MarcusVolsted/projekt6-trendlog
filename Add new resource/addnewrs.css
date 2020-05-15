@@ -5,7 +5,7 @@
 
 body{
     background-color: sandybrown;
-    font-family: Segoe UI; 
+    font-family: Segoe UI;
 }
 html{
     min-width: 100vh;
@@ -97,6 +97,11 @@ html{
     margin-right: 20px;
 }
 
+.type-placeholder{
+    margin-right: 30px;
+}
+
+
 
 
 .add-group{
@@ -114,7 +119,11 @@ html{
 }
 
 
-
+.type-select-newresource {
+width: 100%;
+height: 30px;
+user-select: none;
+}
 
 
 
