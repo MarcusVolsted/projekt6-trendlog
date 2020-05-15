@@ -91,8 +91,17 @@ html{
   box-shadow:0 0 8px 0 dodgerBlue;
 }
 
+.name-placeholder{
+    margin-right: 20px;
+}
 
-
+.resource-wrapper-placeholder{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
 
 
 
