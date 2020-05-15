@@ -92,6 +92,7 @@ html{
 
 /*CSS MARCUS */
 .slide-container{
+    margin-top: 15px;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
