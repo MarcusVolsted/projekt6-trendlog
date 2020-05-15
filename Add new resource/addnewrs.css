@@ -197,9 +197,10 @@ html{
     }
     
     .description-wrapper{
+        padding-top: 15px;
         display: flex;
         width: 90%;
-        justify-content: space-around;
+        justify-content: start;
         align-items: center;
         margin: auto;
     }
