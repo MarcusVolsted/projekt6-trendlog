@@ -98,6 +98,7 @@ html{
 
 /*CSS MARCUS */
 .slide-container{
+    margin-top: 15px;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
@@ -130,7 +131,7 @@ html{
     color: rgb(0, 0, 0);
 }
 
-.venstre-btn {
+.next-btn-popup {
     padding: auto;
     width: 105px;
     height: 52px;
