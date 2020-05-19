@@ -3242,6 +3242,36 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   text-align: center;
   height: auto;
 }
+#newresource2 {
+  width: 500px;
+  overflow: hidden;
+  background: #f1f1f1f1;
+  box-shadow: 1px 2px 11px 2px #0000007d;
+  border-radius: 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  padding: 10px;
+  text-align: center;
+  height: auto;
+}
+#newresource3 {
+  width: 500px;
+  overflow: hidden;
+  background: #f1f1f1f1;
+  box-shadow: 1px 2px 11px 2px #0000007d;
+  border-radius: 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  padding: 10px;
+  text-align: center;
+  height: auto;
+}
 
 .header-popup{
   font-size: 40px;
