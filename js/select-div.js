@@ -19,3 +19,25 @@ function hideNonVisibleDivs() {
     }
   }
 }
+
+var divsNewRes = ["slide-one", "slide-two", "slide-three"];
+var visibleDivIdNewRes = null;
+function toggleVisibilityNewRes(divId) {
+  if(visibleDivIdNewRes === divId) {
+  } else {
+    visibleDivIdNewRes = divId;
+  }
+  hideNonVisibleDivsNewRes();
+}
+function hideNonVisibleDivsNewRes() {
+  var i, divId, divNewRes;
+  for(i = 0; i < divsNewRes.length; i++) {
+    divId = divsNewRes[i];
+    divNewRes = document.getElementById(divId);
+    if(visibleDivIdNewRes === divId) {
+      divNewRes.style.display = "block";
+    } else {
+      divNewRes.style.display = "none";
+    }
+  }
+}

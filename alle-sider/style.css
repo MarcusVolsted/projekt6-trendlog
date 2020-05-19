@@ -3229,27 +3229,10 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
 
 
 /**/
-.modal-bg{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0,0,0,0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s opacity 0.5s;
+
+#modal {
+  display: none;
 }
-
-.bg-active{
-  visibility: visible;
-  opacity: 1;
-}
-
-
 
 
 .modal-close{
@@ -3819,3 +3802,29 @@ cursor: pointer;
     }
 
   }
+
+
+  /* ------------------------------ NEW RESSOURCE ---------------------------------- */
+#slide-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#slide-two {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#slide-three {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ------------------------------ SLUT NEW RESSOURCE ---------------------------------- */
