@@ -529,7 +529,8 @@ h2{
       width: 60%;
       height: 44px;
   }
-    /*Css / style til den orange streng i cirkel loadingbaren*/
+    /*Css / 
+    til den orange streng i cirkel loadingbaren*/
   .circular-chart.orange .circle {
     stroke:#FFB347;
   }
