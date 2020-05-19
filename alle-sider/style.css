@@ -3364,6 +3364,21 @@ transition:.3s;
 border-color:dodgerBlue;
 box-shadow:0 0 6px 0 dodgerBlue;
 }
+#name-placeholder1[type=text]{
+  width:100%;
+  border:1px solid #aaa;
+  margin:8px 0;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  border-radius: 8px;
+  transition:.3s;
+  }
+  
+  #name-placeholder1[type=text]:focus{
+  border-color:dodgerBlue;
+  box-shadow:0 0 6px 0 dodgerBlue;
+  }
 
 .name-placeholder{
   margin-right: 20px;
@@ -3386,7 +3401,22 @@ box-shadow:0 0 6px 0 dodgerBlue;
   border-color:dodgerBlue;
   box-shadow:0 0 6px 0 dodgerBlue;
 }
+#service-interval-nr1[type=text]{
+  width:22%;
+  border:1px solid #aaa;
+  margin:8px 0;
+  margin-right: 5px;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  border-radius: 8px;
+  transition:.3s;
+}
 
+#service-interval1[type=text]:focus{
+  border-color:dodgerBlue;
+  box-shadow:0 0 6px 0 dodgerBlue;
+}
 .service-interval-nr{
     margin-right: 20px;
 }
