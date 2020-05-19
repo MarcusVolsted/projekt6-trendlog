@@ -255,7 +255,6 @@ body{
 /*Dette er bare skriften der siger "Enable" over knappen*/
 .enable1{
   width: auto;
-  height: 10;
   font-size:0.7em;
   font-weight: 600;
 }
@@ -1799,7 +1798,7 @@ nav {
 }
 
 .navikoner li a:hover {
-  background: #666;
+background: #666;
 }
 
 .plugandlog {

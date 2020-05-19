@@ -259,7 +259,6 @@ body{
 /*Dette er bare skriften der siger "Enable" over knappen*/
 .enable1{
   width: auto;
-  height: 10;
   font-size:0.7em;
   font-weight: 600;
 }
@@ -276,7 +275,7 @@ body{
 
 
 .middle-text-resourcer-mb{
-  font-weight: 750;
+  font-weight: 700;
   font-size: 10px;
   line-height: 18px;
 }
@@ -378,7 +377,7 @@ h2{
     width: 100%;
     height: 80px;
     position: fixed;
-    left: 1;
+    left: 1px;
     bottom: 0;
     background-color: #233240;
     box-shadow: 4px -5px 5px 1px rgba(0,0,0,.5);
@@ -416,7 +415,7 @@ h2{
       margin-left: 15px;
       min-width: 160px;
       height: 30px;
-      font-weight: 750;
+      font-weight: 700;
       text-align: center;
       border-radius: 30px;
       text-decoration: none;
@@ -457,7 +456,7 @@ h2{
       width: 100%;
       height: 80px;
       position: fixed;
-      left: 1;
+      left: 1px;
       bottom: 0;
       background-color:#18222c;
       box-shadow: 0px -6px 9px 1px rgba(0,0,0,.5);
@@ -764,7 +763,7 @@ color:#ffffff;
 outline: none;
 border: none;
 font-size: 15px;
-font-weight: 750;
+font-weight: 700;
 border-radius: 30px;
 cursor: pointer;
 }
@@ -778,14 +777,13 @@ color:#2c3e50;
 outline: none;
 border: none;
 font-size: 15px;
-font-weight: 750;
+font-weight: 700;
 border-radius: 30px;
 cursor: pointer;
 }
 
 /*Knapper øverst i den venstre store container ("contentflexbox-1")*/
 .venstre-btn {
-padding: auto;
 width: 130px;
 height: 60px;
 margin-top: 20px;
@@ -796,14 +794,13 @@ box-shadow: 5px 3px 5px 0px rgba(0,0,0,.5);
 outline: none;
 border: none;
 font-size: 15px;
-font-weight: 750;
+font-weight: 700;
 border-radius: 30px;
 cursor: pointer;
 }
 
 /*Knapper øverst i den venstre store container *når der er aktive* ("contentflexbox-1")*/
 .activevenstre-btn {
-padding: auto;
 width: 130px;
 height: 60px;
 margin-top: 20px;
@@ -814,7 +811,7 @@ color: #fff;
 outline: none;
 border: none;
 font-size: 15px;
-font-weight: 750;
+font-weight: 700;
 border-radius: 30px;
 cursor: pointer;
 }
@@ -1015,7 +1012,7 @@ font-size: 12px;
 }
 /*Text css til resourceflex-2 containeren -----WEB*/
 .middle-text-resourcer{
-  font-weight: 750;
+  font-weight: 700;
   font-size: 11px;
   line-height: 35px;
 }
@@ -1052,7 +1049,7 @@ display: flex;
 align-items: center;
 width: 100%;
 height: 150px;
-left: 1;
+left: 1px;
 bottom: 0;
 background-color:#2c3e50;
 }
@@ -1060,7 +1057,7 @@ background-color:#2c3e50;
 
 /*search knappen css (WEB)*/
 .search-btn{
-font-weight: 750;
+font-weight: 700;
 margin-top: 20px;
 background-color: #fff;
 border: none;
@@ -1270,7 +1267,7 @@ align-items: center;
 width: 100%;
 height: 143px;
 position: fixed;
-left: 1;
+left: 1px;
 bottom: 0;
 background-color:#243342;
 box-shadow: 2px -7px 14px rgba(0,0,0,.5);
@@ -1285,7 +1282,7 @@ z-index: 10;
   width: 100%;
   height: 143px;
   position: fixed;
-  left: 1;
+  left: 1px;
   bottom: 0;
   background-color:#243342;
   box-shadow: 2px -7px 14px rgba(0,0,0,.5);
@@ -3543,7 +3540,6 @@ cursor: pointer;
 }
 
 .next-btn-popup {
-  padding: auto;
   width: 105px;
   height: 52px;
   margin-top: 20px;
@@ -3554,7 +3550,7 @@ cursor: pointer;
   outline: none;
   border: none;
   font-size: 15px;
-  font-weight: 750;
+  font-weight: 700;
   border-radius: 30px;
   cursor: pointer;
 }
