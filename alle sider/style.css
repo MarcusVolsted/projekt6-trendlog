@@ -66,7 +66,6 @@ body{
   display: flex;
   flex-direction: column;
   font-size: 30px;
-  font-family: 'Segoe UI';
   font-weight: 500;
   color: #2c3e50;
   margin-top: 50px;
@@ -77,7 +76,6 @@ body{
   display: flex;
   flex-direction: column;
   font-size: 30px;
-  font-family: 'Segoe UI';
   font-weight: bold;
   font-weight: 500;
   color: #2c3e50;
@@ -95,7 +93,6 @@ body{
 .login-wrapper .login-content-boks .login-content-boks-inputs .login-knap button {
   padding: 5px 100px 10px 100px;
   font-size: 30px;
-  font-family: 'Segoe UI';
   font-weight: 500;
   color: #fff;
   background-color: #3bc143;
@@ -116,7 +113,6 @@ body{
 
 .login-wrapper .login-content-boks .login-content-boks-inputs .boks-hjelptekst a {
   color: #333;
-  font-family: 'Segoe UI';
   font-weight: 500;
 }
 
@@ -259,7 +255,6 @@ body{
 /*Dette er bare skriften der siger "Enable" over knappen*/
 .enable1{
   width: auto;
-  height: 10;
   font-size:0.7em;
   font-weight: 600;
 }
@@ -1216,7 +1211,6 @@ box-shadow: 0 5px 25px rgba(0,0,0,.5);
 .next-service{
   fill: rgb(78, 78, 78);
   font-weight: 600;
-  font-family: sans-serif;
   font-size: 0.22em;
   text-anchor: middle;
 }
@@ -1224,7 +1218,6 @@ box-shadow: 0 5px 25px rgba(0,0,0,.5);
 .percentage {
   fill: #38DB38;
   font-weight: 600;
-  font-family: sans-serif;
   font-size: 0.4em;
   text-anchor: middle;
 }
@@ -1237,7 +1230,6 @@ box-shadow: 0 5px 25px rgba(0,0,0,.5);
 .next-service-white{
   fill: #fff;
   font-weight: 600;
-  font-family: sans-serif;
   font-size: 0.22em;
   text-anchor: middle;
 }
@@ -1247,7 +1239,6 @@ box-shadow: 0 5px 25px rgba(0,0,0,.5);
 .next-service-red{
   fill: rgb(78, 78, 78);
   font-weight: 600;
-  font-family: sans-serif;
   font-size: 0.3em;
   text-anchor: middle;
 }
@@ -1255,7 +1246,6 @@ box-shadow: 0 5px 25px rgba(0,0,0,.5);
 .percentage-red {
   fill: #DF403C;
   font-weight: 600;
-  font-family: sans-serif;
   font-size: 0.4em;
   text-anchor: middle;
 }
@@ -1273,7 +1263,6 @@ box-shadow: 0 5px 25px rgba(0,0,0,.5);
 .percentage-orange {
   fill: #FFB347;
   font-weight: 600;
-  font-family: sans-serif;
   font-size: 0.4em;
   text-anchor: middle;
 }
@@ -1809,7 +1798,7 @@ nav {
 }
 
 .navikoner li a:hover {
-  background: #666;
+background: #666;
 }
 
 .plugandlog {
@@ -1827,7 +1816,6 @@ margin-right: 15px;
 
 .navprofildropdown a {
   color: white;
-  font-family: segoe ui;
   font-weight: bold;
   font-size: 14px;
   display: flex;
@@ -1857,7 +1845,6 @@ margin-right: 15px;
 }
 
 .navprofil a{
-  font-family: segoe ui;
   color: #fff;
   font-size: 14px;
   font-weight: bold;
@@ -1937,13 +1924,11 @@ line-height: 25px;
 
 .info-text-categori h4 {
 font-size: 15px;
-font-family: 'Segoe UI';
 font-weight: bold;
 }
 
 .info-text-categori p {
 font-size: 15px;
-font-family: 'Segoe UI';
 }
 
 /* ------------------ Checklisten boxen som indenholder de forskellige "todo's" ------------------ */
@@ -2011,7 +1996,6 @@ width: 50%;
 .todo-item p {
 margin: 15px;
 font-size: 15px;
-font-family: 'Segoe UI';
 font-weight: bold;
 color: #3F3844;
 }
@@ -2092,7 +2076,6 @@ border-radius: 5px;
 
 .comment-checklist-wrapper h4 {
 font-size: 20px;
-font-family: 'Segoe UI';
 font-weight: bold;
 color: white;
 }
@@ -2166,7 +2149,6 @@ width: 90%;
 .documents p {
 margin: 15px;
 font-size: 15px;
-font-family: 'Segoe UI';
 font-weight: bold;
 color: #3F3844;
 }
@@ -2290,7 +2272,6 @@ box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 
 .center-div-indhold p {
 font-size: 15px;
-font-family: 'Segoe UI';
 font-weight: bold;
 color: #3F3844;
 }
@@ -2395,7 +2376,6 @@ text-align: center;
 text-decoration: none;
 border: none;
 font-size: 9px;
-font-family: 'Segoe UI';
 font-weight: bold;
 color: black;
 cursor: pointer;
@@ -2411,7 +2391,6 @@ text-align: center;
 text-decoration: none;
 border: none;
 font-size: 9px;
-font-family: 'Segoe UI';
 font-weight: bold;
 color: white;
 cursor: pointer;
@@ -2475,7 +2454,6 @@ border-radius: 5px;
 
 .name-group-wrapper p {
 font-size: 15px;
-font-family: 'Segoe UI';
 font-weight: bold;
 color: #3F3844;
 margin-left: 15px;
@@ -2520,7 +2498,6 @@ border-radius: 5px;
 
 .description-settings-wrapper h4 {
 font-size: 20px;
-font-family: 'Segoe UI';
 font-weight: bold;
 color: white;
 }
@@ -2585,7 +2562,6 @@ margin-top: 10px;
 
 .add-todo-container h4 {
 font-size: 20px;
-font-family: 'Segoe UI';
 font-weight: bold;
 color: white;
 margin: 10px;
@@ -2618,7 +2594,6 @@ margin-bottom: 10px;
 
 .add-todo-wrapper p {
 font-size: 15px;
-font-family: 'Segoe UI';
 font-weight: bold;
 color: #3F3844;
 margin-left: 15px;
@@ -2715,7 +2690,6 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   text-decoration: none;
   border: none;
   font-size: 15px;
-  font-family: 'Segoe UI';
   font-weight: bold;
   color: white;
   cursor: pointer;
@@ -2730,7 +2704,6 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   text-decoration: none;
   border: none;
   font-size: 15px;
-  font-family: 'Segoe UI';
   font-weight: bold;
   color: white;
   cursor: pointer;
@@ -2796,7 +2769,6 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   height: 50%;
   font-size: 15px;
   color: #fff;
-  font-family: segoe ui;
   font-weight: bold;
   margin-left: 15px;
 }
@@ -2830,7 +2802,6 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
 .history-boks-tekst {
   color: #fff;
   margin-left: 15px;
-  font-family: segoe ui;
   font-weight: bold;
 }
 
@@ -2962,7 +2933,6 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   justify-content: space-between;
   border-radius: 5px;
   color: #fff;
-  font-family: segoe ui;
   font-weight: bold;
   background-color: #222;
   margin: 10px 0px 10px 10px;
@@ -2979,7 +2949,6 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   justify-content: space-between;
   border-radius: 5px;
   color: #fff;
-  font-family: segoe ui;
   font-weight: bold;
   background-color: #222;
   margin: 10px 0px 10px 5px;
@@ -2996,7 +2965,6 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   justify-content: space-between;
   border-radius: 5px;
   color: #fff;
-  font-family: segoe ui;
   font-weight: bold;
   background-color: #222;
   margin: 10px 0px 10px 5px;
@@ -3013,7 +2981,6 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   justify-content: space-between;
   border-radius: 5px;
   color: #fff;
-  font-family: segoe ui;
   font-weight: bold;
   background-color: #222;
   margin: 10px 10px 10px 5px;
@@ -3040,7 +3007,6 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   justify-content: space-between;
   border-radius: 5px;
   color: #222;
-  font-family: segoe ui;
   font-weight: bold;
   background-color: #fff;
   margin: 5px 0px 0px 10px;
@@ -3063,7 +3029,6 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   justify-content: space-between;
   border-radius: 5px;
   color: #222;
-  font-family: segoe ui;
   font-weight: bold;
   background-color: #fff;
   margin: 5px 0px 0px 5px;
@@ -3086,7 +3051,6 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   justify-content: space-between;
   border-radius: 5px;
   color: #222;
-  font-family: segoe ui;
   font-weight: bold;
   background-color: #fff;
   margin: 5px 0px 0px 5px;
@@ -3109,7 +3073,6 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   justify-content: space-between;
   border-radius: 5px;
   color: #222;
-  font-family: segoe ui;
   font-weight: bold;
   background-color: #fff;
   margin: 5px 10px 0px 5px;
@@ -3118,10 +3081,9 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
 
 /* HER SLUTTER HISTORY LISTE DELEN */
 
-.title h1 {¨
+.title h1 {
   height: 75vh;
   font-size: 40px;
-  font-family: 'Segoe UI';
   font-weight: bold;
 }
 
@@ -3162,7 +3124,6 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
     border: none;
     font-size: 16px;
     font-size: 15px;
-    font-family: 'Segoe UI';
     font-weight: bold;
     color: white;
     cursor: pointer;
@@ -3178,7 +3139,6 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
     border: none;
     font-size: 16px;
     font-size: 15px;
-    font-family: 'Segoe UI';
     font-weight: bold;
     color: white;
     cursor: pointer;
@@ -3195,7 +3155,7 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
     display: none;
   }
   .navelement2 .navikoner {
-    display: ;
+    
   }
   .navelement2 .plugandlog {
     display: none;
