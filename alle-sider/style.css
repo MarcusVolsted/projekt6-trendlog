@@ -2789,10 +2789,13 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
     margin-left: 10px;
 }
 
-#datepicker-history-menu2{
-    border-radius: 8px;
-    width: 40%;
+#datepicker-history-menu2 {
+  border-radius: 8px;
+  width: 86%;
+  margin-left: 10px;
 }
+
+
 
 /* History Boks Tekst */
 
