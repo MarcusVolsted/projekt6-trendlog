@@ -10,7 +10,7 @@
   	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="../alle sider/style.css">
+    <link rel="stylesheet" href="../alle-sider/style.css">
 </head>
 <body>
 <!--  TIL RESSOURCEN NÅR DEN ER SELECTED - MOBIL VERSION  -->
@@ -210,7 +210,32 @@
         </div>
     </div>
 
-    <div class="todo-list">service2</div>
+    <div class="name-group">
+        <div class="type-container">
+            <div class="name-group-proxi">
+                <div class="name-group-wrapper">
+                    <label for="lname"><p>Type:</p></label>
+                    <div class="select-and-button-contianer">
+                    <select size="1" id = "group-add-select-out">
+                        <option class="default_option">Machine</option>
+                    </select>
+                    <button class="add-group-button-div" value="+" onclick="selectionAppear('center-div-shadow');"></button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="description-settings">
+        <div class="description-settings-wrapper">
+            <h4>Description</h4>
+            <div class="description-container">
+                <textarea cols="110" name="comment" placeholder="Write description here..."></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="save-button-mobil">
+        <button class="save-mobil">Save</button>
+    </div>
 
 </div>
 <!-- ------------------------------------ SLUT PÅ SETTINGS "SERVICE SETTINGS" UNDERSIDEN ------------------------------------------ -->
