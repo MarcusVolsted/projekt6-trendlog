@@ -6,3 +6,12 @@ function openMenu() {
 
   document.getElementById("dropdownnav").classList.toggle("aktiv");
 }
+
+
+
+document.getElementById("burger").addEventListener("click", openMenu);
+
+function openMenu() {
+
+  document.getElementById("dropdownnav2").classList.toggle("aktiv");
+}

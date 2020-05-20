@@ -1842,7 +1842,6 @@ input[type=text]:focus{
 /* ------------------ HEADER - SPECIFIKT TIL TING KUN UNDER HER ------------------ */
 /* HEADER BOX STYLE */
 .header-mobile {
-  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
@@ -1851,7 +1850,7 @@ input[type=text]:focus{
   position: fixed;
   top: 0;
   left: 0;
-  background: #222222;
+  background: #222;
   z-index: 5;
 }
 /* ------------------ SLUT HEADER - SPECIFIKT TIL TING KUN UNDER HER ------------------ */
@@ -3469,7 +3468,7 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   .navelement2 .burger a {
     display: block;
   }
-}
+} */
 
 
 
@@ -4234,15 +4233,15 @@ cursor: pointer;
     background-color: #fff;
     box-shadow: 0px 2px 2px rgba(0,0,0,.5);
     }
-    
+
     /* .ui-progressbar-value {
     background: #337AB7;
     } */
-    
+
     /* .ui-widget.ui-widget-content {
       border-style: none;
     } */
-    
+
     /* .progressbar-bar {
     margin-top: 10px;
     margin-left: 20px;
@@ -4253,7 +4252,7 @@ cursor: pointer;
     z-index: 5;
     background: #EBEBEB;
     } */
-    
+
     /* .progressbar-label {
     position: absolute;
     margin-top: 10px;

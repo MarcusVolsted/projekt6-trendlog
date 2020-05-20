@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +9,9 @@
     app, html5, css, code">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="navbar.css">
     <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
   	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -19,8 +19,62 @@
     <link rel='icon' href='../img/facicon.png' type='image/x-icon'/>
     <title>Forside | Trendlog</title>
 </head>
-<body>
 
+<header>
+  <nav>
+    <div class="navelement1">
+      <div class="logo">
+        <img src="../img/trendlog-io-white-thin4.png" alt="Trendlog.io logo">
+      </div>
+      <ul class="navmenu">
+        <li><a href="#"><i class="fas fa-home"></i></a></li>
+        <li><a href="#">Trendboards</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">Views</a></li>
+        <li><a href="#">Feeds</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Shares</a></li>
+      </ul>
+    </div>
+    <div class="navelement2">
+      <ul class="navikoner">
+        <li><a href="#"><i class="fas fa-wrench"></i></a></li>
+        <li><a href="#"><i class="fas fa-eye-slash"></i></a></li>
+        <li><a href="#"><i class="fas fa-bell"></i></a></li>
+      </ul>
+      <input class="plugandlog" type="text" name="plug&log" value="">
+      <div class="navprofildropdown" id="navprofildropdown">
+        <div class="navprofil"><a href="#">
+          Navn
+          <i class="fas fa-user"></i>
+        </a>
+      </div>
+          <ul id="dropdownnav">
+            <li><a href="#">Min Side</a></li>
+            <li><a href="#">Log ud</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="burgerdropdownmenu" id="burgerdropdownmenu">
+      <div class="burger" id="burger">
+        <a href="#"><i class="fas fa-bars"></i></a>
+      </div>
+      <ul id="dropdownnav2">
+        <li><a href="#">Min Side</a></li>
+        <li><a href="#">Log ud</a></li>
+        <li><a href="#">Trendboards</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">Views</a></li>
+        <li><a href="#">Feeds</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Shares</a></li>
+        <li><a href="#">Maintenance</a></li>
+        <li><a href="#">Alarms</a></li>
+    </div>
+  </nav>
+</header>
+
+<body>
   <div id="alertbox">
     <span class=alerticon><i class="fas fa-exclamation-circle"></i></span>
     <p>Sure you want to disable?</p>
@@ -30,7 +84,55 @@
   <div class="wrapper">
 
 <!-- NAVBAR STARTER HER -->
-
+<!-- <nav>
+  <div class="navelement1">
+    <div class="logo">
+      <img src="../img/trendlog-io-white-thin4.png" alt="Trendlog.io logo">
+    </div>
+    <ul class="navmenu">
+      <li><a href="#"><i class="fas fa-home"></i></a></li>
+      <li><a href="#">Trendboards</a></li>
+      <li><a href="#">Reports</a></li>
+      <li><a href="#">Views</a></li>
+      <li><a href="#">Feeds</a></li>
+      <li><a href="#">Settings</a></li>
+      <li><a href="#">Shares</a></li>
+    </ul>
+  </div>
+  <div class="navelement2">
+    <ul class="navikoner">
+      <li><a href="#"><i class="fas fa-wrench"></i></a></li>
+      <li><a href="#"><i class="fas fa-eye-slash"></i></a></li>
+      <li><a href="#"><i class="fas fa-bell"></i></a></li>
+    </ul>
+    <input class="plugandlog" type="text" name="plug&log" value="">
+    <div class="navprofildropdown" id="navprofildropdown">
+      <div class="navprofil"><a href="#">
+        Navn
+        <i class="fas fa-user"></i>
+      </a>
+    </div>
+        <ul id="dropdownnav">
+          <li><a href="#">Min Side</a></li>
+          <li><a href="#">Log ud</a></li>
+        </ul>
+    </div>
+  </div>
+  <div class="burgerdropdownmenu" id="burgerdropdownmenu">
+    <div class="burger" id="burger">
+      <a href="#"><i class="fas fa-bars"></i></a>
+    </div>
+    <ul id="dropdownnav2">
+      <li><a href="#">Min Side</a></li>
+      <li><a href="#">Log ud</a></li>
+      <li><a href="#">Trendboards</a></li>
+      <li><a href="#">Reports</a></li>
+      <li><a href="#">Views</a></li>
+      <li><a href="#">Feeds</a></li>
+      <li><a href="#">Settings</a></li>
+      <li><a href="#">Shares</a></li>
+  </div>
+</nav> -->
 
 <!-- NAVBAR SLUTTER HER -->
 
