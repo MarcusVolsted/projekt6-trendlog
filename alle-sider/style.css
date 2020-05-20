@@ -569,7 +569,7 @@ margin-right: 15px;
 #alertbox{
   width: 350px;
   overflow: hidden;
-  background: #f1f1f1f1;
+  background: #f1f1f1;
   box-shadow: 0 0 20px black;
   border-radius: 4px;
   position: absolute;
@@ -583,7 +583,7 @@ margin-right: 15px;
 }
 
 #alertbox .alerticon{
-  color: #8a3711;
+  color: #FF4300;
   font-size: 4em;
   margin: 10px 0;
   display: block;
@@ -597,7 +597,7 @@ margin-right: 15px;
 .yes {
   font-size: 20px;
   color: white;
-  background-color: #8a3711;
+  background-color: #FF4300;
   padding: 0px 8px;
   display: inline-block;
   cursor: pointer;
