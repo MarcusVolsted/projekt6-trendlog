@@ -12,6 +12,8 @@ body{
     background: #F1F1F1;
 }
 
+
+
 /* LOGIN SIDE STARTER HER */
 
 .login-body {
@@ -524,7 +526,7 @@ h2{
       width: 60%;
       height: 44px;
   }
-    /*Css / 
+    /*Css /
     til den orange streng i cirkel loadingbaren*/
   .circular-chart.orange .circle {
     stroke:#FFB347;
@@ -3155,7 +3157,7 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
     display: none;
   }
   .navelement2 .navikoner {
-    
+
   }
   .navelement2 .plugandlog {
     display: none;

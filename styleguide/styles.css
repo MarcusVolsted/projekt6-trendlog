@@ -723,11 +723,11 @@ background-color: white;
 box-shadow: 0px 2px 5px rgba(0,0,0,.5);
 }
 
-.ui-progressbar-value { 
-background: #337AB7; 
+.ui-progressbar-value {
+background: #337AB7;
 }
 
-.progressbar-bar { 
+.progressbar-bar {
 margin-top: 10px;
 margin-left: 20px;
 margin-right: 20px;
