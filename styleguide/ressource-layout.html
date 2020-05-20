@@ -160,7 +160,7 @@
                     <div class="name-group-wrapper">
                         <label for="lname"><p>Group:</p></label>
                         <div class="select-and-button-contianer">
-                        <select size="1" id = "group-add-select-out">
+                        <select size="1" id = "group-add-select-out-1">
                             <option class="default_option">Machine</option>
                         </select>
                         <button class="add-group-button-div" value="+" onclick="selectionAppear('center-div-shadow');"></button>
@@ -210,26 +210,144 @@
         </div>
     </div>
 
-    <div class="name-group">
+    <div class="type">
         <div class="type-container">
-            <div class="name-group-proxi">
-                <div class="name-group-wrapper">
+            <div class="type-proxi">
+                <div class="type-wrapper">
                     <label for="lname"><p>Type:</p></label>
                     <div class="select-and-button-contianer">
-                    <select size="1" id = "group-add-select-out">
-                        <option class="default_option">Machine</option>
+                    <select size="1" id = "group-add-select-out-2">
+                        <option class="default_option">Preventiv</option>
+                        <option class="default_option">Predictiv</option>
                     </select>
-                    <button class="add-group-button-div" value="+" onclick="selectionAppear('center-div-shadow');"></button>
+                    <button class="add-group-button-div2" value="+" onclick="selectionAppear('center-div-shadow');"></button>
                 </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="description-settings">
-        <div class="description-settings-wrapper">
-            <h4>Description</h4>
-            <div class="description-container">
-                <textarea cols="110" name="comment" placeholder="Write description here..."></textarea>
+    <div class="servive-form-mobil">
+        <div class="servive-form-mobil-container">
+            <div class="servive-form-mobil-proxi">
+                <h4>Service form</h4>
+                <div class="servive-form-mobil-wrapper">
+                    <label for="lname">
+                        <p>Service</p>
+                        <p>interval:</p>
+                    </label>
+                    <div class="select-and-button-contianer">
+                    <select size="1" id = "group-add-select-out-3">
+                        <option class="option">1</option>
+                        <option class="option">2</option>
+                        <option class="option">3</option>
+                        <option class="option">4</option>
+                        <option class="option">5</option>
+                        <option class="option">6</option>
+                        <option class="option">7</option>
+                        <option class="option">8</option>
+                        <option class="option">9</option>
+                        <option class="default_option">10</option>
+                        <option class="option">11</option>
+                        <option class="option">12</option>
+                        <option class="option">13</option>
+                        <option class="option">14</option>
+                        <option class="option">15</option>
+                        <option class="option">16</option>
+                        <option class="option">17</option>
+                        <option class="option">18</option>
+                        <option class="option">19</option>
+                        <option class="option">20</option>
+                        <option class="option">21</option>
+                        <option class="option">22</option>
+                        <option class="option">23</option>
+                        <option class="option">24</option>
+                        <option class="option">25</option>
+                        <option class="option">26</option>
+                        <option class="option">27</option>
+                        <option class="option">28</option>
+                        <option class="option">29</option>
+                        <option class="option">30</option>
+                    </select>
+                    <select size="1" id = "group-add-select-out-4">
+                        <option class="default_option">Days</option>
+                        <option class="option">months</option>
+                    </select>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="notify">
+        <div class="notify-container">
+            <div class="notify-proxi">
+                <h4>Notify</h4>
+                <div class="notify-wrapper">
+                    <label for="lname"><p>Notify:</p></label>
+                    <div class="select-and-button-contianer">
+                    <select size="1" id = "group-add-select-out-5">
+                        <option class="option">1</option>
+                        <option class="option">2</option>
+                        <option class="option">3</option>
+                        <option class="option">4</option>
+                        <option class="option">5</option>
+                        <option class="option">6</option>
+                        <option class="option">7</option>
+                        <option class="option">8</option>
+                        <option class="option">9</option>
+                        <option class="default_option">10</option>
+                        <option class="option">11</option>
+                        <option class="option">12</option>
+                        <option class="option">13</option>
+                        <option class="option">14</option>
+                        <option class="option">15</option>
+                        <option class="option">16</option>
+                        <option class="option">17</option>
+                        <option class="option">18</option>
+                        <option class="option">19</option>
+                        <option class="option">20</option>
+                        <option class="option">21</option>
+                        <option class="option">22</option>
+                        <option class="option">23</option>
+                        <option class="option">24</option>
+                        <option class="option">25</option>
+                        <option class="option">26</option>
+                        <option class="option">27</option>
+                        <option class="option">28</option>
+                        <option class="option">29</option>
+                        <option class="option">30</option>
+                    </select>
+                    <select size="1" id = "group-add-select-out-6">
+                        <option class="default_option">Days</option>
+                        <option class="option">months</option>
+                    </select>
+                    <p class="before">before</p>
+                </div>
+                </div>
+                <div class="notify-wrapper">
+                    <label for="lname"><p>Email:</p></label>
+                    <div class="select-and-button-contianer">
+                        <input type="text" id="lname" name="name" placeholder="example@hotmail.com">
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="date-service">
+        <div class="date-service-container">
+            <div class="date-service-proxi">
+                <h4>Service</h4>
+                <div class="date-service-wrapper">
+                    <label for="lname"><p>Last service:</p></label>
+                    <div class="history-menu-nedre-kasse-service-next">
+                        <input type="text" id="datepicker-history-menu-service-next">
+                      </div>
+                </div>
+                <div class="date-service-wrapper">
+                    <label for="lname"><p>Next service:</p></label>
+                        <div class="history-menu-nedre-kasse-service-last">
+                            <input type="text" id="datepicker-history-menu-service-last">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -299,6 +417,9 @@
                     <button class="add-todo-button-div" value="+" onclick=""></button>
                 </div>
             </div>
+            <div class="save-button-mobil">
+                <button class="save-mobil">Save</button>
+            </div>
 
 </div>
 <!-- ------------------------------------ SLUT PÅ SETTINGS "ADD TO CHECKLISTEN SETTINGS" UNDERSIDEN ---------------------------------- -->
@@ -315,7 +436,9 @@
         <button class="button-nav-blue" onclick="toggleVisibility('mobile-history-container');">HISTORY</button>
     </div>
 
-    <div class="title">title</div>
+    <div class="title">
+        <h1>Maintenance history</h1>
+    </div>
     <div class="history-menu">
       <div class="history-menu-kasse">
         <div class="history-menu-øvre-kasse">

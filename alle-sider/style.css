@@ -1773,6 +1773,8 @@ input[type=text]:focus{
     width: 150px;
 }
 
+
+
 /* Dropdown menu */
 
 .select-wrap{
@@ -2445,12 +2447,57 @@ width: 65%;
 height: 30px;
 }
 
-#group-add-select-out {
+/* GENERAL SETTINGS #group-add-select-out */
+
+#group-add-select-out-1 {
 width: 100%;
 height: 30px;
 margin-right: 5px;
 user-select: none;
 }
+
+/* SERVICE CHECK SETTINGS #group-add-select-out */
+
+#group-add-select-out-2 {
+  width: 100%;
+  height: 30px;
+  margin-right: 5px;
+  user-select: none;
+  margin-right: 15px;
+  }
+
+#group-add-select-out-3 {
+  width: 100%;
+  height: 30px;
+  margin-right: 5px;
+  user-select: none;
+  margin-right: 15px;
+  }
+
+#group-add-select-out-4 {
+  width: 100%;
+  height: 30px;
+  margin-right: 5px;
+  user-select: none;
+  margin-right: 15px;
+  }
+
+#group-add-select-out-5 {
+  width: 100%;
+  height: 30px;
+  margin-right: 5px;
+  user-select: none;
+  margin-right: 15px;
+  }
+
+#group-add-select-out-6 {
+  width: 100%;
+  height: 30px;
+  margin-right: 0px;
+  user-select: none;
+  }
+
+
 
 /* Knap som ikke er selectede */
 .button-nav-settings {
@@ -2617,6 +2664,338 @@ padding: 15px;
   align-items: center;
 }
 
+/* Dette er type */
+
+.type {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
+  /* background: rebeccapurple; */
+  }
+  
+  .type-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: orange;
+  height: 70px;
+  width: 90%;
+  background: #7D7D7D;
+  border-radius: 5px;
+  }
+  
+  .type-proxi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* background: red; */
+  border-radius: 5px;
+  }
+  
+  .type-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 45px;
+  width: 90%;
+  background: white;
+  border-radius: 5px;
+  }
+  
+  .type-wrapper p {
+  font-size: 15px;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  color: #3F3844;
+  margin-left: 15px;
+  }
+  
+  #lname {
+  margin-right: 15px;
+  width: 100%;
+  }
+  
+  .type-wrapper input[type=text], select {
+  width: 60%;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+  }
+
+/* Dette er service form */
+
+  .servive-form-mobil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 12.5px;
+    margin-bottom: 12.5px;
+    /* background: rebeccapurple; */
+    }
+    
+    .servive-form-mobil-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: orange;
+    height: 100px;
+    width: 90%;
+    background: #7D7D7D;
+    border-radius: 5px;
+    }
+    
+    .servive-form-mobil-proxi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* background: red; */
+    border-radius: 5px;
+    }
+    
+    .servive-form-mobil-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    width: 100%;
+    border-radius: 5px;
+    }
+    
+    .servive-form-mobil-wrapper p {
+    font-size: 15px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    color: white;
+    margin-left: 15px;
+    }
+    
+    #lname {
+    margin-right: 15px;
+    width: 100%;
+    }
+    
+    .servive-form-mobil-wrapper input[type=text], select {
+    width: 60%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+    }
+
+  .servive-form-mobil-proxi h4 {
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    }
+
+/* Dette er notify */
+
+.notify {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+height: 150px;
+/* background: rebeccapurple; */
+}
+
+.notify-container {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+background: orange;
+height: 150px;
+width: 90%;
+background: #7D7D7D;
+border-radius: 5px;
+}
+
+.notify-proxi {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 150px;
+width: 100%;
+/* background: red; */
+border-radius: 5px;
+}
+
+.notify-wrapper {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+height: 45px;
+width: 100%;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+
+.notify-wrapper p {
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: white;
+margin-left: 15px;
+}
+
+.select-and-button-contianer .notify-wrapper p {
+  font-size: 15px;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  color: white;
+  }
+
+#lname {
+margin-right: 15px;
+width: 100%;
+}
+
+.before {
+  margin-right: 20px;
+}
+
+.notify-wrapper input[type=text], select {
+width: 60%;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+font-size: 15px;
+}
+
+.notify-proxi h4 {
+  font-size: 20px;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  }
+
+
+/* Dette er service form */
+
+.date-service {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 150px;
+  margin-top: 12.5px;
+  /* background: rebeccapurple; */
+  }
+  
+  .date-service-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: orange;
+  height: 150px;
+  width: 90%;
+  background: #7D7D7D;
+  border-radius: 5px;
+  }
+  
+  .date-service-proxi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 100%;
+  /* background: red; */
+  border-radius: 5px;
+  }
+  
+  .date-service-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 45px;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  }
+  
+  .date-service-wrapper p {
+  font-size: 15px;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  color: white;
+  margin-left: 15px;
+  }
+  
+  #lname {
+  margin-right: 15px;
+  width: 100%;
+  }
+  
+  .date-service-wrapper input[type=text], select {
+  width: 60%;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+  }
+  
+.date-service-proxi h4 {
+  font-size: 20px;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  }
+
+.history-menu-nedre-kasse-service-next {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  color: black;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.history-menu-nedre-kasse-service-last {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+  margin-right: 15px;
+}
 
 /* ADD TO CHECKLISTEN SETTINGS BOX STYLE */
 #mobile-add-to-settings-container {
@@ -2692,7 +3071,7 @@ margin-left: 15px;
 }
 
 .add-todo-button-div {
-margin-right: 15px;
+margin-right: 0px;
 height: 30px;
 width: 30px;
 border-radius: 5px;
@@ -2884,10 +3263,13 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
     margin-left: 10px;
 }
 
-#datepicker-history-menu2{
-    border-radius: 8px;
-    width: 40%;
+#datepicker-history-menu2 {
+  border-radius: 8px;
+  width: 86%;
+  margin-left: 10px;
 }
+
+
 
 /* History Boks Tekst */
 
@@ -3530,6 +3912,31 @@ box-shadow:0 0 6px 0 dodgerBlue;
   justify-content: center;
   content: "+";
   font-size: 25px;
+  color:#fff;
+  height: 30px;
+  width: 30px;
+  }
+
+.add-group-button-div2 {
+  margin-right: 15px;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  background-color: #337AB7;
+  text-decoration: none;
+  border: none;
+}
+
+.add-group-button-div2::before {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  content: "i";
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: bold;
   color:#fff;
   height: 30px;
   width: 30px;
