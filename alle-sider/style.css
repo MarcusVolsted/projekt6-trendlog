@@ -4129,6 +4129,9 @@ cursor: pointer;
     .procentagebar-box {
       display: none;
     }
+    #mobile-checkliste-container {
+      display: none;
+    }
   }
 
 
