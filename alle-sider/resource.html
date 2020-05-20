@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+  	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="../alle-sider/style.css">
     <link rel="stylesheet" href="navbar.css">
       	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
@@ -77,14 +83,16 @@
   <div class="wrapper-webversion">
     <!--CONTENTFLEXBOX-1 er den div der indholder at det content der er i den store hvide container, til venstre for siden. Der er her settings og sådan noget til resourcer kommer til at ligge.-->
     <div class="contentflexbox-1">
-      <div class="wrapper-inhold-contentflexbox-1">
+
+        <!--Indenholder checklisten - PC-->
+      <div id="wrapper-inhold-contentflexbox-1">
         <div class="flex-knapper-venstre">
-            <button class="activevenstre-btn" onclick="">Checklist</button>
-            <button class="venstre-btn" onclick="">Settings</button>
-            <button class="venstre-btn" onclick="">History</button>
+            <button class="activevenstre-btn" onclick="toggleVisibilityResWeb('wrapper-inhold-contentflexbox-1');">Checklist</button>
+            <button class="venstre-btn" onclick="toggleVisibilityResWeb('wrapper-inhold-contentflexbox-2');">Settings</button>
+            <button class="venstre-btn" onclick="toggleVisibilityResWeb('wrapper-inhold-contentflexbox-3');">History</button>
       </div>
 
-
+<div id="print">
     <div class="text-flex-venstre">
         <h2 class="resource-venstre">Resource #1</h2>
         <p><b>Name</b></p>
@@ -92,20 +100,52 @@
         <p><b>Service date planned:</b></p>
         <p>23/04/2020</p>
         <p><b>Description</b></p>
+        <p>Dette er en test.</p>
+        <!-- <input type="button" onclick="printDiv('print')" value="print a div!" /> -->
     </div>
 
-    <div class="todo-list">
-      N/A
+      <div class="todo-list-box">
+        <div class="checkboxes-web">
+            <div class="todo-list-wrapper-web">
+                <div class="todo-item"><p>TODO #1</p></div>
+                <label class="item-container">
+                <input type="checkbox">
+                <span class="checkmark-in-box"></span>
+                </label>
+            </div>
+            <div class="todo-list-wrapper-web">
+                <div class="todo-item"><p>TODO #2</p></div>
+                <label class="item-container">
+                <input type="checkbox">
+                <span class="checkmark-in-box"></span>
+                </label>
+            </div>
+            <div class="todo-list-wrapper-web">
+                <div class="todo-item"><p>TODO #3</p></div>
+                <label class="item-container">
+                <input type="checkbox">
+                <span class="checkmark-in-box"></span>
+                </label>
+            </div>
+            <div class="todo-list-wrapper-web">
+                <div class="todo-item"><p>TODO #4</p></div>
+                <label class="item-container">
+                <input type="checkbox">
+                <span class="checkmark-in-box"></span>
+                </label>
+            </div>
+        </div>
     </div>
 
-
+  <div class="image-upload-box">
     <div class="image-upload">
       <a  href="#">
       <img class="uploadimg" src="../img/cloud.png" alt="uploadimg">
       <h2 class="upload-img-text">Upload image here</h2></a>
     </div>
+  </div>
 
-
+  <div class="docs-upload-box">
     <div class="docs-upload">
       <a href="">
       <img class="document-png" src="../img/doc.png" alt="manual">
@@ -117,12 +157,253 @@
       <p class="docs-text">Ei-diagram</p>
     </a>
     </div>
+  </div>
+
+  <div class="procentagebar-box-web-box">
+    <div class="procentagebar-box-web">
+      <div class="progressbar-bar"></div>
+      <div class="progressbar-label"></div>
+  </div>
+</div>
+</div>
 
     <div class="save-button">
       <button class="save">Save</button>
     </div>
+
   </div>
+        <!--Indenholder settings - PC-->
+  <div id="wrapper-inhold-contentflexbox-2">
+    <div class="flex-knapper-venstre">
+      <button class="venstre-btn" onclick="toggleVisibilityResWeb('wrapper-inhold-contentflexbox-1');">Checklist</button>
+      <button class="activevenstre-btn" onclick="toggleVisibilityResWeb('wrapper-inhold-contentflexbox-2');">Settings</button>
+      <button class="venstre-btn" onclick="toggleVisibilityResWeb('wrapper-inhold-contentflexbox-3');">History</button>
+  </div>
+
+    <h2 class="header-popup">Create Resource</h2>
+    <div class="name-newresource">
+
+      <div class="resource-wrapper-placeholder">
+       <div class="name-placeholder">Name:</div>
+      <input id="name-placeholder" type="text" placeholder="TEST_RESOURCE...">
     </div>
+  </div>
+
+  <div class="type-newresource">
+    <div class="resource-wrapper-placeholder">
+      <div class="type-placeholder">Type:</div>
+      <select class="type-select-newresource">
+      <option class="default_option">Preventive</option>
+      <option class="default_option">Predictive</option>
+    </select>
+    </div>
+  </div>
+
+
+    <div class="name-group-web">
+            <div class="name-group-container-web">
+          <div class="name-group-proxi-web">
+
+
+            <div id="center-div-shadow2">
+              <div class="center-div-web">
+                  <div class="center-div-indhold-web">
+                      <p>Add New Group</p><div class="selection-container"><input type="text" placeholder="Write group name here..." id = "nyt-element-navn" />
+                      <input type="button" id = "add-group-button" value="+" onclick = "addnewgroup(); addnewgrouptwo(); "/></div>
+                      <select size="1" id = "group-add-select">
+                          <option>Machine</option>
+                      </select>
+                      <div class="close-button-container"><button class="close-add-group-button" onclick="selectionAppear('center-div-shadow2');">close</button></div>
+                  </div>
+              </div>
+          </div>
+
+
+
+
+              <div class="resource-wrapper-placeholder1">
+                  <label for="lname-web"><span class="grouptext">Group:</span></label>
+                  <div class="select-and-button-contianer-web">
+                  <select size="1" id = "group-add-select-out">
+                      <option class="default_option">Machine</option>
+                  </select>
+                  <button class="add-group-button-div1" value="+" onclick="selectionAppear('center-div-shadow2');"></button>
+              </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+    <div class="group-newresource-dc">
+      <div class="description-wrapper">
+      Description:
+
+      <div class="container-dc-wrap">
+
+      </div>
+    </div>
+      <div class="resource-wrapper-placeholder-description">
+        <div class="comment-container">
+          <textarea cols="110" name="comment" placeholder="Write comment here..."></textarea>
+      </div>
+      </div>
+
+    </div>
+
+</div>
+
+        <!--Indenholder historien - PC-->
+  <div id="wrapper-inhold-contentflexbox-3">
+    <div class="flex-knapper-venstre">
+      <button class="venstre-btn" onclick="toggleVisibilityResWeb('wrapper-inhold-contentflexbox-1');">Checklist</button>
+      <button class="venstre-btn" onclick="toggleVisibilityResWeb('wrapper-inhold-contentflexbox-2');">Settings</button>
+      <button class="activevenstre-btn" onclick="toggleVisibilityResWeb('wrapper-inhold-contentflexbox-3');">History</button>
+   </div>
+
+   <div class="text-flex-venstre">
+    <h2 class="resource-venstre">Maintenance history</h2>
+  </div>
+
+    <div class="history-menu">
+      <div class="history-menu-kasse">
+        <div class="history-menu-øvre-kasse">
+          <div class="history-boks-tekst">
+            Entries:
+          </div>
+          <div class="history-listeantal">
+              <ul class="history-default-option">
+                  <li>
+                      <div class="option 10">
+                        <p>10</p>
+                      </div>
+                  </li>
+              </ul>
+              <ul class="history-listeantal-ul">
+                  <li>
+                      <div class="option 20">
+                        <p>20</p>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="option 30">
+                        <p>30</p>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="option 40">
+                        <p>40</p>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+          <input class="history-søgefunktion" type="text" name="historyesøgefunktion" placeholder="Søg...">
+        </div>
+        <div class="history-menu-nedre-kasse">
+          <div class="history-menu-nedre-kasse-1">
+            Date Filter:
+          </div>
+          <div class="history-menu-nedre-kasse-2">
+            <input type="text" id="datepicker-history-menu1">
+              <i class="fas fa-arrow-right"></i>
+            <input type="text" id="datepicker-history-menu2">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="history-list">
+      <div class="history-list-boks">
+        <div class="history-list-id">
+          <div class="history-list-filter-id">
+            ID
+            <i class="fas fa-caret-down"></i>
+          </div>
+          <div class="history-list-element-id">
+            <ul>
+              <li>203</li>
+              <li>204</li>
+              <li>203</li>
+              <li>204</li>
+              <li>203</li>
+              <li>204</li>
+              <li>203</li>
+              <li>204</li>
+              <li>203</li>
+              <li>204</li>
+            </ul>
+          </div>
+        </div>
+        <div class="history-list-name">
+          <div class="history-list-filter-name">
+            Name
+            <i class="fas fa-caret-down"></i>
+          </div>
+          <div class="history-list-element-name">
+            <ul>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+            </ul>
+          </div>
+        </div>
+        <div class="history-list-date">
+          <div class="history-list-filter-date">
+            Date
+            <i class="fas fa-caret-down"></i>
+          </div>
+          <div class="history-list-element-date">
+            <ul>
+              <li>08/02/20</li>
+              <li>02/01/20</li>
+              <li>09/12/19</li>
+              <li>12/11/19</li>
+              <li>14/10/19</li>
+              <li>25/09/19</li>
+              <li>30/08/19</li>
+              <li>03/07/19</li>
+              <li>03/06/19</li>
+              <li>13/05/19</li>
+            </ul>
+          </div>
+        </div>
+        <div class="history-list-value">
+          <div class="history-list-filter-value">
+            Value
+            <i class="fas fa-caret-down"></i>
+          </div>
+          <div class="history-list-element-value">
+            <ul>
+              <li>N/A</li>
+              <li>N/A</li>
+              <li>N/A</li>
+              <li>N/A</li>
+              <li>N/A</li>
+              <li>N/A</li>
+              <li>N/A</li>
+              <li>N/A</li>
+              <li>N/A</li>
+              <li>N/A</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+    </div>
+  </div>
+
+  </div>
 
 
     <!--CONTENTFLEX-2 Inderholder alt det content vi har i den store box til højre. Den indeholder blandt andet alle resource containere og knapper til pending osv-->
@@ -615,18 +896,6 @@
 
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
   <!--denne wrapper holder alt til mobilversionen. Dette har vi med for at vi kan bruge media queryes til hurtigt at fjerne hele layoutet og skifte det ud med mobillayoutet-->
   <div class="mobil-wrapper-res">
@@ -1457,6 +1726,7 @@
 <script src="../alle-sider/selection-apppear.js"></script>
 
 <script src="../js/calender.js"></script>
+<script src="../js/script.js"></script>
 
 </body>
 </html>

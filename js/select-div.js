@@ -41,3 +41,25 @@ function hideNonVisibleDivsNewRes() {
     }
   }
 }
+
+var divsResWeb = ["wrapper-inhold-contentflexbox-1", "wrapper-inhold-contentflexbox-2", "wrapper-inhold-contentflexbox-3"];
+var visibleDivIdResWeb = null;
+function toggleVisibilityResWeb(divId) {
+  if(visibleDivIdResWeb === divId) {
+  } else {
+    visibleDivIdResWeb = divId;
+  }
+  hideNonVisibleDivsResWeb();
+}
+function hideNonVisibleDivsResWeb() {
+  var i, divId, divResWeb;
+  for(i = 0; i < divsResWeb.length; i++) {
+    divId = divsResWeb[i];
+    divResWeb = document.getElementById(divId);
+    if(visibleDivIdResWeb === divId) {
+      divResWeb.style.display = "flex";
+    } else {
+      divResWeb.style.display = "none";
+    }
+  }
+}
