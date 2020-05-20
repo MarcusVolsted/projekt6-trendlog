@@ -300,7 +300,7 @@ input[type=text]:focus{
 
 /* Navigationsbar */
 
-nav {
+/* nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -422,7 +422,7 @@ margin-right: 15px;
   color: #fff;
   margin: 0px 20px 0px 20px;
   text-decoration: none;
-}
+} */
 
 
 
@@ -1670,8 +1670,13 @@ width: 30px;
       display: none;
     }
     .navelement2 .navprofildropdown {
+      display: ;
+    }
+
+    .navprofil a i {
       display: none;
     }
+
     .navelement2 .burger a {
       display: block;
     }
