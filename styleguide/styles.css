@@ -1670,8 +1670,13 @@ width: 30px;
       display: none;
     }
     .navelement2 .navprofildropdown {
+      display: ;
+    }
+
+    .navprofil a i {
       display: none;
     }
+
     .navelement2 .burger a {
       display: block;
     }

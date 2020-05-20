@@ -1,7 +1,7 @@
 $( function() {
     $( "#datepicker-history-menu1" ).datepicker({
       showOn: "button",
-      buttonImage: "../img/calendar-hvid.png",
+      buttonImage: "../img/calendar-white.png",
       buttonImageOnly: true,
       buttonText: "Select date"
     });
@@ -10,7 +10,7 @@ $( function() {
 $( function() {
     $( "#datepicker-history-menu2" ).datepicker({
       showOn: "button",
-      buttonImage: "../img/calendar-hvid.png",
+      buttonImage: "../img/calendar-white.png",
       buttonImageOnly: true,
       buttonText: "Select date"
     });
@@ -19,7 +19,7 @@ $( function() {
 $( function() {
   $( "#datepicker-history-menu-service-next" ).datepicker({
     showOn: "button",
-    buttonImage: "../img/calendar-hvid.png",
+    buttonImage: "../img/calendar-white.png",
     buttonImageOnly: true,
     buttonText: "Select date"
   });
@@ -28,7 +28,7 @@ $( function() {
 $( function() {
   $( "#datepicker-history-menu-service-last" ).datepicker({
     showOn: "button",
-    buttonImage: "../img/calendar-hvid.png",
+    buttonImage: "../img/calendar-white.png",
     buttonImageOnly: true,
     buttonText: "Select date"
   });
