@@ -286,6 +286,62 @@ body{
 }
 /*flexbox 3 css slutter her*/
 
+/* popup warning */
+#alertbox{
+  width: 350px;
+  overflow: hidden;
+  background: #f1f1f1;
+  box-shadow: 0 0 20px black;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  padding: 10px;
+  text-align: center;
+  display: none;
+}
+
+#alertbox .alerticon{
+  color: #FF4300;
+  font-size: 4em;
+  margin: 10px 0;
+  display: block;
+}
+
+#alertbox p{
+  color: #333333;
+  font-size: 20px;
+}
+
+.yes {
+  font-size: 20px;
+  color: white;
+  background-color: #FF4300;
+  padding: 0px 8px;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 2px;
+  padding-bottom: 2px;
+}
+
+.no{
+  background-color: #337AB7;
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  padding: 0 8px;
+  cursor: pointer;
+  border-radius: 2px;
+  padding-bottom: 2px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+
+
 /*Dette er den sidste flexbox til resource containeren */
 .flexbox4{
     display: flex;
@@ -3053,7 +3109,7 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
 
 #datepicker-history-menu2 {
   border-radius: 8px;
-  width: 86%;
+  width: 100%;
   margin-left: 10px;
 }
 
@@ -3409,6 +3465,28 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
 
 
 
+<<<<<<< HEAD
+@media only screen and (max-width: 1200px) {
+  .navelement1 .navmenu {
+    display: none;
+  }
+  .navelement2 .navikoner {
+
+  }
+  .navelement2 .plugandlog {
+    display: none;
+  }
+  .navelement2 .navprofildropdown {
+    display: none;
+  }
+  .navelement2 .burger a {
+    display: block;
+  }
+}
+
+
+=======
+>>>>>>> 7ccba8b53a798278eee44f021e7bb6cc608c078a
 
 
 
@@ -3924,6 +4002,10 @@ cursor: pointer;
       justify-content: center;
       align-items: center;
       margin: auto;
+  }
+
+  .resource-wrapper-placeholder p{
+      margin-left: -18px;
   }
 
   .resource-wrapper-placeholder-description{

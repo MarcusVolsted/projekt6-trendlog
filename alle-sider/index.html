@@ -21,6 +21,14 @@
 </head>
 <body>
 
+  <div id="alertbox">
+    <span class=alerticon><i class="fas fa-exclamation-circle"></i></span>
+    <p>Sure you want to disable?</p>
+    <a onclick="pop()" class="yes">Yes</a>
+    <a onclick="pop()" class="no">No</a>
+  </div>
+  <div class="wrapper">
+
 <!-- NAVBAR STARTER HER -->
 
 
@@ -75,7 +83,7 @@
         <div class="resourceflex-3">
             <div class="enable">
                 <p><span class="grey-text">Enable</span></p>
-                <div class="toggleBox">
+                <div class="toggleBox" onclick="pop()">
                     <div class="toggle">
                       <input class="toggle-pc" type="checkbox">
                       <div class="onbtn"></div>
@@ -145,7 +153,7 @@
         <div class="resourceflex-3">
             <div class="enable">
                 <p><span class="grey-text">Enable</span></p>
-                <div class="toggleBox">
+                <div class="toggleBox" onclick="pop()">
                     <div class="toggle">
                       <input class="toggle-pc" type="checkbox">
                       <div class="onbtn"></div>
@@ -212,7 +220,7 @@
             <div class="resourceflex-3">
                 <div class="enable">
                     <p><span class="grey-text">Enable</span></p>
-                    <div class="toggleBox">
+                    <div class="toggleBox" onclick="pop()">
                         <div class="toggle">
                           <input class="toggle-pc" type="checkbox">
                           <div class="onbtn"></div>
@@ -279,7 +287,7 @@
         <div class="resourceflex-3">
             <div class="enable">
                 <p><span class="grey-text">Enable</span></p>
-                <div class="toggleBox">
+                <div class="toggleBox" onclick="pop()">
                     <div class="toggle">
                       <input class="toggle-pc" type="checkbox">
                       <div class="onbtn"></div>
@@ -347,7 +355,7 @@
           <div class="resourceflex-3">
               <div class="enable">
                   <p><span class="grey-text">Enable</span></p>
-                  <div class="toggleBox">
+                  <div class="toggleBox" onclick="pop()">
                       <div class="toggle">
                         <input class="toggle-pc" type="checkbox">
                         <div class="onbtn"></div>
@@ -414,7 +422,7 @@
           <div class="resourceflex-3">
               <div class="enable">
                   <p><span class="grey-text">Enable</span></p>
-                  <div class="toggleBox">
+                  <div class="toggleBox" onclick="pop()">
                       <div class="toggle">
                         <input class="toggle-pc" type="checkbox">
                         <div class="onbtn"></div>
@@ -1091,6 +1099,7 @@
 <script src="../js/select-div.js"></script>
 <script src="../js/dropdown.js"></script>
 <script src="../js/calender.js"></script>
+<script src="../js/popup.js"></script>
 
 
 </body>
