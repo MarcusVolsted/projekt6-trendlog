@@ -776,9 +776,27 @@ h2{
 }
 
 
-.wrapper-inhold-contentflexbox-1{
+#wrapper-inhold-contentflexbox-1{
   width: 90%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#wrapper-inhold-contentflexbox-2{
+  width: 90%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#wrapper-inhold-contentflexbox-3{
+  width: 90%;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -910,6 +928,7 @@ text-decoration: none;
 display: inline-block;
 box-shadow: 6px 4px 12px 2px rgba(0,0,0,.5);
 cursor: pointer;
+margin-bottom: 150px;
 }
 
 .save:hover{
@@ -919,6 +938,14 @@ background-color: rgb(29, 62, 90);
 /*save knappen slut */
 
 /*Upload image boxen i venstre side af layoutet (WEB)*/
+.image-upload-box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
 .image-upload{
 margin-top: 40px;
 margin-bottom: 20px;
@@ -934,6 +961,7 @@ align-items: center;
 text-align: center;
 cursor: pointer;
 }
+
 /*Upload image. Billedet der er i containeren */
 .uploadimg{
 width: 90px;
@@ -949,6 +977,13 @@ text-decoration: none;
 }
 
 /*wrapper der fordeler dosc billederne/img (WEB)*/
+.docs-upload-box{
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  }
+
 .docs-upload{
 width: 50%;
 justify-content: space-evenly;
@@ -3418,7 +3453,6 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
 
 
 
-<<<<<<< HEAD
 @media only screen and (max-width: 1200px) {
   .navelement1 .navmenu {
     display: none;
@@ -3438,8 +3472,6 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
 }
 
 
-=======
->>>>>>> 7ccba8b53a798278eee44f021e7bb6cc608c078a
 
 
 
@@ -4159,3 +4191,83 @@ cursor: pointer;
 
 
 /* ------------------------------ SLUT NEW RESSOURCE ---------------------------------- */
+
+/* WEB RESOURCE */
+.checkboxes-web {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  width: 90%;
+  border-radius: 5px;
+  padding-top: 12px;
+  }
+
+.todo-list-wrapper-web {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 90%;
+  background:#fff;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  box-shadow: 0px 5px 8px rgba(0,0,0,.2);
+  }
+
+  .procentagebar-box-web-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    }
+
+  .procentagebar-box-web {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 40%;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0px 2px 2px rgba(0,0,0,.5);
+    }
+    
+    /* .ui-progressbar-value {
+    background: #337AB7;
+    } */
+    
+    /* .ui-widget.ui-widget-content {
+      border-style: none;
+    } */
+    
+    /* .progressbar-bar {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 30px;
+    width: auto;
+    border-radius: 230px;
+    z-index: 5;
+    background: #EBEBEB;
+    } */
+    
+    /* .progressbar-label {
+    position: absolute;
+    margin-top: 10px;
+    top: 15%;
+    left: 50%;
+    z-index: 2;
+    color: #3F3844;
+    } */
+    /* SLUT WEB RESOURCE */
+
+    #print {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
