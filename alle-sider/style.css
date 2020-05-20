@@ -281,6 +281,62 @@ body{
 }
 /*flexbox 3 css slutter her*/
 
+/* popup warning */
+#alertbox{
+  width: 350px;
+  overflow: hidden;
+  background: #f1f1f1f1;
+  box-shadow: 0 0 20px black;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  padding: 10px;
+  text-align: center;
+  display: none;
+}
+
+#alertbox .alerticon{
+  color: #8a3711;
+  font-size: 4em;
+  margin: 10px 0;
+  display: block;
+}
+
+#alertbox p{
+  color: #333333;
+  font-size: 20px;
+}
+
+.yes {
+  font-size: 20px;
+  color: white;
+  background-color: #8a3711;
+  padding: 0px 8px;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 2px;
+  padding-bottom: 2px;
+}
+
+.no{
+  background-color: #337AB7;
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  padding: 0 8px;
+  cursor: pointer;
+  border-radius: 2px;
+  padding-bottom: 2px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+
+
 /*Dette er den sidste flexbox til resource containeren */
 .flexbox4{
     display: flex;
@@ -465,7 +521,7 @@ h2{
       z-index: 10;
     }
   /**/
-  
+
   /*plus ikon til add resource knappen*/
   .plus-svg{
    width: 30%;
@@ -2579,7 +2635,7 @@ padding: 15px;
   margin-bottom: 12.5px;
   /* background: rebeccapurple; */
   }
-  
+
   .type-container {
   display: flex;
   flex-direction: column;
@@ -2591,7 +2647,7 @@ padding: 15px;
   background: #7D7D7D;
   border-radius: 5px;
   }
-  
+
   .type-proxi {
   display: flex;
   flex-direction: column;
@@ -2601,7 +2657,7 @@ padding: 15px;
   /* background: red; */
   border-radius: 5px;
   }
-  
+
   .type-wrapper {
   display: flex;
   flex-direction: row;
@@ -2612,7 +2668,7 @@ padding: 15px;
   background: white;
   border-radius: 5px;
   }
-  
+
   .type-wrapper p {
   font-size: 15px;
   font-family: 'Segoe UI';
@@ -2620,12 +2676,12 @@ padding: 15px;
   color: #3F3844;
   margin-left: 15px;
   }
-  
+
   #lname {
   margin-right: 15px;
   width: 100%;
   }
-  
+
   .type-wrapper input[type=text], select {
   width: 60%;
   margin: 8px 0;
@@ -2648,7 +2704,7 @@ padding: 15px;
     margin-bottom: 12.5px;
     /* background: rebeccapurple; */
     }
-    
+
     .servive-form-mobil-container {
     display: flex;
     flex-direction: column;
@@ -2660,7 +2716,7 @@ padding: 15px;
     background: #7D7D7D;
     border-radius: 5px;
     }
-    
+
     .servive-form-mobil-proxi {
     display: flex;
     flex-direction: column;
@@ -2670,7 +2726,7 @@ padding: 15px;
     /* background: red; */
     border-radius: 5px;
     }
-    
+
     .servive-form-mobil-wrapper {
     display: flex;
     flex-direction: row;
@@ -2680,7 +2736,7 @@ padding: 15px;
     width: 100%;
     border-radius: 5px;
     }
-    
+
     .servive-form-mobil-wrapper p {
     font-size: 15px;
     font-family: 'Segoe UI';
@@ -2688,12 +2744,12 @@ padding: 15px;
     color: white;
     margin-left: 15px;
     }
-    
+
     #lname {
     margin-right: 15px;
     width: 100%;
     }
-    
+
     .servive-form-mobil-wrapper input[type=text], select {
     width: 60%;
     margin: 8px 0;
@@ -2814,7 +2870,7 @@ font-size: 15px;
   margin-top: 12.5px;
   /* background: rebeccapurple; */
   }
-  
+
   .date-service-container {
   display: flex;
   flex-direction: column;
@@ -2826,7 +2882,7 @@ font-size: 15px;
   background: #7D7D7D;
   border-radius: 5px;
   }
-  
+
   .date-service-proxi {
   display: flex;
   flex-direction: column;
@@ -2837,7 +2893,7 @@ font-size: 15px;
   /* background: red; */
   border-radius: 5px;
   }
-  
+
   .date-service-wrapper {
   display: flex;
   flex-direction: row;
@@ -2848,7 +2904,7 @@ font-size: 15px;
   border-radius: 5px;
   margin-bottom: 10px;
   }
-  
+
   .date-service-wrapper p {
   font-size: 15px;
   font-family: 'Segoe UI';
@@ -2856,12 +2912,12 @@ font-size: 15px;
   color: white;
   margin-left: 15px;
   }
-  
+
   #lname {
   margin-right: 15px;
   width: 100%;
   }
-  
+
   .date-service-wrapper input[type=text], select {
   width: 60%;
   margin: 8px 0;
@@ -2871,7 +2927,7 @@ font-size: 15px;
   box-sizing: border-box;
   font-size: 15px;
   }
-  
+
 .date-service-proxi h4 {
   font-size: 20px;
   font-family: 'Segoe UI';
@@ -3529,7 +3585,7 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
     display: none;
   }
   .navelement2 .navikoner {
-    
+
   }
   .navelement2 .plugandlog {
     display: none;
@@ -3675,9 +3731,9 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   margin-top: 20px;
   width: 90%;
   height: 250px;
-  
+
   background-color: #fff;
-  display: flex;  
+  display: flex;
   margin: 20px auto;
   border-radius: 15px;
   flex-direction: column;
@@ -3753,7 +3809,7 @@ box-shadow:0 0 6px 0 dodgerBlue;
   border-radius: 8px;
   transition:.3s;
   }
-  
+
   #name-placeholder1[type=text]:focus{
   border-color:dodgerBlue;
   box-shadow:0 0 6px 0 dodgerBlue;
@@ -3806,7 +3862,7 @@ box-shadow:0 0 6px 0 dodgerBlue;
 }
 
 #name-placeholder-em[type=text] {
-  
+
   width: 67%;
   border: 1px solid #aaa;
   margin: 8px 0;
@@ -3998,13 +4054,13 @@ cursor: pointer;
     .close{
         display: flex;
         justify-content: flex-end;
-        font-weight: 600;  
+        font-weight: 600;
         width: 98%;
         font-size: 25px;
         margin-right: 20px;
         color: #3F3844;
     }
-   
+
 
 
     .resource-wrapper-placeholder1{
@@ -4086,15 +4142,15 @@ cursor: pointer;
           }
 
 
-      
+
   .name-group-web {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-around;
       height: auto;
-      }   
-    
+      }
+
       .name-group-wrapper-web {
           display: flex;
           flex-direction: row;
@@ -4137,7 +4193,7 @@ cursor: pointer;
           right: 0;
           left: 0;
           }
-  
+
   .center-div-indhold-web {
       display: flex;
       flex-direction: column;

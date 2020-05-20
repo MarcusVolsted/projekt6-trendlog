@@ -22,8 +22,13 @@
 </head>
 <body>
 
-
-
+  <div id="alertbox">
+    <span class=alerticon><i class="fas fa-exclamation-circle"></i></span>
+    <p>Sure you want to disable?</p>
+    <a onclick="pop()" class="yes">Yes</a>
+    <a onclick="pop()" class="no">No</a>
+  </div>
+  <div class="wrapper">
 
   <!--WRAPPER, ER EN WRAPPER TIL ALT CONTENT PÅ WEB SIDEN - PC-->
   <div class="wrapper-webversion">
@@ -74,7 +79,7 @@
         <div class="resourceflex-3">
             <div class="enable">
                 <p><span class="grey-text">Enable</span></p>
-                <div class="toggleBox">
+                <div class="toggleBox" onclick="pop()">
                     <div class="toggle">
                       <input class="toggle-pc" type="checkbox">
                       <div class="onbtn"></div>
@@ -144,7 +149,7 @@
         <div class="resourceflex-3">
             <div class="enable">
                 <p><span class="grey-text">Enable</span></p>
-                <div class="toggleBox">
+                <div class="toggleBox" onclick="pop()">
                     <div class="toggle">
                       <input class="toggle-pc" type="checkbox">
                       <div class="onbtn"></div>
@@ -211,7 +216,7 @@
             <div class="resourceflex-3">
                 <div class="enable">
                     <p><span class="grey-text">Enable</span></p>
-                    <div class="toggleBox">
+                    <div class="toggleBox" onclick="pop()">
                         <div class="toggle">
                           <input class="toggle-pc" type="checkbox">
                           <div class="onbtn"></div>
@@ -278,7 +283,7 @@
         <div class="resourceflex-3">
             <div class="enable">
                 <p><span class="grey-text">Enable</span></p>
-                <div class="toggleBox">
+                <div class="toggleBox" onclick="pop()">
                     <div class="toggle">
                       <input class="toggle-pc" type="checkbox">
                       <div class="onbtn"></div>
@@ -346,7 +351,7 @@
           <div class="resourceflex-3">
               <div class="enable">
                   <p><span class="grey-text">Enable</span></p>
-                  <div class="toggleBox">
+                  <div class="toggleBox" onclick="pop()">
                       <div class="toggle">
                         <input class="toggle-pc" type="checkbox">
                         <div class="onbtn"></div>
@@ -413,7 +418,7 @@
           <div class="resourceflex-3">
               <div class="enable">
                   <p><span class="grey-text">Enable</span></p>
-                  <div class="toggleBox">
+                  <div class="toggleBox" onclick="pop()">
                       <div class="toggle">
                         <input class="toggle-pc" type="checkbox">
                         <div class="onbtn"></div>
@@ -959,7 +964,7 @@
                 <p>First service check:</p>
                 <div class="history-menu-nedre-kasse-2">
                   <input type="text" id="datepicker-history-menu2">
-                    
+
                 </div>
             </div>
           </div>
@@ -1028,7 +1033,7 @@
         <div id="newresource3">
             <div class="close">
               <button class="x-close" onclick="selectionAppear('modal'); toggleVisibilityNewRes('slide-one');">x</button>
-            </div>          
+            </div>
             <h2 class="header-popup">Create Resource</h2>
             <div class="name-newresource-3">
               <p>Checklist:</p>
@@ -1090,6 +1095,7 @@
 <script src="../js/select-div.js"></script>
 <script src="../js/dropdown.js"></script>
 <script src="../js/calender.js"></script>
+<script src="../js/popup.js"></script>
 
 
 </body>
