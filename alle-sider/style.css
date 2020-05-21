@@ -12,6 +12,17 @@ body{
     background: #F1F1F1;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 5px;
+}
+
 /* NAVBAR STARTER HER */
 
 
@@ -2287,6 +2298,7 @@ flex-direction: row;
 align-items: center;
 justify-content: space-between;
 flex-wrap: nowrap;
+width: 55%;
 margin: 0px 15px;
 }
 
@@ -2343,7 +2355,7 @@ width: 30px;
 
 /* Dropdown menus */
 #group-add-select {
-width: 220px;
+width: 55%;
 height: 30px;
 user-select: none;
 }
@@ -3798,55 +3810,57 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
 
 /*pop up*/
 #newresource {
-  width: 500px;
+  width: 30%;
   overflow: hidden;
   background: #f1f1f1;
   box-shadow: 1px 2px 11px 2px #0000007d;
   border-radius: 15px;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 10%;
+  left: 35%;
   z-index: 9999;
   padding: 10px;
   text-align: center;
   height: auto;
+  overflow-y: scroll;
 }
 #newresource2 {
-  width: 500px;
+  width: 30%;
   overflow: hidden;
   background: #f1f1f1;
   box-shadow: 1px 2px 11px 2px #0000007d;
   border-radius: 15px;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 10%;
+  left: 35%;
   z-index: 9999;
   padding: 10px;
   text-align: center;
   height: auto;
+  overflow-y: scroll;
 }
 #newresource3 {
-  width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
   overflow: hidden;
   background: #f1f1f1;
   box-shadow: 1px 2px 11px 2px #0000007d;
   border-radius: 15px;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 10%;
+  left: 35%;
   z-index: 9999;
   padding: 10px;
   text-align: center;
   height: auto;
+  overflow-y: scroll;
 }
 
 .header-popup{
   font-size: 40px;
-  margin-top: 20px;
-  margin-bottom:20px;
+  margin-bottom:30px;
 }
 
 .name-newresource {
@@ -3863,18 +3877,25 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   align-items: center;
 }
 .name-newresource-3 {
-  margin-top: 20px;
   width: 90%;
-  height: 250px;
-
+  margin-bottom: 20px;
+  height: auto;
   background-color: #fff;
   display: flex;
-  margin: 20px auto;
+  justify-content: center;
   border-radius: 15px;
   flex-direction: column;
   box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.31);
   justify-content: flex-start;
-  align-items: start;
+  align-items: center;
+}
+
+.name-newresource-3 h4 {
+  font-size: 20px;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  color: black;
+  margin: 10px;
 }
 
 .name-newresource-em {
@@ -3922,7 +3943,7 @@ box-shadow: 1px 2px 11px 0px rgba(183, 183, 183, 0.5);
 #name-placeholder[type=text]{
 width:100%;
 border:1px solid #aaa;
-margin:8px 0;
+margin-left: 25px;
 outline:none;
 padding:8px;
 box-sizing:border-box;
@@ -3934,6 +3955,7 @@ transition:.3s;
 border-color:dodgerBlue;
 box-shadow:0 0 6px 0 dodgerBlue;
 }
+
 #name-placeholder1[type=text]{
   width:100%;
   border:1px solid #aaa;
@@ -3951,7 +3973,7 @@ box-shadow:0 0 6px 0 dodgerBlue;
   }
 
 .name-placeholder{
-  margin-right: 20px;
+  font-weight: bold;
 }
 
 
@@ -3959,7 +3981,7 @@ box-shadow:0 0 6px 0 dodgerBlue;
   width:22%;
   border:1px solid #aaa;
   margin:8px 0;
-  margin-right: 5px;
+  margin-left: 100px;
   outline:none;
   padding:8px;
   box-sizing:border-box;
@@ -3970,12 +3992,13 @@ box-shadow:0 0 6px 0 dodgerBlue;
 #service-interval[type=text]:focus{
   border-color:dodgerBlue;
   box-shadow:0 0 6px 0 dodgerBlue;
+  
 }
 #service-interval-nr1[type=text]{
   width:22%;
   border:1px solid #aaa;
   margin:8px 0;
-  margin-right: 5px;
+  margin-left: 90px;
   outline:none;
   padding:8px;
   box-sizing:border-box;
@@ -3993,12 +4016,11 @@ box-shadow:0 0 6px 0 dodgerBlue;
 
 
 .type-placeholder{
-  margin-right: 30px;
+  font-weight: bold;
 }
 
 #name-placeholder-em[type=text] {
-
-  width: 67%;
+  width: 59%;
   border: 1px solid #aaa;
   margin: 8px 0;
   outline: none;
@@ -4062,10 +4084,11 @@ width: 100%;
 height: 30px;
 user-select: none;
 cursor: pointer;
+margin-left: 32px;
 }
 
 .service-interval {
-  width: 42%;
+  width: 20%;
   height: 36px;
   user-select: none;
   cursor: pointer;
@@ -4122,7 +4145,7 @@ cursor: pointer;
 
 /*CSS MARCUS */
 .slide-container{
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   width: 100%;
   justify-content: space-evenly;
@@ -4169,6 +4192,7 @@ cursor: pointer;
   font-size: 13px;
   font-weight: bold;
   color: #fff;
+  cursor: pointer;
 }
 
 .sliderp{
@@ -4177,13 +4201,14 @@ cursor: pointer;
   align-items: center;
   font-size: 13px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .next-btn-popup {
   width: 105px;
   height: 52px;
   margin-top: 20px;
-  margin-right: 10px;
+  margin-bottom: 10px;
   background-color: #337AB7;
   color: rgb(255, 255, 255);
   box-shadow: 1px 2px 5px 0px rgba(0,0,0,.5);
@@ -4196,50 +4221,61 @@ cursor: pointer;
 }
 
 
-  .group-newresource-dc{
-      width: 90%;
-      height: auto;
-      background-color: #fff;
-      display: flex;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 15px;
-      flex-direction: row;
-      margin-top: 20px;
-      align-items: center;
-      flex-direction: column;
-      box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.31);
-    }
+.group-newresource-dc{
+  width: 90%;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  flex-direction: row;
+  margin-top: 20px;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.31);
+}
 
-    .close{
-        display: flex;
-        justify-content: flex-end;
-        font-weight: 600;
-        width: 98%;
-        font-size: 25px;
-        margin-right: 20px;
-        color: #3F3844;
-    }
+.close{
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 600;
+  width: 98%;
+  font-size: 25px;
+  margin-right: 20px;
+  color: #3F3844;
+}
+
+.x-close{
+  background-color: none;
+  border: none;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
 
 
-    .resource-wrapper-placeholder1{
-      display: flex;
-      flex-direction: row;
-      width: 90%;
-      justify-content: space-between;
-      align-items: center;
-      margin: auto;
-  }
+.resource-wrapper-placeholder1{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
 
-  .service-interval-wrapper{
-      display: flex;
-      flex-direction: row;
-      width: 90%;
-      justify-content: space-evenly;
-      align-items: center;
-      margin: auto;
-  }
+.service-interval-wrapper{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  font-weight: bold;
+}
 
 
   .resource-wrapper-placeholder{
@@ -4250,6 +4286,24 @@ cursor: pointer;
       align-items: center;
       margin: auto;
   }
+
+  .resource-wrapper-placeholder-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0px 20px;
+}
+
+.resource-wrapper-placeholder-3 {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  font-weight: bold;
+}
 
   .resource-wrapper-placeholder p{
       margin-left: -18px;
@@ -4271,6 +4325,7 @@ cursor: pointer;
       justify-content: start;
       align-items: center;
       margin: auto;
+      font-weight: bold;
   }
 
   .comment-checklist-wrapper h4 {
@@ -4375,6 +4430,8 @@ cursor: pointer;
 
   .grouptext{
       font-size: 15px;
+      font-weight: bold;
+      margin-right: 25px;
   }
 
   #center-div-shadow-web {
@@ -4501,6 +4558,27 @@ cursor: pointer;
   margin-bottom: 12px;
   box-shadow: 0px 5px 8px rgba(0,0,0,.2);
   }
+
+  .add-todo-wrapper-web {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    width: 90%;
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 8px rgba(0,0,0,.2);
+    }
+    
+    .add-todo-wrapper-web label {
+    font-size: 15px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    color: #3F3844;
+    margin-left: 15px;
+    }
 
   .procentagebar-box-web-box {
     display: flex;

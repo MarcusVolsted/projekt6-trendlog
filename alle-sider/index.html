@@ -983,16 +983,15 @@
               <div class="slide-aktiv">
                 <p><span class="sliderp-aktiv">1</span></p>
               </div>
-              <a href="">
+
               <div class="slide">
-                <p><span class="sliderp">2</span></p>
+                <p><span class="sliderp" onclick="toggleVisibilityNewRes('slide-two');">2</span></p>
               </div>
-            </a>
-            <a href="">
+
               <div class="slide">
-                <p><span class="sliderp">3</span></p>
+                <p><span class="sliderp" onclick="toggleVisibilityNewRes('slide-three');">3</span></p>
               </div>
-            </a>
+
             </div>
             <button class="next-btn-popup" onclick="toggleVisibilityNewRes('slide-two');">Next</button>
             </div>
@@ -1009,7 +1008,7 @@
             <h2 class="header-popup">Create Resource</h2>
             <div class="name-newresource">
 
-              <div class="resource-wrapper-placeholder">
+              <div class="resource-wrapper-placeholder-3">
                 <p>First service check:</p>
                 <div class="history-menu-nedre-kasse-2">
                   <input type="text" id="datepicker-history-menu2">
@@ -1044,7 +1043,7 @@
 
             <div class="name-newresource-em">
 
-              <div class="resource-wrapper-placeholder">
+              <div class="resource-wrapper-placeholder-2">
                <div class="name-placeholder">Notify to email:</div>
               <input id="name-placeholder-em" type="text" placeholder="Ims@trendlog.io">
             </div>
@@ -1055,18 +1054,18 @@
 
               <div class="slide-container-wrapper">
               <div class="slide-aktiv">
-                <p><span class="sliderp-aktiv">1</span></p>
+                <p><span class="sliderp-aktiv" onclick="toggleVisibilityNewRes('slide-one');">1</span></p>
               </div>
-              <a href="">
+
               <div class="slide-aktiv">
-                <p><span class="sliderp-aktiv">2</span></p>
+                <p><span class="sliderp-aktiv" >2</span></p>
               </div>
-            </a>
-            <a href="">
+
+
               <div class="slide">
-                <p><span class="sliderp">3</span></p>
+                <p><span class="sliderp" onclick="toggleVisibilityNewRes('slide-three');">3</span></p>
               </div>
-            </a>
+
             </div>
             <button class="next-btn-popup" onclick="toggleVisibilityNewRes('slide-three');">Next</button>
             </div>
@@ -1085,40 +1084,44 @@
             </div>
             <h2 class="header-popup">Create Resource</h2>
             <div class="name-newresource-3">
-              <p>Checklist:</p>
-              <div class="addtochecklist-div">
-                Add to checklist
-              </div>
-              <div class="add-knap-container">
-                <p class="imidlertid-addknap">+</p>
-              </div>
+              <h4>Checklist</h4>
+              <div class="add-checklist-container">
+                    <div class="add-todo-proxi">
+                        <div class="add-todo-wrapper-web">
+                            <label for="lname">Add to checklist</label>
+                        </div>
+                        <button class="add-todo-button-div" value="+" onclick=""></button>
+                        </div>
+                </div>
             </div>
               <div class="name-newresource-3">
-                <p>Checklist:</p>
-                <div class="addtochecklist-div">
-                  Add to checklist
-                </div>
-                <div class="add-knap-container">
-                  <p class="imidlertid-addknap">+</p>
-                </div>
+                <h4>Documents</h4>
+                <div class="add-checklist-container">
+                      <div class="add-todo-proxi">
+                          <div class="add-todo-wrapper-web">
+                            <label for="lname">Add adocument</label>
+                          </div>
+                          <button class="add-todo-button-div" value="+" onclick=""></button>
+                          </div>
+                  </div>
         </div>
 
             <div class="slide-container">
 
               <div class="slide-container-wrapper">
               <div class="slide-aktiv">
-                <p><span class="sliderp-aktiv">1</span></p>
+                <p><span class="sliderp-aktiv" onclick="toggleVisibilityNewRes('slide-one');">1</span></p>
               </div>
-              <a href="">
+
               <div class="slide-aktiv">
-                <p><span class="sliderp-aktiv">2</span></p>
+                <p><span class="sliderp-aktiv" onclick="toggleVisibilityNewRes('slide-two');">2</span></p>
               </div>
-            </a>
-            <a href="">
+
+
               <div class="slide-aktiv">
                 <p><span class="sliderp-aktiv">3</span></p>
               </div>
-            </a>
+
             </div>
             <button class="next-btn-popup" onclick="selectionAppear('modal'); toggleVisibilityNewRes('slide-one');">Next</button>
             </div>
