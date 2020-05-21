@@ -101,7 +101,7 @@ margin-right: 15px;
 .burgerdropdownmenu {
   display: none;
   flex-direction: column;
-  margin-top: 420px;
+  /* margin-top: 420px; */
 }
 
 .burgerdropdownmenu a {
@@ -233,7 +233,7 @@ margin-right: 15px;
 
   .burgerdropdownmenu {
     display: flex;
-    margin-top: 430px;
+    margin-top: 30px;
   }
 
   i {
