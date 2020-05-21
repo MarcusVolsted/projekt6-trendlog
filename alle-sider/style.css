@@ -880,7 +880,6 @@ border-radius: 30px;
 cursor: pointer;
 }
 .deactive {
-padding: 10px 20px;
 width: 25%;
 height: 99px;
 margin: 10px;
@@ -893,6 +892,20 @@ font-weight: 700;
 border-radius: 30px;
 cursor: pointer;
 }
+.deactive1 {
+  width: 250px;
+  height: 99px;
+  margin: 10px;
+  background-color: rgb(255, 255, 255);
+  color:#2c3e50;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  }
+
 
 /*Knapper øverst i den venstre store container ("contentflexbox-1")*/
 .venstre-btn {
@@ -3397,6 +3410,222 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   padding: 5px 5px 5px 5px;
 }
 
+@media only screen and (min-width: 861px) {
+  .mobile-history-container {
+    display: none;
+  }
+
+  .history-menu {
+  height: 50px;
+  margin-top: 20px;
+}
+
+.history-menu-kasse {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 90%;
+  background-color: #f1f1f1;
+}
+
+.history-menu-øvre-kasse {
+  margin-right: 10px;
+}
+
+.history-menu-øvre-kasse .history-boks-tekst {
+  margin-left: 20px;
+}
+
+.history-menu-nedre-kasse {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.history-menu-nedre-kasse .history-menu-nedre-kasse-1 {
+  color: #333;
+}
+
+.history-menu-nedre-kasse .history-menu-nedre-kasse-2 input {
+  height: 25px;
+  border-style: none;
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+}
+
+.history-menu-nedre-kasse .history-menu-nedre-kasse-2 i {
+  color: #333;
+}
+
+
+#datepicker-history-menu1 {
+    border-radius: 8px;
+    width: 40%;
+    margin-left: 10px;
+}
+
+#datepicker-history-menu2 {
+    border-radius: 8px;
+    width: 40%;
+}
+
+/* History Boks Tekst */
+
+.history-boks-tekst {
+  color: #333;
+}
+
+/* Historie Søgefunktion */
+
+.history-søgefunktion {
+  height: 25px;
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+}
+
+
+.history-listeantal .history-default-option li{
+    padding: 1px 10px;
+}
+
+.history-listeantal .history-default-option:before{
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    width: 6px;
+    height: 6px;
+    border: 2px solid;
+    border-color: transparent transparent #555555 #555555;
+    transform: rotate(-45deg);
+}
+
+.history-listeantal .history-listeantal-ul{
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  display: none;
+}
+
+.næste-side-knapper {
+  display: flex;
+  justify-content: center;
+}
+
+.næste-side-knapper .previous-knap {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  width: 90px;
+  border-radius: 10px;
+  border-style: none;
+  background: #fff;
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+  margin-right: 20px;
+}
+
+.næste-side-knapper .next-knap {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  width: 70px;
+  border-radius: 10px;
+  border-style: none;
+  background: #fff;
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+}
+
+.næste-side-knapper i {
+  padding-top: 1px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+/* HER SLUTTER HISTORY MENU DELEN */
+
+/* HER STARTER HISTORY LISTE DELEN */
+
+.history-list {
+  background: #f1f1f1;
+}
+
+.history-list .history-list-boks {
+  background-color: #f1f1f1;
+}
+
+/* HER STARTER LISTEN */
+
+.history-list .history-list-boks .history-list-id .history-list-element-id ul li {
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+}
+
+.history-list .history-list-boks .history-list-name .history-list-element-name {
+  display: flex;
+}
+
+.history-list .history-list-boks .history-list-name .history-list-element-name ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.history-list .history-list-boks .history-list-name .history-list-element-name ul li {
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+}
+
+.history-list .history-list-boks .history-list-date .history-list-element-date {
+  display: flex;
+}
+
+.history-list .history-list-boks .history-list-date .history-list-element-date ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.history-list .history-list-boks .history-list-date .history-list-element-date ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #222;
+  font-family: segoe ui;
+  font-weight: bold;
+  background-color: #fff;
+  margin: 5px 0px 0px 5px;
+  padding: 5px 5px 5px 5px;
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+}
+
+.history-list .history-list-boks .history-list-value .history-list-element-value {
+  display: flex;
+}
+
+.history-list .history-list-boks .history-list-value .history-list-element-value ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.history-list .history-list-boks .history-list-value .history-list-element-value ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #222;
+  font-family: segoe ui;
+  font-weight: bold;
+  background-color: #fff;
+  margin: 5px 10px 0px 5px;
+  padding: 5px 5px 5px 5px;
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+}
+}
+
 /* HER SLUTTER LISTE FILTER DELEN */
 
 /* HER STARTER LISTEN */
@@ -4252,6 +4481,12 @@ margin-left: 32px;
 
     #wrapper-inhold-contentflexbox-3{
       margin-top: 80px;
+    }
+  }
+
+  @media screen and (max-width: 970px){
+    .deactive1{
+      width: 150px;
     }
   }
 
