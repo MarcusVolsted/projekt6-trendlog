@@ -417,11 +417,15 @@
 
     <!--CONTENTFLEX-2 Inderholder alt det content vi har i den store box til højre. Den indeholder blandt andet alle resource containere og knapper til pending osv-->
     <div class="contentflexbox-2">
-        <div class="flex-knapper3">
-            <button class="active" type="button" onclick="btnPrimary">Overdue Service<br>Check</button>
-            <button class="deactive" type="button" onclick="click">Awaiting</button>
-            <button class="deactive" type="button" onclick="click">Date Added</button>
-        </div>
+      <div class="flex-knapper3">
+        <button class="active" type="button" onclick="click">Overdue Service<br>Check</button>
+       
+        <form method="get" action="awaiting-resource.html">
+          <button class="deactive1" type="submit">Awaiting</button>
+        </form>
+        
+        <button class="deactive" type="button" onclick="click">Date Added</button>
+    </div>
 
 
         <!--Resource-container giver lidt sig selv. Dette er containeren med alt resource indhold. Det er den hvide container med et cirkeldiagram-->

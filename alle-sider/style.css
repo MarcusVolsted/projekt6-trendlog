@@ -869,7 +869,6 @@ border-radius: 30px;
 cursor: pointer;
 }
 .deactive {
-padding: 10px 20px;
 width: 25%;
 height: 99px;
 margin: 10px;
@@ -882,6 +881,20 @@ font-weight: 700;
 border-radius: 30px;
 cursor: pointer;
 }
+.deactive1 {
+  width: 250px;
+  height: 99px;
+  margin: 10px;
+  background-color: rgb(255, 255, 255);
+  color:#2c3e50;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  }
+  
 
 /*Knapper øverst i den venstre store container ("contentflexbox-1")*/
 .venstre-btn {
@@ -4407,6 +4420,12 @@ cursor: pointer;
 
     #wrapper-inhold-contentflexbox-3{
       margin-top: 80px;
+    }
+  }
+
+  @media screen and (max-width: 970px){
+    .deactive1{
+      width: 150px;
     }
   }
 
