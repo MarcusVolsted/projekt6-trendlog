@@ -915,20 +915,20 @@ color: #fff;
 
 /*save knappen */
 .save {
-margin-top: 50px;
-background-color: #32CD32;
-border: none;
-color:#fff;
-padding: 10px;
-width: 200px;
-height: 50px;
-text-align: center;
-border-radius: 12px;
-text-decoration: none;
-display: inline-block;
-box-shadow: 6px 4px 12px 2px rgba(0,0,0,.5);
-cursor: pointer;
-margin-bottom: 150px;
+  margin-top: 50px;
+  background-color: #32CD32;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  border-radius: 12px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 2px 4px 6px 1px rgba(0,0,0,.5);
+  cursor: pointer;
+  margin-bottom: 150px;
 }
 
 .save:hover{
@@ -2064,6 +2064,7 @@ flex-direction: row;
 align-items: flex-start;
 justify-content: space-around;
 border-radius: 15px;
+width: 100%;
 padding: 15px;
 }
 
@@ -2844,7 +2845,8 @@ font-size: 15px;
   }
 
   .date-service-wrapper input[type=text], select {
-  width: 60%;
+  width: 90%;
+  height: 33px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
