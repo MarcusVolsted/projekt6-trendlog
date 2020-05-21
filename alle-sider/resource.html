@@ -166,7 +166,7 @@
 </div>
 </div>
 
-    <div class="save-button">
+    <div class="save-button" onclick="saveAlert()">
       <button class="save">Save</button>
     </div>
 
@@ -932,7 +932,7 @@
         </div>
     </div>
     <div class="save-button-mobil">
-        <button class="save-mobil">Save</button>
+        <button class="save-mobil" onclick="saveAlert">Save</button>
     </div>
     <div class="procentagebar-box">
         <div class="progressbar-bar"></div>
@@ -1019,7 +1019,7 @@
             </div>
         </div>
         <div class="save-button-mobil">
-            <button class="save-mobil">Save</button>
+            <button class="save-mobil" onclick="saveAlert">Save</button>
         </div>
 
     </div>
@@ -1195,7 +1195,7 @@
         </div>
     </div>
     <div class="save-button-mobil">
-        <button class="save-mobil">Save</button>
+        <button class="save-mobil" onclick="saveAlert">Save</button>
     </div>
 
 </div>
@@ -1263,7 +1263,7 @@
                 </div>
             </div>
             <div class="save-button-mobil">
-                <button class="save-mobil">Save</button>
+                <button class="save-mobil" onclick="saveAlert">Save</button>
             </div>
 
 </div>
@@ -1544,9 +1544,12 @@
             <div class="name-newresource">
 
               <div class="resource-wrapper-placeholder">
-               <div class="name-placeholder">First service check:</div>
-              <input id="name-placeholder1" type="text" placeholder="...">
-            </div>
+                <p>First service check:</p>
+                <div class="history-menu-nedre-kasse-2">
+                  <input type="text" id="datepicker-history-menu3">
+
+                </div>
+              </div>
           </div>
 
           <div class="type-newresource">
@@ -1669,6 +1672,7 @@
 <script src="../js/selection-apppear.js"></script>
 <script src="../js/drop.js"></script>
 <script src="../js/navbar.js"></script>
+<script src="../js/savealert.js"></script>
 
 <script src="../alle-sider/popup.js"></script>
 <script src="../alle-sider/selection-apppear.js"></script>
