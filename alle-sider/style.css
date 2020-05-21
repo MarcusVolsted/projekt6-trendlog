@@ -200,7 +200,7 @@ body{
 /*Wrapperen til mobil = formålet med denne wrapper er så vi kan lave display none på den når vi rammer web-udgaven af vores hjemmeside*/
 .mobil-wrapper{
   background-color: #2C3E50;
-  width: 100%;
+  width: 100vw;
   height: auto;
 }
 
@@ -772,7 +772,7 @@ h2{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 40%;
+  width: 40vw;
   background: #f1f1f1f1;
   /* overflow: auto; */
   height:100vh;
@@ -1014,7 +1014,7 @@ height: 100px;
 
 /*ALT INDHOLD PÅ HØJRE SIDE AF HJEMMESIDEN: DETTE GÆLDER KUN PÅ WEB*/
 .contentflexbox-2{
-  width: 60%;
+  width: 60vw;
   background-color:#2c3e50;
   height:100vh;
   overflow-y: scroll;
