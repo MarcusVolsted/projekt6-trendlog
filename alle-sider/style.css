@@ -894,7 +894,7 @@ cursor: pointer;
   border-radius: 30px;
   cursor: pointer;
   }
-  
+
 
 /*Knapper øverst i den venstre store container ("contentflexbox-1")*/
 .venstre-btn {
@@ -3440,6 +3440,10 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   height: 25px;
   border-style: none;
   box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+}
+
+.history-menu-nedre-kasse .history-menu-nedre-kasse-2 i {
+  color: #333;
 }
 
 
