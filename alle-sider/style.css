@@ -4693,6 +4693,30 @@ margin-left: 32px;
 
 
 /* ------------------------------ SLUT NEW RESSOURCE ---------------------------------- */
+  /* ------------------------------ SETTINGS ---------------------------------- */
+  #general-settings-web {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #service-check-settings-web {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #add-to-checklist-web {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  /* ------------------------------ SLUT SETTINGS ---------------------------------- */
 
 /* WEB RESOURCE */
 .checkboxes-web {

@@ -63,3 +63,25 @@ function hideNonVisibleDivsResWeb() {
     }
   }
 }
+
+var divsResSetWeb = ["general-settings-web", "service-check-settings-web", "add-to-checklist-web"];
+var visibleDivIdResSetWeb = null;
+function toggleVisibilityResSetWeb(divId) {
+  if(visibleDivIdResSetWeb === divId) {
+  } else {
+    visibleDivIdResSetWeb = divId;
+  }
+  hideNonVisibleDivsResSetWeb();
+}
+function hideNonVisibleDivsResSetWeb() {
+  var i, divId, divResSetWeb;
+  for(i = 0; i < divsResWeb.length; i++) {
+    divId = divsResSetWeb[i];
+    divResSetWeb = document.getElementById(divId);
+    if(visibleDivIdResSetWeb === divId) {
+      divResSetWeb.style.display = "flex";
+    } else {
+      divResSetWeb.style.display = "none";
+    }
+  }
+}
