@@ -3666,7 +3666,6 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   justify-content: space-between;
   border-radius: 5px;
   color: #222;
-  font-family: segoe ui;
   font-weight: bold;
   background-color: #fff;
   margin: 5px 0px 0px 5px;
@@ -3690,7 +3689,6 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   justify-content: space-between;
   border-radius: 5px;
   color: #222;
-  font-family: segoe ui;
   font-weight: bold;
   background-color: #fff;
   margin: 5px 10px 0px 5px;
@@ -3813,20 +3811,7 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   .navelement2 .burger a {
     display: block;
   }
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
+} 
 
 
 
@@ -4333,7 +4318,6 @@ margin-left: 32px;
 }
 
 .x-close{
-  background-color: none;
   border: none;
   color: black;
   text-decoration: none;
