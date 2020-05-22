@@ -29,7 +29,9 @@
     <nav>
       <div class="navelement1">
         <div class="logo">
+          <a href="index.html">
           <img src="../img/trendlog-io-white-thin4.png" alt="Trendlog.io logo">
+          </a>
         </div>
         <ul class="navmenu">
           <li><a href="#"><i class="fas fa-home"></i></a></li>
@@ -54,28 +56,12 @@
             <i class="fas fa-user"></i>
           </a>
         </div>
-            <ul id="dropdownnav">
-              <li><a href="#">Min Side</a></li>
-              <li><a href="#">Log ud</a></li>
-            </ul>
         </div>
       </div>
       <div class="burgerdropdownmenu" id="burgerdropdownmenu">
         <div class="burger" id="burger">
           <a href="#"><i class="fas fa-bars"></i></a>
         </div>
-        <!-- <ul id="dropdownnav2">
-          <li><a href="#">Min Side</a></li>
-          <li><a href="#">Log ud</a></li>
-          <li><a href="#">Trendboards</a></li>
-          <li><a href="#">Reports</a></li>
-          <li><a href="#">Views</a></li>
-          <li><a href="#">Feeds</a></li>
-          <li><a href="#">Settings</a></li>
-          <li><a href="#">Shares</a></li>
-          <li><a href="#">Maintenance</a></li>
-          <li><a href="#">Alarms</a></li>
-          </ul> -->
       </div>
   </nav>
 
@@ -107,14 +93,24 @@
           <form method="get" action="resource.html">
             <button class="deactive1" type="submit">Overdue Service<br>Check</button>
           </form>
-            
+
             <button class="active" type="button" onclick="click">Awaiting</button>
-            <button class="deactive" type="button" onclick="click">Date Added</button>
+            <select class="service-interval1">
+              <option class="default_option">Sort by</option>
+              <option>ID </option>
+              <option>NAME</option>
+              <option>ENABLE</option>
+              <option>TYPE</option>
+              <option>NEXT SERVICE</option>
+              <option>LAST SERVICE</option>
+              <option>DATA ADDED</option>
+              <options>GROUP</option>
+              </select>
         </div>
 
 
         <!--Resource-container giver lidt sig selv. Dette er containeren med alt resource indhold. Det er den hvide container med et cirkeldiagram-->
-        <a class="div-click" href="resource.html">
+        <div class="div-click" onclick="location.href='resource.html';" style="cursor: pointer;">
        <div class="resource-container">
         <!--Resource flex containerne er de 4 store flexcontainere der har det content der er i resource-containeren (den aflangde hvide)-->
         <div class="resourceflex-1">
@@ -178,13 +174,13 @@
               </div>
         </div>
     </div>
-  </a>
+  </div>
     <!-- Nr 1 resourcecontainer slut.-->
 
 
     <!-- Nr 2 resourcecontainer start-->
         <!--Resource-container giver lidt sig selv. Dette er containeren med alt resource indhold. Det er den hvide container med et cirkeldiagram-->
-        <a class="div-click" href="#">
+        <div class="div-click" onclick="location.href='resource.html';" style="cursor: pointer;">
        <div class="resource-container">
         <!--Resource flex containerne er de 4 store flexcontainere der har det content der er i resource-containeren (den aflangde hvide)-->
         <div class="resourceflex-1">
@@ -246,12 +242,12 @@
               </div>
         </div>
     </div>
-  </a>
+  </div>
     <!-- Nr 2 resourcecontainer slut.-->
 
     <!-- Nr 3 resourcecontainer start-->
         <!--Resource-container giver lidt sig selv. Dette er containeren med alt resource indhold. Det er den hvide container med et cirkeldiagram-->
-        <a class="div-click" href="#">
+        <div class="div-click" onclick="location.href='resource.html';" style="cursor: pointer;">
         <div class="resource-container">
             <!--Resource flex containerne er de 4 store flexcontainere der har det content der er i resource-containeren (den aflangde hvide)-->
             <div class="resourceflex-1">
@@ -313,7 +309,7 @@
                   </div>
             </div>
         </div>
-        </a>
+      </div>
         <!-- Nr 3 resourcecontainer slut.-->
 
       <br>

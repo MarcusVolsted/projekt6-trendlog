@@ -17,10 +17,10 @@ body{
 ::-webkit-scrollbar {
   width: 5px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: white; 
+  background: white;
   border-radius: 5px;
 }
 
@@ -867,8 +867,8 @@ width: 100%;
 /**/
 .active {
 padding: 10px 20px;
-width: 25%;
-height: 99px;
+width: 22%;
+height: 60px;
 margin: 10px;
 background-color: #337AB7;
 color:#ffffff;
@@ -879,9 +879,46 @@ font-weight: 700;
 border-radius: 30px;
 cursor: pointer;
 }
+
+/*KNAPPERNE NEDENFOR DE ANDRE KNAPPER I CONTENTCONTAINER1*/
+.active2 {
+  padding: 10px 20px;
+  width: 22%;
+  height: 52px;
+  margin: 10px;
+  background-color: #337AB7;
+  box-shadow: 5px 3px 5px 0px rgba(0,0,0,.5);
+  color:#ffffff;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  }
+
+  /*KNAPPERNE NEDERFOR DE ANDRE KNAPPER I CONTENTCONTAINER1*/
+  .deactive2 {
+    width: 22%;
+    height: 52px;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 3px 5px 0px rgba(0,0,0,.5);
+    color:#2c3e50;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+    }
+
+
+
+
 .deactive {
-width: 25%;
-height: 99px;
+width: 22%;
+height: 60px;
 margin: 10px;
 background-color: rgb(255, 255, 255);
 color:#2c3e50;
@@ -893,8 +930,8 @@ border-radius: 30px;
 cursor: pointer;
 }
 .deactive1 {
-  width: 250px;
-  height: 99px;
+  width: 160px;
+  height: 60px;
   margin: 10px;
   background-color: rgb(255, 255, 255);
   color:#2c3e50;
@@ -2315,6 +2352,36 @@ box-sizing: border-box;
 font-size: 15px;
 }
 
+
+
+.selection-container1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 85%;
+  margin: 0px 15px;
+  }
+
+  .selection-container1 input::placeholder  {
+  font-size: 12px;
+  }
+
+  .selection-container1 input[type=text], select {
+  width: 100%;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+  }
+
+
+
+
+
 #add-group-button {
 height: 30px;
 width: 30px;
@@ -2357,6 +2424,12 @@ width: 30px;
 width: 55%;
 height: 30px;
 user-select: none;
+}
+
+#group-add-select1 {
+  width: 85%;
+  height: 30px;
+  user-select: none;
 }
 
 .select-and-button-contianer {
@@ -3595,7 +3668,6 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   justify-content: space-between;
   border-radius: 5px;
   color: #222;
-  font-family: segoe ui;
   font-weight: bold;
   background-color: #fff;
   margin: 5px 0px 0px 5px;
@@ -3619,7 +3691,6 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   justify-content: space-between;
   border-radius: 5px;
   color: #222;
-  font-family: segoe ui;
   font-weight: bold;
   background-color: #fff;
   margin: 5px 10px 0px 5px;
@@ -3742,23 +3813,8 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   .navelement2 .burger a {
     display: block;
   }
-} */
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Modal forsøg*/
 
 
 .subscribe-section button{
@@ -3788,6 +3844,7 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   border: none;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
 }
 
 .modal-btn p{
@@ -3865,6 +3922,7 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
 
 .header-popup{
   font-size: 40px;
+  margin-top: 30px;
   margin-bottom:30px;
 }
 
@@ -3981,6 +4039,20 @@ box-shadow:0 0 6px 0 dodgerBlue;
   font-weight: bold;
 }
 
+.service-interval1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  color: #2c3e50;
+  font-weight: bold;
+  font-size: 15px;
+  width: 20%;
+  height: 60px;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 30px;
+  text-align-last: center;
+}
 
 #service-interval-nr[type=text]{
   width:22%;
@@ -3997,7 +4069,7 @@ box-shadow:0 0 6px 0 dodgerBlue;
 #service-interval[type=text]:focus{
   border-color:dodgerBlue;
   box-shadow:0 0 6px 0 dodgerBlue;
-  
+
 }
 #service-interval-nr1[type=text]{
   width:22%;
@@ -4252,7 +4324,6 @@ margin-left: 32px;
 }
 
 .x-close{
-  background-color: none;
   border: none;
   color: black;
   text-decoration: none;
@@ -4365,12 +4436,19 @@ margin-left: 32px;
           width: 100%;
           }
 
+.nedre-knapcontainer-content1{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-
-  .name-group-web {
+  .name-group-web1 {
       display: flex;
       flex-direction: row;
       align-items: center;
+      width: 100%;
       justify-content: space-around;
       height: auto;
       }
@@ -4433,6 +4511,22 @@ margin-left: 32px;
       box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
   }
 
+  .center-div-indhold-web1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 56%;
+    height: 200px;
+    line-height: 40px;
+    background-color: #F1F1F1;
+    border-radius: 6px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+
 
   .grouptext{
       font-size: 15px;
@@ -4464,6 +4558,20 @@ margin-left: 32px;
       background-color: rgba(0, 0, 0, 0.3);;
       border-radius: 0px;
       }
+
+
+  #center-div-shadow3 {
+    display: none;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    bottom: 0;
+    left: -810px;
+    height: 100vh;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.3);;
+    border-radius: 0px;
+    }
 
   /*MEDIA QUERY: FRA WEB TIL MOBIL*/
   @media screen and (max-width: 860px){
@@ -4542,11 +4650,6 @@ margin-left: 32px;
     }
   }
 
-  @media screen and (max-width: 970px){
-    .deactive1{
-      width: 150px;
-    }
-  }
 
   @media only screen and (min-width: 861px) {
     .mobil-wrapper {
@@ -4628,7 +4731,7 @@ margin-left: 32px;
     margin-bottom: 10px;
     box-shadow: 0px 5px 8px rgba(0,0,0,.2);
     }
-    
+
     .add-todo-wrapper-web label {
     font-size: 15px;
     font-family: 'Segoe UI';
