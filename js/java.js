@@ -4,7 +4,7 @@ $(document).ready(function() {
   var count = 0;
   var checked = 0;
   function countBoxes() { 
-    count = $("input[type='checkbox']").length;
+    count = $(".checkboxes-web input[type='checkbox']").length;
     console.log(count);
   }
   
@@ -14,7 +14,7 @@ $(document).ready(function() {
   // count checks
   
   function countChecked() {
-    checked = $("input:checked").length;
+    checked = $(".checkboxes-web input:checked").length;
     
     var percentage = parseInt(((checked / count) * 100),10);
     $(".progressbar-bar").progressbar({
