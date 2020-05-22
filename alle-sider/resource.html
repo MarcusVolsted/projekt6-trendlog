@@ -244,10 +244,19 @@
     </div>
 
     <!--          FORSØG                   -->
+    <div class="type-newresource">
+      <div class="resource-wrapper-placeholder">
+        <div class="type-placeholder">Type:</div>
+        <select class="type-select-newresource">
+        <option class="default_option">Preventive</option>
+        <option class="default_option">Predictive</option>
+      </select>
+      </div>
+    </div>
     <div class="name-newresource">
 
       <div class="resource-wrapper-placeholder-3">
-        <p>First service check:</p>
+        <p>Last service:</p>
         <div class="history-menu-nedre-kasse-2">
           <input type="text" id="datepicker-history-menu3">
 
@@ -258,7 +267,7 @@
   <div class="type-newresource">
     <div class="service-interval-wrapper">
       <div class="type-placeholder">Service Interval:</div>
-      <input id="service-interval-nr1" type="text" placeholder="1">
+      <input id="service-interval-nr2" type="text" placeholder="1">
       <select class="service-interval">
       <option class="default_option">Days</option>
       <option class="default_option">Month</option>
@@ -283,7 +292,7 @@
 
       <div class="resource-wrapper-placeholder-2">
        <div class="name-placeholder">Notify to email:</div>
-      <input id="name-placeholder-em" type="text" placeholder="Ims@trendlog.io">
+      <input id="name-placeholder-em1" type="text" placeholder="Ims@trendlog.io">
     </div>
   </div>
 <!--       FORSØG         -->
@@ -293,7 +302,7 @@
     </div>
   </div>
 
-  <div id="add-to-checklist-web">
+  <div id="add-to-checklist-web-content1">
     <h2 class="header-popup">Resource Details</h2>
     <div class="nedre-knapcontainer-content1">
       <button class="deactive2" onclick="toggleVisibilityResSetWeb('general-settings-web');">General settings</button>

@@ -826,6 +826,7 @@ h2{
 }
 
 
+
 /*Skrift på index.html venstre for*/
 .select-rs{
 display: flex;
@@ -4066,6 +4067,18 @@ box-shadow:0 0 6px 0 dodgerBlue;
   transition:.3s;
 }
 
+#service-interval-nr2[type=text] {
+  width: 19%;
+  border: 1px solid #aaa;
+  margin: 8px 0;
+  margin-left: 100px;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  transition: .3s;
+}
+
 #service-interval[type=text]:focus{
   border-color:dodgerBlue;
   box-shadow:0 0 6px 0 dodgerBlue;
@@ -4097,6 +4110,17 @@ box-shadow:0 0 6px 0 dodgerBlue;
 }
 
 #name-placeholder-em[type=text] {
+  width: 59%;
+  border: 1px solid #aaa;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  transition: .3s;
+}
+
+#name-placeholder-em1[type=text] {
   width: 59%;
   border: 1px solid #aaa;
   margin: 8px 0;
@@ -4709,6 +4733,13 @@ margin-left: 32px;
   }
   
   #add-to-checklist-web {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #add-to-checklist-web-content1 {
     display: none;
     flex-direction: column;
     justify-content: center;
