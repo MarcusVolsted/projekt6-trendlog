@@ -234,7 +234,7 @@ body{
 /*knapperne der ses øverst i layoutet af mobilversionen*/
 .mobile-btn-top {
   margin-top: 20px;
-  width: 96px;
+  width: 131px;
   height: 39px;
   font-size: 1em;
   font-weight: 600;
@@ -248,7 +248,7 @@ body{
 
 .mobile-btn-top-active {
   margin-top: 20px;
-  width: 96px;
+  width: 131px;
   height: 39px;
   font-size: 1em;
   font-weight: 600;
