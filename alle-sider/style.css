@@ -246,6 +246,20 @@ body{
   cursor: pointer;
 }
 
+.mobile-btn-top-active {
+  margin-top: 20px;
+  width: 96px;
+  height: 39px;
+  font-size: 1em;
+  font-weight: 600;
+  background-color: #337ab7;
+  color: #f1f1f1;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
 /*Parrenten til resource containerne.*/
 .resourcervirk{
     margin-top: 20px;
