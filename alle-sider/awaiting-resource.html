@@ -684,9 +684,9 @@
           </div>
       </div>
 
-        <div class="addnew-rs1">
-          <div class="addnew-text">Add New Resource</div>
-        </div>
+      <div class="addnew-rs1">
+        <div class="addnew-text" onclick="selectionAppear('modal');">Add New Resource</div>
+      </div>
       </div>
       </div>
       <!--footer knap container slut-->
@@ -711,7 +711,7 @@
 
               <div class="resource-wrapper-placeholder">
                <div class="name-placeholder">Name:</div>
-              <input id="name-placeholder" type="text" placeholder="TEST_RESOURCE...">
+              <input id="name-placeholder" type="text" placeholder="TEST_RESOURCE1...">
             </div>
           </div>
 
@@ -727,16 +727,16 @@
 
 
             <div class="name-group-web">
-                    <div class="name-group-container-web">
+                    <div class="name-group-container-web1">
                   <div class="name-group-proxi-web">
 
 
                     <div id="center-div-shadow2">
                       <div class="center-div-web">
                           <div class="center-div-indhold-web">
-                              <p>Add New Group</p><div class="selection-container"><input type="text" placeholder="Write group name here..." id = "nyt-element-navn" />
-                              <input type="button" id = "add-group-button" value="+" onclick = "addnewgroup(); addnewgrouptwo(); "/></div>
-                              <select size="1" id = "group-add-select">
+                              <p>Add New Group</p><div class="selection-container"><input type="text" placeholder="Write group name here..." id = "nyt-element-navn-2" />
+                              <input type="button" id = "add-group-button" value="+" onclick = "addnewgroupresources(); addnewgrouptworesources(); "/></div>
+                              <select size="1" id = "group-add-select-res">
                                   <option>Machine</option>
                               </select>
                               <div class="close-button-container"><button class="close-add-group-button" onclick="selectionAppear('center-div-shadow2');">close</button></div>
@@ -750,7 +750,7 @@
                       <div class="resource-wrapper-placeholder1">
                           <label><span class="grouptext">Group:</span></label>
                           <div class="select-and-button-contianer-web">
-                          <select size="1" id = "group-add-select-out">
+                          <select size="1" id = "group-add-select-out-res">
                               <option class="default_option">Machine</option>
                           </select>
                           <button class="add-group-button-div1" value="+" onclick="selectionAppear('center-div-shadow2');"></button>
@@ -789,16 +789,15 @@
               <div class="slide-aktiv">
                 <p><span class="sliderp-aktiv">1</span></p>
               </div>
-              <a href="">
+
               <div class="slide">
-                <p><span class="sliderp">2</span></p>
+                <p><span class="sliderp" onclick="toggleVisibilityNewRes('slide-two');">2</span></p>
               </div>
-            </a>
-            <a href="">
+
               <div class="slide">
-                <p><span class="sliderp">3</span></p>
+                <p><span class="sliderp" onclick="toggleVisibilityNewRes('slide-three');">3</span></p>
               </div>
-            </a>
+
             </div>
             <button class="next-btn-popup" onclick="toggleVisibilityNewRes('slide-two');">Next</button>
             </div>
@@ -815,10 +814,10 @@
             <h2 class="header-popup">Create Resource</h2>
             <div class="name-newresource">
 
-              <div class="resource-wrapper-placeholder">
+              <div class="resource-wrapper-placeholder-3">
                 <p>First service check:</p>
                 <div class="history-menu-nedre-kasse-2">
-                  <input type="text" id="datepicker-history-menu2">
+                  <input type="text" id="datepicker-history-menu5">
 
                 </div>
             </div>
@@ -839,7 +838,7 @@
           <div class="type-newresource">
             <div class="service-interval-wrapper">
               <div class="type-placeholder">Nofify:</div>
-              <input id="service-interval-nr" type="text" placeholder="2">
+              <input id="service-interval-nr3" type="text" placeholder="2">
               <select class="service-interval">
               <option class="default_option">Days</option>
               <option class="default_option">Month</option>
@@ -850,7 +849,7 @@
 
             <div class="name-newresource-em">
 
-              <div class="resource-wrapper-placeholder">
+              <div class="resource-wrapper-placeholder-2">
                <div class="name-placeholder">Notify to email:</div>
               <input id="name-placeholder-em" type="text" placeholder="Ims@trendlog.io">
             </div>
@@ -861,18 +860,18 @@
 
               <div class="slide-container-wrapper">
               <div class="slide-aktiv">
-                <p><span class="sliderp-aktiv">1</span></p>
+                <p><span class="sliderp-aktiv" onclick="toggleVisibilityNewRes('slide-one');">1</span></p>
               </div>
-              <a href="">
+
               <div class="slide-aktiv">
-                <p><span class="sliderp-aktiv">2</span></p>
+                <p><span class="sliderp-aktiv" >2</span></p>
               </div>
-            </a>
-            <a href="">
+
+
               <div class="slide">
-                <p><span class="sliderp">3</span></p>
+                <p><span class="sliderp" onclick="toggleVisibilityNewRes('slide-three');">3</span></p>
               </div>
-            </a>
+
             </div>
             <button class="next-btn-popup" onclick="toggleVisibilityNewRes('slide-three');">Next</button>
             </div>
@@ -891,40 +890,44 @@
             </div>
             <h2 class="header-popup">Create Resource</h2>
             <div class="name-newresource-3">
-              <p>Checklist:</p>
-              <div class="addtochecklist-div">
-                Add to checklist
-              </div>
-              <div class="add-knap-container">
-                <p class="imidlertid-addknap">+</p>
-              </div>
+              <h4>Checklist</h4>
+              <div class="add-checklist-container">
+                    <div class="add-todo-proxi">
+                        <div class="add-todo-wrapper-web">
+                            <label>Add to checklist</label>
+                        </div>
+                        <button class="add-todo-button-div" value="+" onclick=""></button>
+                        </div>
+                </div>
             </div>
               <div class="name-newresource-3">
-                <p>Checklist:</p>
-                <div class="addtochecklist-div">
-                  Add to checklist
-                </div>
-                <div class="add-knap-container">
-                  <p class="imidlertid-addknap">+</p>
-                </div>
+                <h4>Documents</h4>
+                <div class="add-checklist-container">
+                      <div class="add-todo-proxi">
+                          <div class="add-todo-wrapper-web">
+                            <label>Add adocument</label>
+                          </div>
+                          <button class="add-todo-button-div" value="+" onclick=""></button>
+                          </div>
+                  </div>
         </div>
 
             <div class="slide-container">
 
               <div class="slide-container-wrapper">
               <div class="slide-aktiv">
-                <p><span class="sliderp-aktiv">1</span></p>
+                <p><span class="sliderp-aktiv" onclick="toggleVisibilityNewRes('slide-one');">1</span></p>
               </div>
-              <a href="">
+
               <div class="slide-aktiv">
-                <p><span class="sliderp-aktiv">2</span></p>
+                <p><span class="sliderp-aktiv" onclick="toggleVisibilityNewRes('slide-two');">2</span></p>
               </div>
-            </a>
-            <a href="">
+
+
               <div class="slide-aktiv">
                 <p><span class="sliderp-aktiv">3</span></p>
               </div>
-            </a>
+
             </div>
             <button class="next-btn-popup" onclick="selectionAppear('modal'); toggleVisibilityNewRes('slide-one');">Next</button>
             </div>
