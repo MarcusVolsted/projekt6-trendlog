@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-
+    
 }
 
 body{
@@ -918,19 +918,18 @@ cursor: pointer;
 
 
 .deactive {
-  width: 22%;
-  height: 60px;
-  margin: 10px;
-  background-color: rgb(255, 255, 255);
-  color:#2c3e50;
-  outline: none;
-  border: none;
-  font-size: 15px;
-  font-weight: 700;
-  border-radius: 30px;
-  cursor: pointer;
+width: 22%;
+height: 60px;
+margin: 10px;
+background-color: rgb(255, 255, 255);
+color:#2c3e50;
+outline: none;
+border: none;
+font-size: 15px;
+font-weight: 700;
+border-radius: 30px;
+cursor: pointer;
 }
-
 .deactive1 {
   width: 160px;
   height: 60px;
@@ -948,42 +947,42 @@ cursor: pointer;
 
 /*Knapper øverst i den venstre store container ("contentflexbox-1")*/
 .venstre-btn {
-  width: 130px;
-  height: 60px;
-  margin-top: 20px;
-  margin-right: 10px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  box-shadow: 5px 3px 5px 0px rgba(0,0,0,.5);
-  outline: none;
-  border: none;
-  font-size: 15px;
-  font-weight: 700;
-  border-radius: 30px;
-  cursor: pointer;
+width: 130px;
+height: 60px;
+margin-top: 20px;
+margin-right: 10px;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+box-shadow: 5px 3px 5px 0px rgba(0,0,0,.5);
+outline: none;
+border: none;
+font-size: 15px;
+font-weight: 700;
+border-radius: 30px;
+cursor: pointer;
 }
 
 /*Knapper øverst i den venstre store container *når der er aktive* ("contentflexbox-1")*/
 .activevenstre-btn {
-  width: 130px;
-  height: 60px;
-  margin-top: 20px;
-  margin-right: 10px;
-  background-color: #337AB7;
-  box-shadow: 5px 3px 5px 0px rgba(0,0,0,.5);
-  color: #fff;
-  outline: none;
-  border: none;
-  font-size: 15px;
-  font-weight: 700;
-  border-radius: 30px;
-  cursor: pointer;
+width: 130px;
+height: 60px;
+margin-top: 20px;
+margin-right: 10px;
+background-color: #337AB7;
+box-shadow: 5px 3px 5px 0px rgba(0,0,0,.5);
+color: #fff;
+outline: none;
+border: none;
+font-size: 15px;
+font-weight: 700;
+border-radius: 30px;
+cursor: pointer;
 }
 
 /*Klik effekt til knapper i den vestre container. (virker ikke endnu)*/
 .venstre-btn:active{
-  background: #337AB7;
-  color: #fff;
+background: #337AB7;
+color: #fff;
 }
 
 
@@ -1006,7 +1005,7 @@ cursor: pointer;
 }
 
 .save:hover{
-  background-color: rgb(29, 62, 90);
+background-color: rgb(29, 62, 90);
 }
 
 /*save knappen slut */
@@ -1073,88 +1072,6 @@ width: 100px;
 height: 100px;
 }
 
-/* Settings-add to checklist tab starter her */
-
-.web-checklist-main-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80%;
-  background-color: #fff;
-  height: 350px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.web-document-main-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80%;
-  background-color: #fff;
-  height: 280px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-  margin-top: 20px;
-}
-
-.web-checklist-main-div-tekst {
-  width: 100%;
-  margin-top: 15px;
-  margin-left: 60px;
-  font-weight: bold;
-}
-
-.web-checklist-main-div-elementer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 90%;
-  margin-top: 10px;
-}
-
-.web-settings-checklist-element1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px 10px 20px;
-  margin-top: 10px;
-  width: 95%;
-  border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.web-settings-resource-todo-tekst {
-  font-weight: bold;
-  font-size: 17px;
-}
-
-.web-settings-resource-todo-ikoner {
-  display: flex;
-  flex-direction: row;
-}
-
-.web-settings-resource-todo-ikoner i {
-  margin: 10px 10px;
-  font-size: 20px;
-}
-
-.add-to-checklist-web-settings {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  background-color: #0f0;
-  border-radius: 5px;
-  color: #fff;
-  margin-top: 30px;
-}
-
-/* Settings-add to checklist slutter her */
 
 
 /*ALT INDHOLD PÅ HØJRE SIDE AF HJEMMESIDEN: DETTE GÆLDER KUN PÅ WEB*/
@@ -2462,10 +2379,6 @@ font-size: 15px;
   font-size: 15px;
   }
 
-
-
-
-
 #add-group-button {
 height: 30px;
 width: 30px;
@@ -2476,6 +2389,17 @@ border: none;
 color: #ffffff;
 font-size: 25px;
 }
+#add-group-button1 {
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  background-color: #32CD32;
+  text-decoration: none;
+  border: none;
+  color: #ffffff;
+  font-size: 25px;
+  }
+
 
 .add-group-button-div {
 margin-right: 15px;
@@ -2499,9 +2423,6 @@ height: 30px;
 width: 30px;
 }
 
-.close-add-group-button {
-
-}
 
 /* Dropdown menus */
 #group-add-select {
@@ -3371,6 +3292,12 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   width: 82%;
   margin-left: 10px;
 }
+#datepicker-history-menu5.hasDatepicker {
+  border-radius: 8px;
+  width: 82%;
+  margin-left: 10px;
+}
+
 
 #datepicker-history-menu3 {
   border-radius: 8px;
@@ -3623,10 +3550,19 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
     width: 40%;
     margin-left: 10px;
 }
+#datepicker-history-menu6 {
+  border-radius: 8px;
+  width: 40%;
+  margin-left: 10px;
+}
 
 #datepicker-history-menu2 {
     border-radius: 8px;
     width: 40%;
+}
+#datepicker-history-menu5 {
+  border-radius: 8px;
+  width: 40%;
 }
 
 /* History Boks Tekst */
@@ -4819,22 +4755,22 @@ margin-left: 32px;
     justify-content: center;
     align-items: center;
   }
-
+  
   #service-check-settings-web {
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
+  
   #add-to-checklist-web {
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
-
+  
+  
   /* ------------------------------ SLUT SETTINGS ---------------------------------- */
 
 /* WEB RESOURCE */
