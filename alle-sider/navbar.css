@@ -32,7 +32,6 @@ nav {
 }
 
 .navelement1 .navmenu li a{
-  font-family: segoe ui;
   font-size: 14px;
   font-weight: bold;
   color: #fff;
@@ -77,7 +76,6 @@ nav {
 
 .navprofildropdown a {
   color: white;
-  font-family: segoe ui;
   font-weight: bold;
   font-size: 14px;
   display: flex;
@@ -106,7 +104,6 @@ nav {
 
 .burgerdropdownmenu a {
   color: white;
-  font-family: segoe ui;
   font-weight: bold;
   font-size: 18px;
   display: flex;
@@ -137,7 +134,6 @@ nav {
 }
 
 .navprofil a{
-  font-family: segoe ui;
   color: #fff;
   font-size: 14px;
   font-weight: bold;
