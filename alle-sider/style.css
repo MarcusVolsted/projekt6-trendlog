@@ -11,6 +11,8 @@ body{
     color:#000;
     font-family: 'Segoe UI', sans-serif;
     background: #F1F1F1;
+    overflow-y: hidden;
+
 }
 
 /* width */
@@ -2288,7 +2290,7 @@ right: 0;
 bottom: 0;
 left: 0;
 width: 100vw;
-height: 89vh;
+height: 95vh;
 background-color: rgba(0, 0, 0, 0.3);;
 border-radius: 0px;
 }
@@ -2306,6 +2308,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 margin: auto;
+margin-top: 6vh;
 width: 250px;
 height: 190px;
 line-height: 40px;
@@ -2335,8 +2338,7 @@ flex-direction: row;
 align-items: center;
 justify-content: space-between;
 flex-wrap: nowrap;
-width: 55%;
-margin: 0px 15px;
+width: 85%;
 }
 
 .selection-container input::placeholder  {
@@ -2379,10 +2381,6 @@ font-size: 15px;
   font-size: 15px;
   }
 
-
-
-
-
 #add-group-button {
 height: 30px;
 width: 30px;
@@ -2393,6 +2391,29 @@ border: none;
 color: #ffffff;
 font-size: 25px;
 }
+
+#add-group-button-1 {
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  background-color: #32CD32;
+  text-decoration: none;
+  border: none;
+  color: #ffffff;
+  font-size: 25px;
+  }
+
+#add-group-button-2 {
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  border-radius: 5px;
+  background-color: #32CD32;
+  text-decoration: none;
+  border: none;
+  color: #ffffff;
+  font-size: 25px;
+  }
 
 .add-group-button-div {
 margin-right: 15px;
@@ -2422,12 +2443,24 @@ width: 30px;
 
 /* Dropdown menus */
 #group-add-select {
-width: 55%;
+width: 85%;
 height: 30px;
 user-select: none;
 }
 
 #group-add-select1 {
+  width: 85%;
+  height: 30px;
+  user-select: none;
+}
+
+#group-add-select3 {
+  width: 85%;
+  height: 30px;
+  user-select: none;
+}
+
+#group-add-select-res {
   width: 85%;
   height: 30px;
   user-select: none;
@@ -4540,7 +4573,7 @@ margin-left: 32px;
       justify-content: center;
       text-align: center;
       margin: auto;
-      width: 85%;
+      width: 70%;
       height: 190px;
       line-height: 40px;
       background-color: #F1F1F1;
@@ -4701,6 +4734,21 @@ margin-left: 32px;
       display: none;
     }
     #mobile-checkliste-container {
+      display: none;
+    }
+    #mobile-settings-container {
+      display: none;
+    }
+    #mobile-history-container {
+      display: none;
+    }
+    #mobile-service-settings-container {
+      display: none;
+    }
+    #mobile-service-settings-container {
+      display: none;
+    }
+    #mobile-add-to-settings-container {
       display: none;
     }
   }
