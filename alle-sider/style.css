@@ -3106,6 +3106,11 @@ color: #3F3844;
 margin-left: 15px;
 }
 
+.add-todo-wrapper i {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
 .add-todo-button-div {
 margin-right: 0px;
 height: 30px;
@@ -4183,7 +4188,7 @@ box-shadow:0 0 6px 0 dodgerBlue;
   border-radius: 8px;
   transition:.3s;
   }
-  
+
   #name-placeholder-rwp[type=text]:focus{
   border-color:dodgerBlue;
   box-shadow:0 0 6px 0 dodgerBlue;
@@ -5033,6 +5038,6 @@ margin-left: 32px;
       .procentagebar-box {
         display: none;
       }
-  
+
     }
   }
