@@ -23,7 +23,7 @@
 </head>
 <body>
 
-  <header class="header-fixed">
+  <header id="top" class="header-fixed">
     <nav>
       <div class="navelement1">
         <div class="logo">
@@ -176,7 +176,7 @@
 
       <div class="resource-wrapper-placeholder">
        <div class="name-placeholder">Name:</div>
-      <input id="name-placeholder" type="text" placeholder="Write name here...">
+      <input id="name-placeholder-rwp" type="text" placeholder="Write name here...">
     </div>
   </div>
 
@@ -432,9 +432,9 @@
             Date Filter:
           </div>
           <div class="history-menu-nedre-kasse-2">
-            <input type="text" id="datepicker-history-menu1">
+            <input type="text" id="datepicker-history-menu7">
               <i class="fas fa-arrow-right"></i>
-            <input type="text" id="datepicker-history-menu2">
+            <input type="text" id="datepicker-history-menu4">
           </div>
         </div>
       </div>
@@ -556,7 +556,7 @@
           <option>NEXT SERVICE</option>
           <option>LAST SERVICE</option>
           <option>DATA ADDED</option>
-          <options>GROUP</option>
+          <option>GROUP</option>
           </select>
     </div>
 
@@ -993,7 +993,7 @@
     </div>
 
   <!--denne wrapper holder alt til mobilversionen. Dette har vi med for at vi kan bruge media queryes til hurtigt at fjerne hele layoutet og skifte det ud med mobillayoutet-->
-  <div class="mobil-wrapper-res">
+  <div id="mobil-wrapper-res">
 
     <!--TIL RESSOURCEN NÅR DEN ER SELECTED - MOBIL VERSION-->
 
@@ -1142,7 +1142,7 @@
                 <div class="name-group-proxi">
                     <div class="name-group-wrapper">
                         <label>Name:</label>
-                        <div class="select-and-button-contianer"><input type="text" id="lname" name="name" placeholder="Resource #1"></div>
+                        <div class="select-and-button-contianer"><input type="text" class="name-button-class" name="name" placeholder="Resource #1"></div>
                     </div>
                     <div class="name-group-wrapper">
                         <label>Group:</label>
@@ -1221,8 +1221,8 @@
                 <h4>Service form</h4>
                 <div class="servive-form-mobil-wrapper">
                     <label>
-                        <p>Service</p>
-                        <p>interval:</p>
+                        Service
+                        interval:
                     </label>
                     <div class="select-and-button-contianer">
                     <select size="1" id = "group-add-select-out-3">
@@ -1315,7 +1315,7 @@
                 <div class="notify-wrapper">
                     <label>Email:</label>
                     <div class="select-and-button-contianer">
-                        <input type="text" id="lname" name="name" placeholder="example@hotmail.com">
+                        <input type="text" class="name-button-class" name="name" placeholder="example@hotmail.com">
                 </div>
                 </div>
             </div>
@@ -1379,16 +1379,16 @@
             <h4>Description</h4>
             <div class="add-todo-proxi">
                 <div class="add-todo-wrapper">
-                    <label for="lname">TODO #1</label>
+                    <label>TODO #1</label>
                 </div>
                 <div class="add-todo-wrapper">
-                    <label for="lname">TODO #2</label>
+                    <label>TODO #2</label>
                 </div>
                 <div class="add-todo-wrapper">
-                    <label for="lname">TODO #3</label>
+                    <label>TODO #3</label>
                 </div>
                 <div class="add-todo-wrapper">
-                    <label for="lname">TODO #4</label>
+                    <label>TODO #4</label>
                 </div>
                 </div>
                 <button class="add-todo-button-div" value="+" onclick=""></button>
@@ -1690,7 +1690,7 @@
               <div class="resource-wrapper-placeholder-3">
                 <p>First service check:</p>
                 <div class="history-menu-nedre-kasse-2">
-                  <input type="text" id="datepicker-history-menu3">
+                  <input type="text" id="datepicker-history-menu5">
 
                 </div>
             </div>
@@ -1711,7 +1711,7 @@
           <div class="type-newresource">
             <div class="service-interval-wrapper">
               <div class="type-placeholder">Nofify:</div>
-              <input id="service-interval-nr" type="text" placeholder="2">
+              <input id="service-interval-nr3" type="text" placeholder="2">
               <select class="service-interval">
               <option class="default_option">Days</option>
               <option class="default_option">Month</option>
@@ -1826,7 +1826,8 @@
   <script src="../alle-sider/selection-apppear.js"></script>
 
   <script src="../js/calender.js"></script>
-  <script src="../js/script.js"></script>
+  <script src="../js/script.js"></script> 
+  <script src="../js/size-change.js"></script>
 
 </body>
 </html>

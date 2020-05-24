@@ -25,6 +25,33 @@ $( function() {
       });
     } );
 
+    $( function() {
+      $( "#datepicker-history-menu4" ).datepicker({
+        showOn: "button",
+        buttonImage: "../img/calendar-white.png",
+        buttonImageOnly: true,
+        buttonText: "Select date"
+      });
+    } );
+
+    $( function() {
+      $( "#datepicker-history-menu5" ).datepicker({
+        showOn: "button",
+        buttonImage: "../img/calendar-white.png",
+        buttonImageOnly: true,
+        buttonText: "Select date"
+      });
+    } );
+
+    $( function() {
+      $( "#datepicker-history-menu7" ).datepicker({
+        showOn: "button",
+        buttonImage: "../img/calendar-white.png",
+        buttonImageOnly: true,
+        buttonText: "Select date"
+      });
+    } );
+
 $( function() {
   $( "#datepicker-history-menu-service-next" ).datepicker({
     showOn: "button",
