@@ -891,14 +891,14 @@ cursor: pointer;
   margin: 10px;
   background-color: #337AB7;
   box-shadow: 5px 3px 5px 0px rgba(0,0,0,.5);
-  color:#ffffff;
+  color: #ffffff;
   outline: none;
   border: none;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 700;
   border-radius: 30px;
   cursor: pointer;
-  }
+}
 
   /*KNAPPERNE NEDERFOR DE ANDRE KNAPPER I CONTENTCONTAINER1*/
   .deactive2 {
