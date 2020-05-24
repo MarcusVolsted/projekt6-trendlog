@@ -11,7 +11,6 @@ body{
     color:#000;
     font-family: 'Segoe UI', sans-serif;
     background: #F1F1F1;
-    overflow-y: hidden;
 
 }
 
@@ -217,7 +216,8 @@ body{
   height: auto;
 }
 
-.mobil-wrapper-res{
+#mobil-wrapper-res{
+  display: none;
   width: 100%;
   height: auto;
 }
@@ -2630,11 +2630,6 @@ color: #3F3844;
 margin-left: 15px;
 }
 
-#lname {
-margin-right: 15px;
-width: 100%;
-}
-
 .name-group-wrapper input[type=text], select {
 width: 60%;
 margin: 8px 0;
@@ -2754,11 +2749,6 @@ padding: 15px;
   margin-left: 15px;
   }
 
-  #lname {
-  margin-right: 15px;
-  width: 100%;
-  }
-
   .type-wrapper input[type=text], select {
   width: 60%;
   margin: 8px 0;
@@ -2820,11 +2810,6 @@ padding: 15px;
     font-weight: bold;
     color: white;
     margin-left: 15px;
-    }
-
-    #lname {
-    margin-right: 15px;
-    width: 100%;
     }
 
     .servive-form-mobil-wrapper input[type=text], select {
@@ -2906,7 +2891,7 @@ margin-left: 15px;
   color: white;
   }
 
-#lname {
+.name-button-class {
 margin-right: 15px;
 width: 100%;
 }
@@ -2993,11 +2978,6 @@ font-size: 15px;
   font-weight: bold;
   color: white;
   margin-left: 15px;
-  }
-
-  #lname {
-  margin-right: 15px;
-  width: 100%;
   }
 
   .date-service-wrapper input[type=text], select {
@@ -3318,17 +3298,18 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   margin: 0px 10px 0px 10px;
 }
 
-#datepicker-history-menu1{
-    border-radius: 8px;
-    width: 40%;
-    margin-left: 10px;
-}
-
 #datepicker-history-menu2.hasDatepicker {
   border-radius: 8px;
   width: 82%;
   margin-left: 10px;
 }
+
+#datepicker-history-menu4.hasDatepicker {
+  border-radius: 8px;
+  width: 82%;
+  margin-left: 10px;
+}
+
 #datepicker-history-menu5.hasDatepicker {
   border-radius: 8px;
   width: 82%;
@@ -3342,6 +3323,11 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   margin-left: 10px;
 }
 
+#datepicker-history-menu4 {
+  border-radius: 8px;
+  width: 80%;
+  margin-left: 10px;
+}
 
 /* History Boks Tekst */
 
@@ -3587,6 +3573,13 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
     width: 40%;
     margin-left: 10px;
 }
+
+#datepicker-history-menu7 {
+  border-radius: 8px;
+  width: 40%;
+  margin-left: 10px;
+}
+
 #datepicker-history-menu6 {
   border-radius: 8px;
   width: 40%;
@@ -3597,6 +3590,12 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
     border-radius: 8px;
     width: 40%;
 }
+
+#datepicker-history-menu4 {
+  border-radius: 8px;
+  width: 40%;
+}
+
 #datepicker-history-menu5 {
   border-radius: 8px;
   width: 40%;
@@ -4160,6 +4159,22 @@ border-color:dodgerBlue;
 box-shadow:0 0 6px 0 dodgerBlue;
 }
 
+#name-placeholder-rwp[type=text]{
+  width:100%;
+  border:1px solid #aaa;
+  margin-left: 25px;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  border-radius: 8px;
+  transition:.3s;
+  }
+  
+  #name-placeholder-rwp[type=text]:focus{
+  border-color:dodgerBlue;
+  box-shadow:0 0 6px 0 dodgerBlue;
+  }
+
 #name-placeholder1[type=text]{
   width:100%;
   border:1px solid #aaa;
@@ -4196,6 +4211,18 @@ box-shadow:0 0 6px 0 dodgerBlue;
 }
 
 #service-interval-nr[type=text]{
+  width:22%;
+  border:1px solid #aaa;
+  margin:8px 0;
+  margin-left: 100px;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  border-radius: 8px;
+  transition:.3s;
+}
+
+#service-interval-nr3[type=text]{
   width:22%;
   border:1px solid #aaa;
   margin:8px 0;
@@ -4594,12 +4621,6 @@ margin-left: 32px;
       resize: none;
       }
 
-
-
-      #lname-web {
-          width: 100%;
-          }
-
 .nedre-knapcontainer-content1{
   display: flex;
   width: 100%;
@@ -4806,6 +4827,10 @@ margin-left: 32px;
       text-align: center;
       height: 100vh;
       }
+      body{
+        overflow-y: scroll;
+        top: 0;
+    }
   }
 
   @media only screen and (max-width: 1201px) {
@@ -4827,38 +4852,7 @@ margin-left: 32px;
   }
 
 
-  @media only screen and (min-width: 861px) {
-    .mobil-wrapper {
-      display: none;
-    }
-    .navigation-buttons {
-      display: none;
-    }
-    .header-mobile {
-      display: none;
-    }
-    .procentagebar-box {
-      display: none;
-    }
-    #mobile-checkliste-container {
-      display: none;
-    }
-    #mobile-settings-container {
-      display: none;
-    }
-    #mobile-history-container {
-      display: none;
-    }
-    #mobile-service-settings-container {
-      display: none;
-    }
-    #mobile-service-settings-container {
-      display: none;
-    }
-    #mobile-add-to-settings-container {
-      display: none;
-    }
-  }
+
 
   /* ------------------------------ NEW RESSOURCE ---------------------------------- */
 #slide-one {
@@ -5009,3 +5003,20 @@ margin-left: 32px;
       justify-content: center;
       width: 100%;
     }
+
+    @media only screen and (min-width: 861px) {
+      .mobil-wrapper {
+        display: none;
+      }
+      .navigation-buttons {
+        display: none;
+      }
+      .header-mobile {
+        display: none;
+      }
+      .procentagebar-box {
+        display: none;
+      }
+  
+    }
+  }
