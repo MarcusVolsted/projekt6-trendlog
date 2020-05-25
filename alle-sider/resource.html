@@ -231,7 +231,7 @@
     </div>
 
     <div class="">
-      <button class="save" onclick="saveAlert">Save</button>
+      <button class="save" onclick="saveAlert()">Save</button>
     </div>
   </div>
 
@@ -298,7 +298,7 @@
 <!--       FORSØG         -->
 
     <div class="">
-      <button class="save" onclick="saveAlert">Save</button>
+      <button class="save" onclick="saveAlert()">Save</button>
     </div>
   </div>
 
@@ -375,7 +375,7 @@
       </div>
     </div>
     <div class="">
-      <button class="save" onclick="saveAlert">Save</button>
+      <button class="save" onclick="saveAlert()">Save</button>
     </div>
   </div>
 
@@ -399,32 +399,14 @@
           <div class="history-boks-tekst">
             Entries:
           </div>
-          <div class="history-listeantal">
-              <ul class="history-default-option">
-                  <li>
-                      <div class="option 10">
-                        <p>10</p>
-                      </div>
-                  </li>
-              </ul>
-              <ul class="history-listeantal-ul">
-                  <li>
-                      <div class="option 20">
-                        <p>20</p>
-                      </div>
-                  </li>
-                  <li>
-                      <div class="option 30">
-                        <p>30</p>
-                      </div>
-                  </li>
-                  <li>
-                      <div class="option 40">
-                        <p>40</p>
-                      </div>
-                  </li>
-              </ul>
-          </div>
+          <select class="history-menu-øvre-kasse-entries">
+            <option class="history-boks-tekst">10</option>
+            <option>10 </option>
+            <option>20</option>
+            <option>30</option>
+            <option>40</option>
+            <option>50</option>
+            </select>
           <input class="history-søgefunktion" type="text" name="historyesøgefunktion" placeholder="Søg...">
         </div>
         <div class="history-menu-nedre-kasse">
@@ -971,6 +953,7 @@
 
       <div class="fixed-knap-container1">
         <div class="tester">
+          <div class="addnew-rs">
           <div class="search-bar">
             <div class="virk">
             <p class="texttt">
@@ -981,6 +964,7 @@
                 <input class="search-web" type="text" name="search" value="" autocomplete="off"  onkeyup="searchFunction()" placeholder="Search...">
             </div>
         </div>
+      </div>
 
           <div class="addnew-rs">
             <button class="modal-btn" onclick="selectionAppear('modal');">ADD RESOURCE</button>
@@ -1078,7 +1062,7 @@
         </div>
     </div>
     <div class="save-button-mobil">
-        <button class="save-mobil" onclick="saveAlert">Save</button>
+        <button class="save-mobil" onclick="saveAlert()">Save</button>
     </div>
     <div class="procentagebar-box">
         <div class="progressbar-bar"></div>
@@ -1165,7 +1149,7 @@
             </div>
         </div>
         <div class="save-button-mobil">
-            <button class="save-mobil" onclick="saveAlert">Save</button>
+            <button class="save-mobil" onclick="saveAlert()">Save</button>
         </div>
 
     </div>
@@ -1341,7 +1325,7 @@
         </div>
     </div>
     <div class="save-button-mobil">
-        <button class="save-mobil" onclick="saveAlert">Save</button>
+        <button class="save-mobil" onclick="saveAlert()">Save</button>
     </div>
 
 </div>
@@ -1433,7 +1417,7 @@
                 </div>
             </div>
             <div class="save-button-mobil">
-                <button class="save-mobil" onclick="saveAlert">Save</button>
+                <button class="save-mobil" onclick="saveAlert()">Save</button>
             </div>
 
 </div>
@@ -1458,37 +1442,19 @@
     </div>
     <div class="history-menu">
       <div class="history-menu-kasse">
-        <div class="history-menu-øvre-kasse">
+        <div class="history-menu-øvre-kasse-mobil">
           <div class="history-boks-tekst">
             Entries:
           </div>
-          <div class="history-listeantal">
-              <ul class="history-default-option">
-                  <li>
-                      <div class="option 10">
-                        <p>10</p>
-                      </div>
-                  </li>
-              </ul>
-              <ul class="history-listeantal-ul">
-                  <li>
-                      <div class="option 20">
-                        <p>20</p>
-                      </div>
-                  </li>
-                  <li>
-                      <div class="option 30">
-                        <p>30</p>
-                      </div>
-                  </li>
-                  <li>
-                      <div class="option 40">
-                        <p>40</p>
-                      </div>
-                  </li>
-              </ul>
-          </div>
-          <input class="history-søgefunktion" type="text" name="historyesøgefunktion" placeholder="Søg...">
+          <select class="history-menu-øvre-kasse-entries-mobil">
+            <option class="history-boks-tekst">10</option>
+            <option>10 </option>
+            <option>20</option>
+            <option>30</option>
+            <option>40</option>
+            <option>50</option>
+            </select>
+          <div class="history-søgefunktion"><input type="text" name="historyesøgefunktion" placeholder="Søg..."></div>
         </div>
         <div class="history-menu-nedre-kasse">
           <div class="history-menu-nedre-kasse-1">
@@ -1826,7 +1792,7 @@
               </div>
 
             </div>
-            <button class="next-btn-popup" onclick="selectionAppear('modal'); toggleVisibilityNewRes('slide-one');">Next</button>
+            <button class="create-btn-popup" onclick="selectionAppear('modal'); toggleVisibilityNewRes('slide-one'); toggleVisibilityNewRes('slide-one'); createAlert();">Create</button>
             </div>
           </div>
       </div>

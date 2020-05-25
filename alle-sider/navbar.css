@@ -212,7 +212,7 @@ nav {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 861px) {
   .navelement1 .logo img {
     height: 35px;
     width: auto;

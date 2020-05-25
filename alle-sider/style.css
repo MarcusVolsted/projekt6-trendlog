@@ -232,9 +232,30 @@ body{
 }
 
 /*knapperne der ses øverst i layoutet af mobilversionen*/
+.flex-knapper-mobil form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 31%;
+}
+
+.mobile-btn-top-awa {
+  margin-top: 20px;
+  width: 100%;
+  height: 39px;
+  font-size: 1em;
+  font-weight: 600;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
 .mobile-btn-top {
   margin-top: 20px;
-  width: 131px;
+  width: 31%;
   height: 39px;
   font-size: 1em;
   font-weight: 600;
@@ -248,7 +269,7 @@ body{
 
 .mobile-btn-top-active {
   margin-top: 20px;
-  width: 131px;
+  width: 31%;
   height: 39px;
   font-size: 1em;
   font-weight: 600;
@@ -525,9 +546,10 @@ h2{
       height: 30px;
       font-weight: 700;
       text-align: center;
-      border-radius: 30px;
+      border-radius: 12px;
       text-decoration: none;
       cursor: pointer;
+      padding: 8px 10px;
       box-shadow: 0 5px 25px rgba(0,0,0,.5);
     }
     /**/
@@ -535,10 +557,11 @@ h2{
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 8px 10px;
       width: 160px;
       height: 30px;
       background: rgb(255, 255, 255);
-      border-radius: 30px;
+      border-radius: 12px;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
       overflow: hidden;
   }
@@ -593,19 +616,6 @@ h2{
       width: 100%;
       height: 100%;
     }
-
-    /*searchbaren til (web)*/
-    .search-bar {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 160px;
-      height: 30px;
-      background: rgb(255, 255, 255);
-      border-radius: 30px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-      overflow: hidden;
-  }
 
   /*Containeren til search skriften i searchbaren*/
   .virk{
@@ -681,8 +691,9 @@ h2{
   .flex-knapper-mobil{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 50px;
+    width: 100%;
     }
 
 
@@ -847,6 +858,7 @@ h2{
   align-items: center;
   text-align: center;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 
@@ -895,30 +907,30 @@ padding: 10px 20px;
 width: 22%;
 height: 60px;
 margin: 10px;
+margin-bottom: 0px;
 background-color: #337AB7;
 color:#ffffff;
 outline: none;
 border: none;
 font-size: 15px;
 font-weight: 700;
-border-radius: 30px;
+border-radius: 12px;
 cursor: pointer;
 }
 
 /*KNAPPERNE NEDENFOR DE ANDRE KNAPPER I CONTENTCONTAINER1*/
 .active2 {
-  padding: 10px 20px;
   width: 22%;
   height: 52px;
-  margin: 10px;
+  margin: 10px 10px;
   background-color: #337AB7;
   box-shadow: 5px 3px 5px 0px rgba(0,0,0,.5);
-  color: #ffffff;
+  color:white;
   outline: none;
   border: none;
   font-size: 13px;
   font-weight: 700;
-  border-radius: 30px;
+  border-radius: 12px;
   cursor: pointer;
 }
 
@@ -932,13 +944,11 @@ cursor: pointer;
     color:#2c3e50;
     outline: none;
     border: none;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 700;
-    border-radius: 30px;
+    border-radius: 12px;
     cursor: pointer;
     }
-
-
 
 
 .deactive {
@@ -951,20 +961,21 @@ outline: none;
 border: none;
 font-size: 15px;
 font-weight: 700;
-border-radius: 30px;
+border-radius: 12px;
 cursor: pointer;
 }
 .deactive1 {
   width: 160px;
   height: 60px;
   margin: 10px;
+  margin-bottom: 0px;
   background-color: rgb(255, 255, 255);
   color:#2c3e50;
   outline: none;
   border: none;
   font-size: 15px;
   font-weight: 700;
-  border-radius: 30px;
+  border-radius: 12px;
   cursor: pointer;
   }
 
@@ -982,7 +993,7 @@ outline: none;
 border: none;
 font-size: 15px;
 font-weight: 700;
-border-radius: 30px;
+border-radius: 12px;
 cursor: pointer;
 }
 
@@ -999,7 +1010,7 @@ outline: none;
 border: none;
 font-size: 15px;
 font-weight: 700;
-border-radius: 30px;
+border-radius: 12px;
 cursor: pointer;
 }
 
@@ -1229,7 +1240,8 @@ font-size: 12px;
 display: flex;
 flex-direction: row;
 justify-content: center;
-margin-top: 50px;
+align-items: flex-end;
+margin-top: 55px;
 }
 /**/
 .resourceflex-3{
@@ -1478,7 +1490,7 @@ z-index: 10;
 .fixed-knap-container1{
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 60%;
   height: 143px;
   position: fixed;
   left: 40%;
@@ -1508,8 +1520,9 @@ font-size: 15px;
   align-items: center;
   text-align: center;
   justify-content: center;
-  width: 65%;
+  width: 100%;
   height: 100%;
+  margin: 0px 20%;
 }
 
 
@@ -1518,13 +1531,20 @@ font-size: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  width: 30%;
+  width: 100%;
   height: 68px;
-  background: rgb(255, 255, 255);
-  border-radius: 30px;
+  margin: 10px;
+  background: white;
+  border-radius: 12px;
+  color: black;
+  border: none;
+  cursor: pointer;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
+  font-weight: bold;
+}
+
+.search-bar p{
+margin-right: 20px;
 }
 
 .virk{
@@ -1726,6 +1746,19 @@ input[type=text]{
   padding:8px;
   box-sizing:border-box;
   border-radius: 8px;
+  transition:.3s;
+  margin-right: 10px;
+}
+
+.history-søgefunktion input[type=text]{
+  width:100%;
+  border:2px solid #aaa;
+  border-radius:4px;
+  margin:8px 0;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  border-radius: 5px;
   transition:.3s;
 }
 
@@ -2248,10 +2281,11 @@ background: #EBEBEB;
 .progressbar-label {
 position: absolute;
 margin-top: 10px;
-top: 15%;
-left: 50%;
+top: 10%;
+left: 45%;
 z-index: 2;
 color: #3F3844;
+font-weight: bold;
 }
 /* ------------------ SLUT CHECKLIST UNDERSIDE - SPECIFIKT TIL TING KUN UNDER HER ------------------ */
 
@@ -3273,38 +3307,67 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   height: 50%;
   width: 100%;
+}
+
+.history-menu-øvre-kasse-mobil {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 50%;
+  width: 90%;
+}
+
+.history-menu-øvre-kasse-entries {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 35%;
+  width: 50%;
+  margin-right: 10px;
+}
+
+.history-menu-øvre-kasse-entries-mobil {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 45%;
+  width: 50%;
   margin-right: 10px;
 }
 
 .history-menu-øvre-kasse .history-boks-tekst {
-  margin-left: 20px;
+  margin-right: 10px;
 }
 
 .history-menu-nedre-kasse {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   height: 50%;
-  width: 100%;
-  margin-right: 10px;
-  margin-left: 10px;
+  width: 90%;
 }
 
 .history-menu-nedre-kasse .history-menu-nedre-kasse-1 {
   display: flex;
   align-items: center;
+  align-items: flex-start;
+  margin-top: 10px;
   height: 50%;
+  width: 25%;
   font-size: 15px;
   color: #fff;
   font-weight: bold;
-  margin-left: 15px;
 }
 
 .history-menu-nedre-kasse-2 {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
+  width: 90%;
 }
 
 .history-menu-nedre-kasse .history-menu-nedre-kasse-2 {
@@ -3319,8 +3382,8 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
 
 #datepicker-history-menu2.hasDatepicker {
   border-radius: 8px;
-  width: 82%;
-  margin-left: 10px;
+  width: 42%;
+  margin-right: 10px;
 }
 
 #datepicker-history-menu4.hasDatepicker {
@@ -3352,16 +3415,9 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
 
 .history-boks-tekst {
   color: #fff;
-  margin-left: 15px;
   font-weight: bold;
 }
 
-/* Historie Søgefunktion */
-
-.history-søgefunktion {
-  height: 40px;
-  margin-right: 10px;
-}
 
 /* Øvre kasse dropdowns */
 
@@ -3544,26 +3600,18 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   }
 
   .history-menu {
-  height: 50px;
+  height: 150px;
   margin-top: 20px;
 }
 
 .history-menu-kasse {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 80%;
-  height: 90%;
+  height: 100%;
   background-color: #f1f1f1;
-}
-
-.history-menu-øvre-kasse {
-  margin-right: 10px;
-}
-
-.history-menu-øvre-kasse .history-boks-tekst {
-  margin-left: 20px;
 }
 
 .history-menu-nedre-kasse {
@@ -3985,20 +4033,23 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
   cursor: pointer;
 }
 
-
+.addnew-rs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
 
 
 .modal-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 75px;
-  margin-right: 75px;
-  width: 279px;
+  width: 100%;
   height: 68px;
-  margin-top: 20px;
+  margin: 10px;
   background-color:  #32CD32;;
-  border-radius: 30px;
+  border-radius: 12px;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -4217,7 +4268,8 @@ box-shadow:0 0 6px 0 dodgerBlue;
 .service-interval1 {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin: 10px;
+  margin-bottom: 0px;
   color: #2c3e50;
   font-weight: bold;
   font-size: 15px;
@@ -4225,7 +4277,7 @@ box-shadow:0 0 6px 0 dodgerBlue;
   height: 60px;
   user-select: none;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 12px;
   text-align-last: center;
 }
 
@@ -4497,6 +4549,22 @@ margin-left: 32px;
   margin-top: 20px;
   margin-bottom: 10px;
   background-color: #337AB7;
+  color: rgb(255, 255, 255);
+  box-shadow: 1px 2px 5px 0px rgba(0,0,0,.5);
+  outline: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.create-btn-popup {
+  width: 105px;
+  height: 52px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: #32CD32;
   color: rgb(255, 255, 255);
   box-shadow: 1px 2px 5px 0px rgba(0,0,0,.5);
   outline: none;
@@ -4982,10 +5050,10 @@ margin-left: 32px;
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 40%;
+    width: 40.1%;
     height: 50px;
     background-color: #fff;
-    box-shadow: 0px 2px 2px rgba(0,0,0,.5);
+    box-shadow: 0px 2px 10px rgba(0,0,0,.5);
     }
 
     /* .ui-progressbar-value {
