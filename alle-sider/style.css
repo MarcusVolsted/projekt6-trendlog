@@ -4637,6 +4637,20 @@ margin-left: 32px;
   box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.31);
 }
 
+.group-newresource-dc-comment{
+  width: 90%;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  flex-direction: row;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.31);
+}
+
 .close{
   display: flex;
   justify-content: flex-end;
