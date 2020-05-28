@@ -1,3 +1,5 @@
+// Forklar hvad jQuary er!
+
 $(document).ready(function() {
   
   // get box count

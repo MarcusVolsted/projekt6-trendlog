@@ -1,7 +1,11 @@
+// Funger på samme måde som select-div.js
+
 var divs = ["slide-one", "slide-two", "slide-three"];
-var visibleDivId = null;
+var visibleDivId;
 function toggleVisibilityNewRes(divId) {
   if(visibleDivId === divId) {
+     // Her er visibleDivId = null;
+     // Så der sker intet.
   } else {
     visibleDivId = divId;
   }
