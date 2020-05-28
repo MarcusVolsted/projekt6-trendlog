@@ -1644,16 +1644,40 @@ margin-right: 20px;
   border-top-right-radius: 5px;
 }
 
+.header-styleguide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.header-styleguide h1{
+font-size: 50px;
+}
+
+.header-styleguide h2{
+  font-size: 30px;
+  }
+
 .wrapper-styleguide .main-content-styleguide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   margin-left: 200px;
+  text-align: center;
 }
 
 .wrapper-styleguide .main-content-styleguide .header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   background-color: lightgrey;
   color: #000000;
   border-bottom: 1px solid #e0e4e8;
+  text-align: center;
 }
 
 .wrapper-styleguide .main-content-styleguide .info{
@@ -1664,6 +1688,30 @@ margin-right: 20px;
 .wrapper-styleguide .main-content-styleguide .info div{
   margin-bottom: 20px;
 }
+
+.sg-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 90%;
+  margin: 20px;
+  background: #f1f1f1f1;
+  border-radius: 12px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,.5);
+  color: white;
+}
+
+.sg-knap-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 50%;
+  /* background: blue; */
+  margin: 10px;
+}
+
 
 /*Farver */
 .xx-swatches {
@@ -1857,7 +1905,12 @@ input[type=text]:focus{
 
 /*til alt content på styleguiden*/
 .content-wrapper-styleguide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: auto;
+  height: 100%;
   background-color:#7a7a7a;
   margin-left: 200px;
   padding: 20px;
@@ -5099,4 +5152,4 @@ margin-left: 32px;
       }
 
     }
-  }
+  
