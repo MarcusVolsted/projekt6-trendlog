@@ -1,7 +1,7 @@
 // Jeg laver først en array med de objekter som skal bruges i funktionen. 
 
 var divs = ["mobile-settings-container", "mobile-checkliste-container", "mobile-history-container", "mobile-service-settings-container", "mobile-service-settings-container", "mobile-add-to-settings-container"];
-var visibleDivId;                    // Dette er en tom variable (kunne også sættes til null) 
+var visibleDivId = null;                    // Dette er en tom variable (kunne også sættes til null) 
 
 function toggleVisibility(divId) {
   if(visibleDivId === divId) {

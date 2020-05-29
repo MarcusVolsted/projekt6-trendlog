@@ -1,3 +1,8 @@
+sizeChange();
+window.onresize = function() {
+    sizeChange();
+}
+
 // Denne funktion kører ved brug af en onsize event, som er sat på body'en.
 
 function sizeChange() {
